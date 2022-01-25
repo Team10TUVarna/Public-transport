@@ -7,48 +7,53 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane cache="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: rgba(202,239,222,0.68);" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bg.tu_varna.sit.oop_project_demo.presentation.controllers.HelloController">
+<Pane cache="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E2F2FA;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bg.tu_varna.sit.oop_project_demo.presentation.controllers.HelloController">
    <children>
-      <Button fx:id="admin" layoutX="57.0" layoutY="286.0" mnemonicParsing="false"  prefHeight="40.0" prefWidth="143.0" text="Log In As Administrator" />
-      <Button fx:id="distributor" layoutX="228.0" layoutY="286.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="143.0" text="Log In As Distributor" />
-      <Button fx:id="company" layoutX="399.0" layoutY="286.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="143.0" text="Log In As Company" textAlignment="CENTER" />
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-66.0" layoutY="64.0" prefHeight="59.0" prefWidth="600.0" text="Welcome to" textAlignment="CENTER" textFill="#302222" textOverrun="LEADING_WORD_ELLIPSIS">
+      <ImageView fitHeight="253.0" fitWidth="365.0" layoutX="123.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../background.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="admin" layoutX="57.0" layoutY="343.0" mnemonicParsing="false"  prefHeight="40.0" prefWidth="143.0" text="Log In As Administrator" />
+      <Button fx:id="distributor" layoutX="228.0" layoutY="343.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="143.0" text="Log In As Distributor" />
+      <Button fx:id="company" layoutX="399.0" layoutY="343.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="143.0" text="Log In As Company" textAlignment="CENTER" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-136.0" layoutY="14.0" prefHeight="59.0" prefWidth="600.0" text="Welcome to" textAlignment="CENTER" textFill="#302222" textOverrun="LEADING_WORD_ELLIPSIS">
          <font>
-            <Font name="Broadway" size="48.0" />
+            <Font name="Broadway" size="45.0" />
          </font>
       </Label>
-      <ImageView fitHeight="136.0" fitWidth="163.0" layoutX="384.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="141.0" fitWidth="173.0" layoutX="419.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../../../../logoEasyTravel2.png" />
          </image>
       </ImageView>
-      <Label layoutX="125.0" layoutY="139.0" text="Travel        Explore          Have Fun">
+      <Label layoutX="195.0" layoutY="261.0" text="Travel        Explore          Have Fun">
          <font>
             <Font name="Book Antiqua" size="16.0" />
          </font>
       </Label>
       <Label layoutX="159.0" layoutY="165.0" />
-      <Label layoutX="77.0" layoutY="179.0" text="Everything is                    with us!">
+      <Label layoutX="129.0" layoutY="299.0" text="Everything is                    with us!">
          <font>
             <Font name="Broadway" size="21.0" />
          </font>
       </Label>
-      <ImageView fitHeight="65.0" fitWidth="97.0" layoutX="231.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="65.0" fitWidth="97.0" layoutX="283.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../../../../easy.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="32.0" fitWidth="31.0" layoutX="93.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="32.0" fitWidth="31.0" layoutX="163.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../../../../travel.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="30.0" fitWidth="31.0" layoutX="177.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="30.0" fitWidth="31.0" layoutX="247.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../../../../explore.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="59.0" fitWidth="31.0" layoutX="266.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="59.0" fitWidth="31.0" layoutX="336.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../../../../havefun.png" />
          </image>
