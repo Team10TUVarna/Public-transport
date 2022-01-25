@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
+        <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+        <property name="hibernate.connection.url">jdbc:sqlserver://localhost; databaseName=Coursework; user=root; password=root123</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">root123</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.enable_lazy_load_no_trans">true</property>
+
+        <mapping class="bg.tu_varna.sit.oop_project_demo.data.entities.Admin"/>
+        <mapping class="bg.tu_varna.sit.oop_project_demo.data.entities.Cashier"/>
+        <mapping class="bg.tu_varna.sit.oop_project_demo.data.entities.Company"/>
+        <mapping class="bg.tu_varna.sit.oop_project_demo.data.entities.Distributor"/>
+        <mapping class="bg.tu_varna.sit.oop_project_demo.data.entities.Location"/>
+        <mapping class="bg.tu_varna.sit.oop_project_demo.data.entities.Notification"/>
+        <mapping class="bg.tu_varna.sit.oop_project_demo.data.entities.Request"/>
+        <mapping class="bg.tu_varna.sit.oop_project_demo.data.entities.Route"/>
+        <mapping class="bg.tu_varna.sit.oop_project_demo.data.entities.Ticket"/>
+        <mapping class="bg.tu_varna.sit.oop_project_demo.data.entities.TransportType"/>
+        <mapping class="bg.tu_varna.sit.oop_project_demo.data.entities.Trip"/>
+        <mapping class="bg.tu_varna.sit.oop_project_demo.data.entities.TripType"/>
+    </session-factory>
+</hibernate-configuration>
