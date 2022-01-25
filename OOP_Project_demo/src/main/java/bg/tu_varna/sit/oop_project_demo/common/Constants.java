@@ -2,7 +2,7 @@ package bg.tu_varna.sit.oop_project_demo.common;
 
 public class Constants {
     public static class View{
-        public static final String HELLO_VIEW = "/bg/tu_varna/sit/oop_project_demo/presentation.views/hello-view.fxml";
+        public static final String HELLO_VIEW = "/bg/tu_varna/sit/oop_project_demo/presentation.views/startViews/hello-view.fxml";
     }
 
     public static class Configurations {
