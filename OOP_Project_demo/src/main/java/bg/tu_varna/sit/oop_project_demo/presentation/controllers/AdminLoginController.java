@@ -7,16 +7,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 public class AdminLoginController {
-    //private final AdminService service=AdminService.getInstance();
-    public Stage s;
-    @FXML
-    public TextField admin_name;
-    @FXML
-    public PasswordField admin_pass;
-    @FXML
-    public Button login;
 
-    public AdminLoginController(Stage stage){
-        s=stage;
+    public AdminLoginController(Stage stage) {
     }
 }

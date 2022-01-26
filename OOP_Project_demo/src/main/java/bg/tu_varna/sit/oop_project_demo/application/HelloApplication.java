@@ -1,7 +1,6 @@
 package bg.tu_varna.sit.oop_project_demo.application;
 
 import bg.tu_varna.sit.oop_project_demo.common.Constants;
-import bg.tu_varna.sit.oop_project_demo.presentation.controllers.HelloController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -13,6 +12,8 @@ import org.apache.log4j.PropertyConfigurator;
 
 import java.io.IOException;
 import java.net.URL;
+
+import static bg.tu_varna.sit.oop_project_demo.common.Constants.View.HELLO_VIEW;
 
 public class HelloApplication extends Application {
 
@@ -28,21 +29,18 @@ public class HelloApplication extends Application {
 
         PropertyConfigurator.configure(HelloApplication.class.getResource(Constants.Configurations.LOG4J_PROPERTIES));
 
-        URL path = getClass().getResource(Constants.View.HELLO_VIEW);
+        URL path = getClass().getResource(HELLO_VIEW);
 
         if(path != null){
-            FXMLLoader fxmlLoader=new FXMLLoader(path);
-            fxmlLoader.setController(new HelloController(stage));
-            Parent root =fxmlLoader.load();
+            Parent root = FXMLLoader.load(path);
             Scene scene = new Scene(root);
             scene.setFill(Color.TRANSPARENT);
+
             stage.setTitle(Constants.Values.Title);
             stage.setScene(scene);
             stage.setResizable(false);
-            stage.setMaxWidth(1920);
-            stage.setMaxHeight(1080);
-            stage.setWidth(600);
-            stage.setHeight(400);
+            stage.setWidth(630);
+            stage.setHeight(430);
             stage.show();
         } else {
             log.error("Sorry, the main FXML could not be loaded");

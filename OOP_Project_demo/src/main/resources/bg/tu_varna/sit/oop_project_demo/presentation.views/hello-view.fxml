@@ -13,7 +13,7 @@
             <Image url="@../../../../../background.png" />
          </image>
       </ImageView>
-      <Button fx:id="adminButton" layoutX="6.0" layoutY="343.0" mnemonicParsing="false" onAction="#adminLog" prefHeight="40.0" prefWidth="141.0" text="Log In As Administrator" />
+      <Button fx:id="adminButton" layoutX="6.0" layoutY="343.0" mnemonicParsing="false" onAction="#adminLogin" prefHeight="40.0" prefWidth="141.0" text="Log In As Administrator" />
       <Button fx:id="distributorButton" layoutX="155.0" layoutY="343.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="141.0" text="Log In As Distributor" />
       <Button fx:id="companyButton" layoutX="305.0" layoutY="343.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="141.0" text="Log In As Company" textAlignment="CENTER" />
       <Label fx:id="label1" alignment="CENTER" contentDisplay="CENTER" layoutX="-136.0" layoutY="14.0" prefHeight="59.0" prefWidth="600.0" text="Welcome to" textAlignment="CENTER" textFill="#302222" textOverrun="LEADING_WORD_ELLIPSIS">
