@@ -13,6 +13,8 @@ import org.apache.log4j.PropertyConfigurator;
 import java.io.IOException;
 import java.net.URL;
 
+import static bg.tu_varna.sit.oop_project_demo.common.Constants.View.HELLO_VIEW;
+
 public class HelloApplication extends Application {
 
     private static final Logger log = Logger.getLogger(HelloApplication.class);
@@ -27,7 +29,7 @@ public class HelloApplication extends Application {
 
         PropertyConfigurator.configure(HelloApplication.class.getResource(Constants.Configurations.LOG4J_PROPERTIES));
 
-        URL path = getClass().getResource(Constants.View.HELLO_VIEW);
+        URL path = getClass().getResource(HELLO_VIEW);
 
         if(path != null){
             Parent root = FXMLLoader.load(path);
@@ -37,10 +39,8 @@ public class HelloApplication extends Application {
             stage.setTitle(Constants.Values.Title);
             stage.setScene(scene);
             stage.setResizable(false);
-            stage.setMaxWidth(780);
-            stage.setMaxHeight(630);
-            stage.setWidth(320);
-            stage.setMaxWidth(240);
+            stage.setWidth(630);
+            stage.setHeight(430);
             stage.show();
         } else {
             log.error("Sorry, the main FXML could not be loaded");

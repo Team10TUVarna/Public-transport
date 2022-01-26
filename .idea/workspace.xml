@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8027a98-a442-40a4-bb09-720408b72957" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-    </list>
+    <list default="true" id="0aa2aad8-9505-497c-8ff4-f43497d366b7" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,39 +18,52 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
   </component>
-  <component name="ProjectId" id="20pNzoL0YeD7rNVddCunnB4gj6s" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="24Eqsg2IXzpbCflnaLR6vE7abJq" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/OOP_Project_demo" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\User\IdeaProjects\demo1\src\main\resources\bg\tu_varna\sit\demo1\presentations.views" />
+      <recent name="C:\Users\FERKO\Documents\GitHub\Public-transport\OOP_Project_demo\src\main\resources\bg\tu_varna\sit\oop_project_demo\presentation.views" />
     </key>
   </component>
   <component name="RunManager">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bg.tu_varna.sit.demo1.application.HelloApplication" />
-      <module name="demo1" />
+      <option name="MAIN_CLASS_NAME" value="bg.tu_varna.sit.oop_project_demo.application.HelloApplication" />
+      <module name="OOP_Project_demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="bg.tu_varna.sit.demo1.application.*" />
+          <option name="PATTERN" value="bg.tu_varna.sit.oop_project_demo.application.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -69,31 +80,39 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f8027a98-a442-40a4-bb09-720408b72957" name="Changes" comment="" />
-      <created>1636737836265</created>
+      <changelist id="0aa2aad8-9505-497c-8ff4-f43497d366b7" name="Changes" comment="" />
+      <created>1643206302685</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1636737836265</updated>
-      <workItem from="1636737837578" duration="2088000" />
-      <workItem from="1637072002603" duration="2168000" />
-      <workItem from="1637235814434" duration="206000" />
-      <workItem from="1637419722847" duration="190000" />
-      <workItem from="1639929049270" duration="12000" />
-      <workItem from="1639929187299" duration="164000" />
-      <workItem from="1639938817717" duration="853000" />
-      <workItem from="1639954968946" duration="46000" />
-      <workItem from="1643126786595" duration="170000" />
+      <updated>1643206302685</updated>
+      <workItem from="1643206304560" duration="9797000" />
+      <workItem from="1643223872601" duration="1027000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.NoSuchMethodException" package="java.lang" />
+          <properties class="java.lang.reflect.InvocationTargetException" package="java.lang.reflect" />
           <option name="timeStamp" value="1" />
         </breakpoint>
       </breakpoints>
