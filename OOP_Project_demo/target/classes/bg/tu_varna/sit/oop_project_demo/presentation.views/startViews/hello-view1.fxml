@@ -9,14 +9,15 @@
 
 <Pane cache="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E2F2FA;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bg.tu_varna.sit.oop_project_demo.presentation.controllers.HelloController">
    <children>
+      <Button fx:id="company1" layoutX="454.0" layoutY="343.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="141.0" text="Log In As Cashier" textAlignment="CENTER" />
       <ImageView fitHeight="253.0" fitWidth="365.0" layoutX="123.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../../../../background.png" />
          </image>
       </ImageView>
-      <Button fx:id="admin" layoutX="57.0" layoutY="343.0" mnemonicParsing="false"  prefHeight="40.0" prefWidth="143.0" text="Log In As Administrator" />
-      <Button fx:id="distributor" layoutX="228.0" layoutY="343.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="143.0" text="Log In As Distributor" />
-      <Button fx:id="company" layoutX="399.0" layoutY="343.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="143.0" text="Log In As Company" textAlignment="CENTER" />
+      <Button fx:id="admin" layoutX="6.0" layoutY="343.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="141.0" text="Log In As Administrator" />
+      <Button fx:id="distributor" layoutX="155.0" layoutY="343.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="141.0" text="Log In As Distributor" />
+      <Button fx:id="company" layoutX="305.0" layoutY="343.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="141.0" text="Log In As Company" textAlignment="CENTER" />
       <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-136.0" layoutY="14.0" prefHeight="59.0" prefWidth="600.0" text="Welcome to" textAlignment="CENTER" textFill="#302222" textOverrun="LEADING_WORD_ELLIPSIS">
          <font>
             <Font name="Broadway" size="45.0" />
