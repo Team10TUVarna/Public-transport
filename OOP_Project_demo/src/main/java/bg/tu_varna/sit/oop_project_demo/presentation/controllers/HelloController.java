@@ -93,7 +93,7 @@ public class HelloController implements Initializable {
     }
 
     public void cashierLogin(ActionEvent actionEvent) throws IOException {
-        Stage s = (Stage) adminButton.getScene().getWindow();
+        Stage s = (Stage) cashierButton.getScene().getWindow();
         s.close();
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(CASHIER_LOGIN));
         Stage stage = new Stage();
@@ -107,7 +107,7 @@ public class HelloController implements Initializable {
     }
 
     public void distributorLogin(ActionEvent actionEvent) throws IOException {
-        Stage s = (Stage) adminButton.getScene().getWindow();
+        Stage s = (Stage) distributorButton.getScene().getWindow();
         s.close();
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(DISTRIBUTOR_LOGIN));
         Stage stage = new Stage();
@@ -121,7 +121,7 @@ public class HelloController implements Initializable {
     }
 
     public void companyLogin(ActionEvent actionEvent) throws IOException {
-        Stage s = (Stage) adminButton.getScene().getWindow();
+        Stage s = (Stage) companyButton.getScene().getWindow();
         s.close();
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(COMPANY_LOGIN));
         Stage stage = new Stage();
