@@ -1,19 +1,82 @@
 package bg.tu_varna.sit.oop_project_demo.presentation.controllers;
 
 import bg.tu_varna.sit.oop_project_demo.business.services.NotificationService;
+import bg.tu_varna.sit.oop_project_demo.common.Constants;
 import bg.tu_varna.sit.oop_project_demo.presentation.models.HelloModel;
 import bg.tu_varna.sit.oop_project_demo.presentation.models.NotificationListViewModel;
 import javafx.collections.ObservableList;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
 
-public class HelloController implements EventHandler<MouseEvent> {
+import static bg.tu_varna.sit.oop_project_demo.common.Constants.View.ADMIN_LOGIN;
 
-    private final NotificationService service = NotificationService.getInstance();
+public class HelloController/* implements EventHandler<MouseEvent> */{
+
+    public Stage s;
+
+    @FXML
+    private Button cashierButton;
+    @FXML
+    private Button adminButton;
+    @FXML
+    private Button companyButton;
+    @FXML
+    private Button distributorButton;
+    @FXML
+    private ImageView iv1;
+    @FXML
+    private ImageView iv2;
+    @FXML
+    private ImageView iv3;
+    @FXML
+    private ImageView iv4;
+    @FXML
+    private ImageView iv5;
+    @FXML
+    private ImageView iv6;
+    @FXML
+    private Label label1;
+    @FXML
+    private Label label2;
+    @FXML
+    private Label label3;
+
+
+    public HelloController(Stage s) {
+        this.s = s;
+    }
+
+    @FXML
+    protected void adminLog()
+    {
+        try {
+            Constants.User.trackUser=1;
+            s.close();
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(ADMIN_LOGIN));
+            Stage stage = new Stage();
+            fxmlLoader.setController(new AdminLoginController(stage));
+            Parent root1 = (Parent) fxmlLoader.load();
+            stage.setScene(new Scene(root1));
+            stage.setResizable(false);
+            stage.setWidth(750);
+            stage.setHeight(500);
+            stage.show();
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+
+    /*private final NotificationService service = NotificationService.getInstance();
 
     @FXML
     private Label welcomeText;
@@ -41,5 +104,5 @@ public class HelloController implements EventHandler<MouseEvent> {
 
         ObservableList<NotificationListViewModel> notificationListViewModels = service.getAllNotification();
         listView.setItems(notificationListViewModels);
-    }
+    }*/
 }
