@@ -22,7 +22,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import static bg.tu_varna.sit.oop_project_demo.common.Constants.View.ADMIN_LOGIN;
+import static bg.tu_varna.sit.oop_project_demo.common.Constants.View.*;
 
 public class HelloController implements Initializable {
 
@@ -87,8 +87,50 @@ public class HelloController implements Initializable {
         Parent root1 = (Parent) fxmlLoader.load();
         stage.setScene(new Scene(root1));
         stage.setResizable(false);
-        stage.setWidth(750);
-        stage.setHeight(500);
+        stage.setWidth(600);
+        stage.setHeight(400);
+        stage.show();
+    }
+
+    public void cashierLogin(ActionEvent actionEvent) throws IOException {
+        Stage s = (Stage) adminButton.getScene().getWindow();
+        s.close();
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(CASHIER_LOGIN));
+        Stage stage = new Stage();
+        fxmlLoader.setController(new AdminLoginController(stage));
+        Parent root1 = (Parent) fxmlLoader.load();
+        stage.setScene(new Scene(root1));
+        stage.setResizable(false);
+        stage.setWidth(600);
+        stage.setHeight(400);
+        stage.show();
+    }
+
+    public void distributorLogin(ActionEvent actionEvent) throws IOException {
+        Stage s = (Stage) adminButton.getScene().getWindow();
+        s.close();
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(DISTRIBUTOR_LOGIN));
+        Stage stage = new Stage();
+        fxmlLoader.setController(new AdminLoginController(stage));
+        Parent root1 = (Parent) fxmlLoader.load();
+        stage.setScene(new Scene(root1));
+        stage.setResizable(false);
+        stage.setWidth(600);
+        stage.setHeight(400);
+        stage.show();
+    }
+
+    public void companyLogin(ActionEvent actionEvent) throws IOException {
+        Stage s = (Stage) adminButton.getScene().getWindow();
+        s.close();
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(COMPANY_LOGIN));
+        Stage stage = new Stage();
+        fxmlLoader.setController(new AdminLoginController(stage));
+        Parent root1 = (Parent) fxmlLoader.load();
+        stage.setScene(new Scene(root1));
+        stage.setResizable(false);
+        stage.setWidth(600);
+        stage.setHeight(400);
         stage.show();
     }
 

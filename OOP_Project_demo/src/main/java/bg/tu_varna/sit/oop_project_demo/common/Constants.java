@@ -4,6 +4,9 @@ public class Constants {
     public static class View{
         public static final String HELLO_VIEW = "/bg/tu_varna/sit/oop_project_demo/presentation.views/hello-view.fxml";
         public static final String ADMIN_LOGIN = "/bg/tu_varna/sit/oop_project_demo/presentation.views/login/admin-login.fxml";
+        public static final String DISTRIBUTOR_LOGIN = "/bg/tu_varna/sit/oop_project_demo/presentation.views/login/distributor-login.fxml";
+        public static final String COMPANY_LOGIN = "/bg/tu_varna/sit/oop_project_demo/presentation.views/login/company-login.fxml";
+        public static final String CASHIER_LOGIN = "/bg/tu_varna/sit/oop_project_demo/presentation.views/login/cashier-login.fxml";
     }
 
     public static class Configurations {
