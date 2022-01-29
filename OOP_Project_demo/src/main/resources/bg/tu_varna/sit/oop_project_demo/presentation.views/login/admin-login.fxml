@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane fx:id="adminLogin" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E2F2FA;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<Pane fx:id="adminLogin" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E2F2FA;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bg.tu_varna.sit.oop_project_demo.presentation.controllers.AdminLoginController">
    <children>
       <Text layoutX="174.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="username:">
          <font>
@@ -21,14 +21,14 @@
             <Font name="Book Antiqua" size="15.0" />
          </font>
       </Text>
-      <TextField layoutX="302.0" layoutY="163.0" />
-      <PasswordField layoutX="302.0" layoutY="235.0" />
+      <TextField fx:id="username" layoutX="302.0" layoutY="163.0" />
+      <PasswordField fx:id="password" layoutX="302.0" layoutY="235.0" />
       <Text layoutX="73.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please, enter your username and password to log in the sysytem.">
          <font>
             <Font name="Book Antiqua" size="16.0" />
          </font>
       </Text>
-      <Button layoutX="275.0" layoutY="298.0" mnemonicParsing="false" text="Log In" />
+      <Button fx:id="loginButton" layoutX="275.0" layoutY="298.0" mnemonicParsing="false" onAction="#onAdminLoginButtonClick" text="Log In" />
       <ImageView fitHeight="108.0" fitWidth="164.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../../../../logoEasyTravel2.png" />

@@ -14,11 +14,11 @@ public class Route {
     private int routeId;
 
     @ManyToOne
-    @JoinColumn(name = "locationFrom", nullable = false)
+    @JoinColumn(name = "locationFromId", nullable = false)
     private Location locationFrom;
 
     @ManyToOne
-    @JoinColumn(name = "locationTo", nullable = false)
+    @JoinColumn(name = "locationToId", nullable = false)
     private Location locationTo;
 
     @Override
@@ -39,19 +39,19 @@ public class Route {
         this.routeId = routeId;
     }
 
-    public Location getLocationFrom() {
+    public Location getLocationFromId() {
         return locationFrom;
     }
 
-    public void setLocationFrom(Location locationFrom) {
+    public void setLocationFromId(Location locationFrom) {
         this.locationFrom = locationFrom;
     }
 
-    public Location getLocationTo() {
+    public Location getLocationToId() {
         return locationTo;
     }
 
-    public void setLocationTo(Location locationTo) {
+    public void setLocationToId(Location locationTo) {
         this.locationTo = locationTo;
     }
 

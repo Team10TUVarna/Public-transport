@@ -1,6 +1,7 @@
 package bg.tu_varna.sit.oop_project_demo.data.repositories;
 
 import bg.tu_varna.sit.oop_project_demo.data.access.Connection;
+import bg.tu_varna.sit.oop_project_demo.data.entities.Cashier;
 import bg.tu_varna.sit.oop_project_demo.data.entities.Company;
 import org.apache.log4j.Logger;
 import org.hibernate.Session;
@@ -45,8 +46,9 @@ public class CompanyRepository implements DAORepository<Company>{
     }
 
     @Override
-    public Optional<Company> getById(int id) {
-        return Optional.empty();
+    public Company getById(int id) {
+        Company obj = new Company();
+        return obj;
     }
 
     @Override

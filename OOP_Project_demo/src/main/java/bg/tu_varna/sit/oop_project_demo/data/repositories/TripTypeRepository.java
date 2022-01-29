@@ -1,6 +1,7 @@
 package bg.tu_varna.sit.oop_project_demo.data.repositories;
 
 import bg.tu_varna.sit.oop_project_demo.data.access.Connection;
+import bg.tu_varna.sit.oop_project_demo.data.entities.Trip;
 import bg.tu_varna.sit.oop_project_demo.data.entities.TripType;
 import org.apache.log4j.Logger;
 import org.hibernate.Session;
@@ -46,8 +47,9 @@ public class TripTypeRepository implements DAORepository<TripType>{
     }
 
     @Override
-    public Optional<TripType> getById(int id) {
-        return Optional.empty();
+    public TripType getById(int id) {
+        TripType obj = new TripType();
+        return obj;
     }
 
     @Override

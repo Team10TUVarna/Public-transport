@@ -1,6 +1,7 @@
 package bg.tu_varna.sit.oop_project_demo.data.repositories;
 
 import bg.tu_varna.sit.oop_project_demo.data.access.Connection;
+import bg.tu_varna.sit.oop_project_demo.data.entities.Notification;
 import bg.tu_varna.sit.oop_project_demo.data.entities.Request;
 import org.apache.log4j.Logger;
 import org.hibernate.Session;
@@ -46,8 +47,9 @@ public class RequestRepository implements DAORepository<Request>{
     }
 
     @Override
-    public Optional<Request> getById(int id) {
-        return Optional.empty();
+    public Request getById(int id) {
+        Request obj = new Request();
+        return obj;
     }
 
     @Override

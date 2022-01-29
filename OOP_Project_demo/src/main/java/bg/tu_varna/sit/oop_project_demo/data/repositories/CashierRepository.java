@@ -46,8 +46,9 @@ public class CashierRepository implements DAORepository<Cashier>{
     }
 
     @Override
-    public Optional<Cashier> getById(int id) {
-        return Optional.empty();
+    public Cashier getById(int id) {
+        Cashier cashier = new Cashier();
+        return cashier;
     }
 
     @Override

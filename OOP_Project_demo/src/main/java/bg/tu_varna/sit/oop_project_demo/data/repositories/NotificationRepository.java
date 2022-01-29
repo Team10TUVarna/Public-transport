@@ -2,6 +2,7 @@ package bg.tu_varna.sit.oop_project_demo.data.repositories;
 
 import bg.tu_varna.sit.oop_project_demo.data.access.Connection;
 import bg.tu_varna.sit.oop_project_demo.data.entities.Admin;
+import bg.tu_varna.sit.oop_project_demo.data.entities.Location;
 import bg.tu_varna.sit.oop_project_demo.data.entities.Notification;
 import org.apache.log4j.Logger;
 import org.hibernate.Session;
@@ -47,8 +48,9 @@ public class NotificationRepository implements DAORepository<Notification>{
     }
 
     @Override
-    public Optional<Notification> getById(int id) {
-        return Optional.empty();
+    public Notification getById(int id) {
+        Notification obj = new Notification();
+        return obj;
     }
 
     @Override

@@ -1,6 +1,7 @@
 package bg.tu_varna.sit.oop_project_demo.data.repositories;
 
 import bg.tu_varna.sit.oop_project_demo.data.access.Connection;
+import bg.tu_varna.sit.oop_project_demo.data.entities.Route;
 import bg.tu_varna.sit.oop_project_demo.data.entities.Ticket;
 import org.apache.log4j.Logger;
 import org.hibernate.Session;
@@ -46,8 +47,9 @@ public class TicketRepository implements DAORepository<Ticket>{
     }
 
     @Override
-    public Optional<Ticket> getById(int id) {
-        return Optional.empty();
+    public Ticket getById(int id) {
+        Ticket obj = new Ticket();
+        return obj;
     }
 
     @Override

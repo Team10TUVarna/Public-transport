@@ -67,6 +67,8 @@ public class HelloController implements Initializable {
     @FXML
     private Label label3;
 
+
+
     /*public HelloController(Stage s) {
         this.s = s;
     }*/
@@ -77,33 +79,56 @@ public class HelloController implements Initializable {
     }
 
     public void adminLogin(ActionEvent actionEvent) throws IOException {
-
+/*
         //s.close();
         Stage s = (Stage) adminButton.getScene().getWindow();
         s.close();
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(ADMIN_LOGIN));
         Stage stage = new Stage();
-        fxmlLoader.setController(new AdminLoginController(stage));
+        fxmlLoader.setController(new AdminLoginController());
         Parent root1 = (Parent) fxmlLoader.load();
         stage.setScene(new Scene(root1));
         stage.setResizable(false);
         stage.setWidth(600);
         stage.setHeight(400);
-        stage.show();
+        stage.show();*/
+        try
+        {
+            Stage s = (Stage) adminButton.getScene().getWindow();
+            s.close();
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(ADMIN_LOGIN));
+            Stage stage = new Stage();
+            //fxmlLoader.setController(new AdminLoginController());
+            Parent root1 = (Parent) fxmlLoader.load();
+            stage.setScene(new Scene(root1));
+            stage.setResizable(false);
+            stage.setWidth(600);
+            stage.setHeight(400);
+            stage.show();
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public void cashierLogin(ActionEvent actionEvent) throws IOException {
-        Stage s = (Stage) cashierButton.getScene().getWindow();
-        s.close();
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(CASHIER_LOGIN));
-        Stage stage = new Stage();
-        fxmlLoader.setController(new AdminLoginController(stage));
-        Parent root1 = (Parent) fxmlLoader.load();
-        stage.setScene(new Scene(root1));
-        stage.setResizable(false);
-        stage.setWidth(600);
-        stage.setHeight(400);
-        stage.show();
+        try
+        {
+            Stage s = (Stage) cashierButton.getScene().getWindow();
+            s.close();
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(CASHIER_LOGIN));
+            Stage stage = new Stage();
+            fxmlLoader.setController(new AdminLoginController());
+            Parent root1 = (Parent) fxmlLoader.load();
+            stage.setScene(new Scene(root1));
+            stage.setResizable(false);
+            stage.setWidth(600);
+            stage.setHeight(400);
+            stage.show();
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public void distributorLogin(ActionEvent actionEvent) throws IOException {
@@ -111,7 +136,7 @@ public class HelloController implements Initializable {
         s.close();
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(DISTRIBUTOR_LOGIN));
         Stage stage = new Stage();
-        fxmlLoader.setController(new AdminLoginController(stage));
+        fxmlLoader.setController(new AdminLoginController());
         Parent root1 = (Parent) fxmlLoader.load();
         stage.setScene(new Scene(root1));
         stage.setResizable(false);
@@ -125,7 +150,7 @@ public class HelloController implements Initializable {
         s.close();
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(COMPANY_LOGIN));
         Stage stage = new Stage();
-        fxmlLoader.setController(new AdminLoginController(stage));
+        fxmlLoader.setController(new AdminLoginController());
         Parent root1 = (Parent) fxmlLoader.load();
         stage.setScene(new Scene(root1));
         stage.setResizable(false);

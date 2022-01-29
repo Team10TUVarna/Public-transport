@@ -1,7 +1,9 @@
 package bg.tu_varna.sit.oop_project_demo.data.repositories;
 
 import bg.tu_varna.sit.oop_project_demo.data.access.Connection;
+import bg.tu_varna.sit.oop_project_demo.data.entities.Company;
 import bg.tu_varna.sit.oop_project_demo.data.entities.Distributor;
+import bg.tu_varna.sit.oop_project_demo.data.entities.Location;
 import org.apache.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -46,8 +48,9 @@ public class DistributorRepository implements DAORepository<Distributor>{
     }
 
     @Override
-    public Optional<Distributor> getById(int id) {
-        return Optional.empty();
+    public Distributor getById(int id) {
+        Distributor obj = new Distributor();
+        return obj;
     }
 
     @Override

@@ -1,6 +1,7 @@
 package bg.tu_varna.sit.oop_project_demo.data.repositories;
 
 import bg.tu_varna.sit.oop_project_demo.data.access.Connection;
+import bg.tu_varna.sit.oop_project_demo.data.entities.Request;
 import bg.tu_varna.sit.oop_project_demo.data.entities.Route;
 import org.apache.log4j.Logger;
 import org.hibernate.Session;
@@ -46,8 +47,9 @@ public class RouteRepository implements DAORepository<Route>{
     }
 
     @Override
-    public Optional<Route> getById(int id) {
-        return Optional.empty();
+    public Route getById(int id) {
+        Route obj = new Route();
+        return obj;
     }
 
     @Override

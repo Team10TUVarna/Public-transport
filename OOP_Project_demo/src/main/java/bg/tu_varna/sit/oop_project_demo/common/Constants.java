@@ -7,6 +7,7 @@ public class Constants {
         public static final String DISTRIBUTOR_LOGIN = "/bg/tu_varna/sit/oop_project_demo/presentation.views/login/distributor-login.fxml";
         public static final String COMPANY_LOGIN = "/bg/tu_varna/sit/oop_project_demo/presentation.views/login/company-login.fxml";
         public static final String CASHIER_LOGIN = "/bg/tu_varna/sit/oop_project_demo/presentation.views/login/cashier-login.fxml";
+        public static final String ADMIN_VIEW = "/bg/tu_varna/sit/oop_project_demo/presentation.views/userviews/admin-view.fxml";
     }
 
     public static class Configurations {

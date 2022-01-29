@@ -1,6 +1,7 @@
 package bg.tu_varna.sit.oop_project_demo.data.repositories;
 
 import bg.tu_varna.sit.oop_project_demo.data.access.Connection;
+import bg.tu_varna.sit.oop_project_demo.data.entities.Ticket;
 import bg.tu_varna.sit.oop_project_demo.data.entities.TransportType;
 import org.apache.log4j.Logger;
 import org.hibernate.Session;
@@ -46,8 +47,9 @@ public class TransportTypeRepository implements DAORepository<TransportType>{
     }
 
     @Override
-    public Optional<TransportType> getById(int id) {
-        return Optional.empty();
+    public TransportType getById(int id) {
+        TransportType obj = new TransportType();
+        return obj;
     }
 
     @Override

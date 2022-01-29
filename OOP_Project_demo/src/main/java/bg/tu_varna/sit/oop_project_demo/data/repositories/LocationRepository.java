@@ -1,6 +1,7 @@
 package bg.tu_varna.sit.oop_project_demo.data.repositories;
 
 import bg.tu_varna.sit.oop_project_demo.data.access.Connection;
+import bg.tu_varna.sit.oop_project_demo.data.entities.Distributor;
 import bg.tu_varna.sit.oop_project_demo.data.entities.Location;
 import org.apache.log4j.Logger;
 import org.hibernate.Session;
@@ -46,8 +47,9 @@ public class LocationRepository implements DAORepository<Location> {
     }
 
     @Override
-    public Optional<Location> getById(int id) {
-        return Optional.empty();
+    public Location getById(int id) {
+        Location obj = new Location();
+        return obj;
     }
 
     @Override
