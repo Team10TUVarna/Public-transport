@@ -39,8 +39,8 @@ public class HelloApplication extends Application {
             stage.setTitle(Constants.Values.Title);
             stage.setScene(scene);
             stage.setResizable(false);
-            stage.setWidth(630);
-            stage.setHeight(430);
+            stage.setWidth(615);
+            stage.setHeight(440);
             stage.show();
         } else {
             log.error("Sorry, the main FXML could not be loaded");

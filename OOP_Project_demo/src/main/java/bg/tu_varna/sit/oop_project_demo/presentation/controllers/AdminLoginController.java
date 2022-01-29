@@ -12,6 +12,7 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 import static bg.tu_varna.sit.oop_project_demo.common.Constants.View.ADMIN_VIEW;
+import static bg.tu_varna.sit.oop_project_demo.common.Constants.View.HELLO_VIEW;
 
 public class AdminLoginController {
     private final AdminService service=AdminService.getInstance();
@@ -20,6 +21,9 @@ public class AdminLoginController {
 
     @FXML
     private Button loginButton;
+
+    @FXML
+    private Button backButton;
 
     @FXML
     private PasswordField password;
@@ -64,10 +68,10 @@ public class AdminLoginController {
         }
     }
 
-    /*@FXML
+    @FXML
     public void goBack(ActionEvent actionEvent){
         loadNewPage(HELLO_VIEW);
-    }*/
+    }
 
     public void loadNewPage(String path){
         try {
@@ -79,8 +83,8 @@ public class AdminLoginController {
             Parent root1 = (Parent) fxmlLoader.load();
             stage.setScene(new Scene(root1));
             stage.setResizable(false);
-            stage.setWidth(600);
-            stage.setHeight(400);
+            stage.setWidth(615);
+            stage.setHeight(440);
             stage.show();
         } catch(Exception e) {
             e.printStackTrace();

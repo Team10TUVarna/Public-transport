@@ -12,7 +12,7 @@
       <Button fx:id="cashierButton" layoutX="454.0" layoutY="343.0" mnemonicParsing="false" onAction="#cashierLogin" prefHeight="40.0" prefWidth="141.0" text="Log In As Cashier" textAlignment="CENTER" />
       <ImageView fx:id="iv1" fitHeight="253.0" fitWidth="365.0" layoutX="123.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../background.png" />
+            <Image url="@../images/background.png" />
          </image>
       </ImageView>
       <Button fx:id="adminButton" layoutX="6.0" layoutY="343.0" mnemonicParsing="false" onAction="#adminLogin" prefHeight="40.0" prefWidth="141.0" text="Log In As Administrator" />
@@ -25,7 +25,7 @@
       </Label>
       <ImageView fx:id="iv2" fitHeight="141.0" fitWidth="173.0" layoutX="419.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../logoEasyTravel2.png" />
+            <Image url="@../images/logoEasyTravel2.png" />
          </image>
       </ImageView>
       <Label fx:id="label2" layoutX="195.0" layoutY="261.0" text="Travel        Explore          Have Fun">
@@ -40,22 +40,22 @@
       </Label>
       <ImageView fx:id="iv3" fitHeight="65.0" fitWidth="97.0" layoutX="283.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../easy.png" />
+            <Image url="@../images/easy.png" />
          </image>
       </ImageView>
       <ImageView fx:id="iv4" fitHeight="32.0" fitWidth="31.0" layoutX="163.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../travel.png" />
+            <Image url="@../images/travel.png" />
          </image>
       </ImageView>
       <ImageView fx:id="iv5" fitHeight="30.0" fitWidth="31.0" layoutX="247.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../explore.png" />
+            <Image url="@../images/explore.png" />
          </image>
       </ImageView>
       <ImageView fx:id="iv6" fitHeight="59.0" fitWidth="31.0" layoutX="336.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../havefun.png" />
+            <Image url="@../images/havefun.png" />
          </image>
       </ImageView>
    </children>

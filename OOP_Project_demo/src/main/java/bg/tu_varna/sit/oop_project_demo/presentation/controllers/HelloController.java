@@ -163,33 +163,24 @@ public class HelloController implements Initializable {
 
 
     /*private final NotificationService service = NotificationService.getInstance();
-
     @FXML
     private Label welcomeText;
-
     @FXML
     private Button helloButton;
-
     @FXML
     private ListView<NotificationListViewModel> listView;
-
     private final HelloModel model;
-
     public HelloController() {
         this.model = new HelloModel();
     }
-
     @FXML
     private void initialize (){
         helloButton.setOnMouseClicked(this::handle);
     }
-
     @Override
     public void handle(MouseEvent mouseEvent) {
         welcomeText.setText(model.getWelcomeMessage());
-
         ObservableList<NotificationListViewModel> notificationListViewModels = service.getAllNotification();
         listView.setItems(notificationListViewModels);
-
     }*/
 }
