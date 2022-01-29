@@ -67,8 +67,7 @@ public class AdminLoginController {
             password.setText("");
         }
     }
-
-    @FXML
+    
     public void goBack(ActionEvent actionEvent){
         loadNewPage(HELLO_VIEW);
     }
