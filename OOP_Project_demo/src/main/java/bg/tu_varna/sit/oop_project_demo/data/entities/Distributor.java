@@ -29,6 +29,14 @@ public class Distributor {
     @OneToMany(mappedBy = "distributorId")
     Set<Request> requestSet2;
 
+    public Distributor() {
+    }
+
+    public Distributor(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
+
     @Override
     public String toString() {
         return "Distributor{" +

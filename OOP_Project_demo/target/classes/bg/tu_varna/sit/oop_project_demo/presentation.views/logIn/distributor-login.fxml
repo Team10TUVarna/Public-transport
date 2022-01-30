@@ -33,7 +33,7 @@
             <Image url="@../../images/logoEasyTravel2.png" />
          </image>
       </ImageView>
-      <Button fx:id="loginButton" layoutX="274.0" layoutY="308.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="77.0" text="Log In">
+      <Button fx:id="loginButton" layoutX="274.0" layoutY="308.0" mnemonicParsing="false" onAction="#onCompanyLoginButtonClick" prefHeight="40.0" prefWidth="77.0" text="Log In">
          <font>
             <Font name="Book Antiqua" size="15.0" />
          </font>

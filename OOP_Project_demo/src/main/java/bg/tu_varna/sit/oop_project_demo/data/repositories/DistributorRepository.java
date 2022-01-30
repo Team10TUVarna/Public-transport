@@ -39,18 +39,47 @@ public class DistributorRepository implements DAORepository<Distributor>{
 
     @Override
     public void update(Distributor obj) {
-
+        Session session = Connection.openSession();
+        Transaction transaction = session.beginTransaction();
+        try {
+            session.update(obj);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            transaction.commit();
+            session.close();
+        }
     }
 
     @Override
     public void delete(Distributor obj) {
-
+        Session session = Connection.openSession();
+        Transaction transaction = session.beginTransaction();
+        try {
+            session.delete(obj);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            transaction.commit();
+            session.close();
+        }
     }
 
     @Override
     public Distributor getById(int id) {
-        Distributor obj = new Distributor();
-        return obj;
+        Session session = Connection.openSession();
+        Transaction transaction = session.beginTransaction();
+        Distributor distributor = new Distributor();
+        try {
+            String jpql = "SELECT a FROM Distributor a WHERE distributorId =" + String.valueOf(id);
+            distributor=session.createQuery(jpql, Distributor.class).getSingleResult();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            transaction.commit();
+            session.close();
+        }
+        return distributor;
     }
 
     @Override
