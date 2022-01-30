@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0aa2aad8-9505-497c-8ff4-f43497d366b7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/presentation/controllers/AdminLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/presentation/controllers/AdminLoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/target/classes/bg/tu_varna/sit/oop_project_demo/presentation/controllers/AdminLoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/target/classes/bg/tu_varna/sit/oop_project_demo/presentation/controllers/AdminLoginController.class" afterDir="false" />
-    </list>
+    <list default="true" id="0aa2aad8-9505-497c-8ff4-f43497d366b7" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -100,7 +96,7 @@
       <workItem from="1643227255188" duration="38000" />
       <workItem from="1643457589827" duration="4756000" />
       <workItem from="1643463151900" duration="26000" />
-      <workItem from="1643476485765" duration="5226000" />
+      <workItem from="1643476485765" duration="5399000" />
     </task>
     <servers />
   </component>

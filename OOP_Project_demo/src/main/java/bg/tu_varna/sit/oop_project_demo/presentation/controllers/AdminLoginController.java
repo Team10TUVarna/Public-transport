@@ -67,7 +67,7 @@ public class AdminLoginController {
             password.setText("");
         }
     }
-    
+
     public void goBack(ActionEvent actionEvent){
         loadNewPage(HELLO_VIEW);
     }
