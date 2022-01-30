@@ -157,7 +157,7 @@ public class HelloController implements Initializable {
         {
             Stage s = (Stage) companyButton.getScene().getWindow();
             s.close();
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(CASHIER_LOGIN));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(COMPANY_LOGIN));
             Stage stage = new Stage();
             //fxmlLoader.setController(new AdminLoginController());
             Parent root1 = (Parent) fxmlLoader.load();

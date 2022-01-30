@@ -11,3 +11,5 @@
 [JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login error!
 [JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin not found!
 [JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login error!
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Cashier not found!
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Cashier login error!

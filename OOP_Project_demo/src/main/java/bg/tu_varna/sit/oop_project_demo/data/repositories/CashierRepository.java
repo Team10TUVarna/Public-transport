@@ -1,6 +1,7 @@
 package bg.tu_varna.sit.oop_project_demo.data.repositories;
 
 import bg.tu_varna.sit.oop_project_demo.data.access.Connection;
+import bg.tu_varna.sit.oop_project_demo.data.entities.Admin;
 import bg.tu_varna.sit.oop_project_demo.data.entities.Cashier;
 import org.apache.log4j.Logger;
 import org.hibernate.Session;
@@ -37,17 +38,46 @@ public class CashierRepository implements DAORepository<Cashier>{
 
     @Override
     public void update(Cashier obj) {
-
+        Session session = Connection.openSession();
+        Transaction transaction = session.beginTransaction();
+        try {
+            session.update(obj);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            transaction.commit();
+            session.close();
+        }
     }
 
     @Override
     public void delete(Cashier obj) {
-
+        Session session = Connection.openSession();
+        Transaction transaction = session.beginTransaction();
+        try {
+            session.delete(obj);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            transaction.commit();
+            session.close();
+        }
     }
 
     @Override
     public Cashier getById(int id) {
+        Session session = Connection.openSession();
+        Transaction transaction = session.beginTransaction();
         Cashier cashier = new Cashier();
+        try {
+            String jpql = "SELECT a FROM Cashier a WHERE cashierId =" + String.valueOf(id);
+            cashier=session.createQuery(jpql, Cashier.class).getSingleResult();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            transaction.commit();
+            session.close();
+        }
         return cashier;
     }
 

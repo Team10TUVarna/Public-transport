@@ -29,6 +29,13 @@ public class Cashier {
     @OneToMany(mappedBy = "cashierId")
     Set<Ticket> ticketSet2;
 
+    public Cashier(String username, String password) {
+    }
+
+    public Cashier() {
+
+    }
+
     @Override
     public String toString() {
         return "Cashier{" +

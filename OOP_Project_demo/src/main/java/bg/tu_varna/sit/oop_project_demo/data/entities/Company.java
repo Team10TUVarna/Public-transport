@@ -28,6 +28,14 @@ public class Company {
     @OneToMany(mappedBy = "companyId")
     Set<Request> requestSet3;
 
+    public Company() {
+    }
+
+    public Company(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
+
     @Override
     public String toString() {
         return "Company{" +

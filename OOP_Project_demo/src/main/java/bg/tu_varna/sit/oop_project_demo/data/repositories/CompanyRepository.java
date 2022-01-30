@@ -37,18 +37,47 @@ public class CompanyRepository implements DAORepository<Company>{
 
     @Override
     public void update(Company obj) {
-
+        Session session = Connection.openSession();
+        Transaction transaction = session.beginTransaction();
+        try {
+            session.update(obj);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            transaction.commit();
+            session.close();
+        }
     }
 
     @Override
     public void delete(Company obj) {
-
+        Session session = Connection.openSession();
+        Transaction transaction = session.beginTransaction();
+        try {
+            session.delete(obj);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            transaction.commit();
+            session.close();
+        }
     }
 
     @Override
     public Company getById(int id) {
-        Company obj = new Company();
-        return obj;
+        Session session = Connection.openSession();
+        Transaction transaction = session.beginTransaction();
+        Company company = new Company();
+        try {
+            String jpql = "SELECT a FROM Company a WHERE companyId =" + String.valueOf(id);
+            company=session.createQuery(jpql, Company.class).getSingleResult();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            transaction.commit();
+            session.close();
+        }
+        return company;
     }
 
     @Override
