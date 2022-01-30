@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane fx:id="adminLogin" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E2F2FA;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<Pane fx:id="adminLogin" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E2F2FA;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bg.tu_varna.sit.oop_project_demo.presentation.controllers.DistributorLoginController">
    <children>
       <Text layoutX="174.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="username:">
          <font>
@@ -21,8 +21,8 @@
             <Font name="Book Antiqua" size="15.0" />
          </font>
       </Text>
-      <TextField layoutX="302.0" layoutY="176.0" />
-      <PasswordField layoutX="302.0" layoutY="235.0" />
+      <TextField fx:id="username" layoutX="302.0" layoutY="176.0" />
+      <PasswordField fx:id="password" layoutX="302.0" layoutY="235.0" />
       <Text layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please, enter your username and password to log into the system as a distributor." textAlignment="CENTER" wrappingWidth="600.0">
          <font>
             <Font name="Book Antiqua" size="16.0" />
@@ -33,7 +33,7 @@
             <Image url="@../../images/logoEasyTravel2.png" />
          </image>
       </ImageView>
-      <Button layoutX="274.0" layoutY="308.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="77.0" text="Log In">
+      <Button fx:id="loginButton" layoutX="274.0" layoutY="308.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="77.0" text="Log In">
          <font>
             <Font name="Book Antiqua" size="15.0" />
          </font>
