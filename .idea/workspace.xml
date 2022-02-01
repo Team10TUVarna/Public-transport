@@ -14,8 +14,9 @@
       <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/resources/bg/tu_varna/sit/oop_project_demo/presentation.views/login/distributor-login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/resources/bg/tu_varna/sit/oop_project_demo/presentation.views/login/distributor-login.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OOP_Project_demo/target/classes/bg/tu_varna/sit/oop_project_demo/data/entities/Distributor.class" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/target/classes/bg/tu_varna/sit/oop_project_demo/data/entities/Distributor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OOP_Project_demo/target/classes/bg/tu_varna/sit/oop_project_demo/data/repositories/DistributorRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/target/classes/bg/tu_varna/sit/oop_project_demo/data/repositories/DistributorRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/resources/bg/tu_varna/sit/oop_project_demo/presentation.views/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/resources/bg/tu_varna/sit/oop_project_demo/presentation.views/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/resources/bg/tu_varna/sit/oop_project_demo/presentation.views/userviews/admin-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/resources/bg/tu_varna/sit/oop_project_demo/presentation.views/userviews/admin-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OOP_Project_demo/target/classes/bg/tu_varna/sit/oop_project_demo/presentation/controllers/DistributorLoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/target/classes/bg/tu_varna/sit/oop_project_demo/presentation/controllers/DistributorLoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/application.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +33,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
@@ -111,6 +120,7 @@
       <workItem from="1643476485765" duration="5399000" />
       <workItem from="1643540739405" duration="5425000" />
       <workItem from="1643555684530" duration="946000" />
+      <workItem from="1643714960091" duration="4158000" />
     </task>
     <servers />
   </component>

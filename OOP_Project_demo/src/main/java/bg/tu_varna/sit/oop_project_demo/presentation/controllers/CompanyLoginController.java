@@ -10,7 +10,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
-
+import static bg.tu_varna.sit.oop_project_demo.common.Constants.User.trackUser;
 import static bg.tu_varna.sit.oop_project_demo.common.Constants.View.*;
 
 public class CompanyLoginController {
@@ -35,6 +35,7 @@ public class CompanyLoginController {
         if(service.companyLogin(companyToLogIn))
         {
             try {
+                trackUser = 2;
                 Stage s = (Stage) loginButton.getScene().getWindow();
                 s.close();
                 FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(COMPANY_VIEW));
