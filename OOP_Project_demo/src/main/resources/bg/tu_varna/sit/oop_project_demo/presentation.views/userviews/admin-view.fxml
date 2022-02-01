@@ -23,99 +23,94 @@
                </image>
             </ImageView>
          </children></Pane>
-      <ImageView fitHeight="74.0" fitWidth="89.0" layoutX="512.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../images/logoEasyTravel2.png" />
-         </image>
-      </ImageView>
-      <Separator layoutX="121.0" layoutY="88.0" prefHeight="8.0" prefWidth="479.0" style="-fx-background-color: #375E72FF;" />
-      <Separator layoutX="121.0" layoutY="140.0" prefHeight="8.0" prefWidth="479.0" style="-fx-background-color: #375E72FF;" />
-      <Separator layoutX="121.0" layoutY="190.0" prefHeight="8.0" prefWidth="479.0" style="-fx-background-color: #375E72FF;" />
-      <Button layoutX="154.0" layoutY="51.0" mnemonicParsing="false" text="Clients Operations">
+      <Separator layoutX="121.0" layoutY="81.0" prefHeight="8.0" prefWidth="479.0" style="-fx-background-color: #375E72FF;" />
+      <Separator layoutX="121.0" layoutY="165.0" prefHeight="8.0" prefWidth="479.0" style="-fx-background-color: #375E72FF;" />
+      <Separator layoutX="121.0" layoutY="215.0" prefHeight="8.0" prefWidth="479.0" style="-fx-background-color: #375E72FF;" />
+      <Button layoutX="136.0" layoutY="47.0" mnemonicParsing="false" text="Clients Operations">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="188.0" layoutY="105.0" mnemonicParsing="false" text="Button">
+      <Button layoutX="136.0" layoutY="100.0" mnemonicParsing="false" text="Add Trip Type">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="492.0" layoutY="105.0" mnemonicParsing="false" text="Button">
+      <Button layoutX="433.0" layoutY="100.0" mnemonicParsing="false" text="Add Transport Type">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="340.0" layoutY="105.0" mnemonicParsing="false" text="Button">
+      <Button layoutX="273.0" layoutY="101.0" mnemonicParsing="false" text="Add Location">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="188.0" layoutY="157.0" mnemonicParsing="false" text="Button">
+      <Button layoutX="188.0" layoutY="182.0" mnemonicParsing="false" text="Button">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="492.0" layoutY="157.0" mnemonicParsing="false" text="Button">
+      <Button layoutX="492.0" layoutY="182.0" mnemonicParsing="false" text="Button">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="340.0" layoutY="157.0" mnemonicParsing="false" text="Button">
+      <Button layoutX="340.0" layoutY="182.0" mnemonicParsing="false" text="Button">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="188.0" layoutY="212.0" mnemonicParsing="false" text="Button">
+      <Button layoutX="188.0" layoutY="237.0" mnemonicParsing="false" text="Button">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="492.0" layoutY="212.0" mnemonicParsing="false" text="Button">
+      <Button layoutX="492.0" layoutY="237.0" mnemonicParsing="false" text="Button">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="342.0" layoutY="212.0" mnemonicParsing="false" text="Button">
+      <Button layoutX="342.0" layoutY="237.0" mnemonicParsing="false" text="Button">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <Separator layoutX="121.0" layoutY="242.0" prefHeight="8.0" prefWidth="479.0" style="-fx-background-color: #375E72FF;" />
-      <Button layoutX="133.0" layoutY="256.0" mnemonicParsing="false" text="Travel Companies Report">
+      <Separator layoutX="121.0" layoutY="269.0" prefHeight="8.0" prefWidth="479.0" style="-fx-background-color: #375E72FF;" />
+      <Button layoutX="133.0" layoutY="288.0" mnemonicParsing="false" text="Travel Companies Report">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="476.0" layoutY="256.0" mnemonicParsing="false" text="Cashiers Report">
+      <Button layoutX="476.0" layoutY="288.0" mnemonicParsing="false" text="Cashiers Report">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="321.0" layoutY="256.0" mnemonicParsing="false" text="Distributors Report">
+      <Button layoutX="321.0" layoutY="288.0" mnemonicParsing="false" text="Distributors Report">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <Separator layoutX="121.0" layoutY="321.0" prefHeight="8.0" prefWidth="479.0" style="-fx-background-color: #375E72FF;" />
-      <Button layoutX="150.0" layoutY="364.0" mnemonicParsing="false" text="Check Notifications">
+      <Separator layoutX="121.0" layoutY="350.0" prefHeight="8.0" prefWidth="397.0" style="-fx-background-color: #375E72FF;" />
+      <Button layoutX="150.0" layoutY="367.0" mnemonicParsing="false" text="Check Notifications">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
       <Pane prefHeight="400.0" prefWidth="125.0" style="-fx-background-color: #375E72FF;">
          <children>
-            <Label layoutX="52.0" layoutY="60.0" text="Clients" textFill="WHITE">
+            <Label layoutX="52.0" layoutY="50.0" text="Clients" textFill="WHITE">
                <font>
                   <Font name="Book Antiqua" size="15.0" />
                </font>
             </Label>
-            <Label layoutX="54.0" layoutY="110.0" text="Add" textFill="WHITE">
+            <Label layoutX="54.0" layoutY="98.0" text="Add" textFill="WHITE">
                <font>
                   <Font name="Book Antiqua" size="15.0" />
                </font>
             </Label>
-            <Label layoutX="52.0" layoutY="264.0" text="Reports" textFill="WHITE">
+            <Label layoutX="51.0" layoutY="291.0" text="Reports" textFill="WHITE">
                <font>
                   <Font name="Book Antiqua" size="15.0" />
                </font>
@@ -125,37 +120,37 @@
                   <Font name="Book Antiqua" size="15.0" />
                </font>
             </Label>
-            <Label layoutX="54.0" layoutY="214.0" text="Delete" textFill="WHITE">
+            <Label layoutX="54.0" layoutY="237.0" text="Delete" textFill="WHITE">
                <font>
                   <Font name="Book Antiqua" size="15.0" />
                </font>
             </Label>
-            <Label layoutX="54.0" layoutY="159.0" text="Update" textFill="WHITE">
+            <Label layoutX="54.0" layoutY="184.0" text="Update" textFill="WHITE">
                <font>
                   <Font name="Book Antiqua" size="15.0" />
                </font>
             </Label>
-            <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="26.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="26.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/users.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="25.0" fitWidth="22.0" layoutX="26.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="25.0" fitWidth="22.0" layoutX="26.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/add.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="25.0" fitWidth="30.0" layoutX="23.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="25.0" fitWidth="30.0" layoutX="23.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/update.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="36.0" fitWidth="30.0" layoutX="20.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="36.0" fitWidth="30.0" layoutX="20.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/delete.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="25.0" fitWidth="22.0" layoutX="23.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="25.0" fitWidth="22.0" layoutX="22.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/report.png" />
                </image>
@@ -172,15 +167,35 @@
             </Label>
          </children>
       </Pane>
-      <Button layoutX="250.0" layoutY="289.0" mnemonicParsing="false" text="Tickets Report">
+      <Button layoutX="250.0" layoutY="321.0" mnemonicParsing="false" text="Tickets Report">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="411.0" layoutY="289.0" mnemonicParsing="false" text="Trips Report">
+      <Button layoutX="411.0" layoutY="321.0" mnemonicParsing="false" text="Trips Report">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
+      <Button layoutX="273.0" layoutY="135.0" mnemonicParsing="false" text="Add Purchase Form">
+         <font>
+            <Font name="Book Antiqua" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="136.0" layoutY="135.0" mnemonicParsing="false" text="Add Trip">
+         <font>
+            <Font name="Book Antiqua" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="434.0" layoutY="135.0" mnemonicParsing="false" text="Add Notification">
+         <font>
+            <Font name="Book Antiqua" size="13.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="74.0" fitWidth="89.0" layoutX="506.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/logoEasyTravel2.png" />
+         </image>
+      </ImageView>
    </children>
 </Pane>
