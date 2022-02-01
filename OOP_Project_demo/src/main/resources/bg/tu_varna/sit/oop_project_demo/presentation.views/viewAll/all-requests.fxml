@@ -45,7 +45,7 @@
          </children>
       </Pane>
       <TextField fx:id="requestID" layoutX="358.0" layoutY="305.0" prefHeight="25.0" prefWidth="116.0" />
-      <Button fx:id="deleteRequestButton" layoutX="410.0" layoutY="347.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="75.0" text="Delete">
+      <Button fx:id="deleteRequestButton" layoutX="445.0" layoutY="347.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="104.0" text="    Delete">
          <font>
             <Font name="Book Antiqua" size="14.0" />
          </font>
@@ -61,15 +61,30 @@
          </font>
       </Button>
       <ListView fx:id="listView" layoutX="125.0" layoutY="104.0" prefHeight="180.0" prefWidth="476.0" style="-fx-background-color: transperent;" />
-      <Button fx:id="approveButton" layoutX="241.0" layoutY="347.0" mnemonicParsing="false" text="Approve">
+      <Button fx:id="approveButton" layoutX="200.0" layoutY="347.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="104.0" text="      Approve">
          <font>
             <Font name="Book Antiqua" size="14.0" />
          </font>
       </Button>
-      <Button fx:id="rejectButton" layoutX="325.0" layoutY="347.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="75.0" text="Reject">
+      <Button fx:id="rejectButton" layoutX="321.0" layoutY="347.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="104.0" text="     Reject">
          <font>
             <Font name="Book Antiqua" size="14.0" />
          </font>
       </Button>
+      <ImageView fitHeight="25.0" fitWidth="26.0" layoutX="203.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/approval.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="26.0" layoutX="331.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/cancel.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="26.0" layoutX="453.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/delete-black.png" />
+         </image>
+      </ImageView>
    </children>
 </Pane>
