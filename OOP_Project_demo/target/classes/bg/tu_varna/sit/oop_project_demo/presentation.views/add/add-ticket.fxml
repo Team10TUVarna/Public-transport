@@ -24,7 +24,7 @@
                   <Image url="@../../images/logout.png" />
                </image>
             </ImageView>
-            <Label layoutX="65.0" layoutY="74.0" text="Add New Ticket" textFill="WHITE">
+            <Label layoutX="65.0" layoutY="74.0" text="Add New Purchase Form" textFill="WHITE">
                <font>
                   <Font name="Book Antiqua" size="22.0" />
                </font>
@@ -45,18 +45,18 @@
             </ImageView>
          </children>
       </Pane>
-      <Label layoutX="152.0" layoutY="324.0" prefHeight="28.0" prefWidth="360.0" text="Please, make sure you filled all text fields." textFill="#233d48">
+      <Label layoutX="152.0" layoutY="324.0" prefHeight="28.0" prefWidth="360.0" text="Please, make sure you filled all fields." textFill="#233d48">
          <font>
             <Font name="Book Antiqua Bold Italic" size="14.0" />
          </font>
       </Label>
       <TextField layoutX="300.0" layoutY="124.0" prefHeight="25.0" prefWidth="177.0" />
-      <Button layoutX="315.0" layoutY="358.0" mnemonicParsing="false" text="Add">
+      <Button fx:id="addTicketButton" layoutX="315.0" layoutY="358.0" mnemonicParsing="false" text="Add">
          <font>
             <Font name="Book Antiqua" size="14.0" />
          </font>
       </Button>
-      <Label layoutX="152.0" layoutY="124.0" prefHeight="28.0" prefWidth="187.0" text="Seat Number:" textFill="#233d48">
+      <Label fx:id="seatNumber" layoutX="152.0" layoutY="124.0" prefHeight="28.0" prefWidth="187.0" text="Seat Number:" textFill="#233d48">
          <font>
             <Font name="Book Antiqua" size="14.0" />
          </font>
@@ -76,19 +76,24 @@
             <Font name="Book Antiqua" size="14.0" />
          </font>
       </Label>
-      <TextField layoutX="300.0" layoutY="164.0" prefHeight="25.0" prefWidth="177.0" />
+      <TextField fx:id="customerName" layoutX="300.0" layoutY="164.0" prefHeight="25.0" prefWidth="177.0" />
       <Label layoutX="152.0" layoutY="284.0" prefHeight="28.0" prefWidth="187.0" text="Trip:" textFill="#233d48">
          <font>
             <Font name="Book Antiqua" size="14.0" />
          </font>
       </Label>
-      <ComboBox layoutX="301.0" layoutY="284.0" prefHeight="25.0" prefWidth="177.0" />
-      <ComboBox layoutX="301.0" layoutY="244.0" prefHeight="25.0" prefWidth="177.0" />
-      <DatePicker layoutX="300.0" layoutY="204.0" prefHeight="25.0" prefWidth="177.0" />
+      <ComboBox fx:id="trip" layoutX="301.0" layoutY="284.0" prefHeight="25.0" prefWidth="177.0" />
+      <ComboBox fx:id="cashier" layoutX="301.0" layoutY="244.0" prefHeight="25.0" prefWidth="177.0" />
+      <DatePicker fx:id="purchaseDate" layoutX="300.0" layoutY="204.0" prefHeight="25.0" prefWidth="177.0" />
       <ImageView fitHeight="98.0" fitWidth="65.0" layoutX="512.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../images/ticket_purchase.png" />
          </image>
       </ImageView>
+      <Button fx:id="backButton" layoutX="24.0" layoutY="24.0" mnemonicParsing="false" onAction="#goBack" text="Go Back">
+         <font>
+            <Font name="Book Antiqua" size="13.0" />
+         </font>
+      </Button>
    </children>
 </Pane>

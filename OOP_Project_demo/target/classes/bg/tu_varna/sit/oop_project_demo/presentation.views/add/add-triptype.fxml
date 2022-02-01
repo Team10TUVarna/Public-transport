@@ -48,10 +48,45 @@
             <Font name="Book Antiqua Bold Italic" size="14.0" />
          </font>
       </Label>
-      <TextField layoutX="227.0" layoutY="202.0" prefHeight="25.0" prefWidth="177.0" />
-      <Button layoutX="428.0" layoutY="200.0" mnemonicParsing="false" text="Add">
+      <TextField fx:id="tripType" layoutX="227.0" layoutY="202.0" prefHeight="25.0" prefWidth="177.0" />
+      <Button fx:id="addTripTypeButton" layoutX="428.0" layoutY="200.0" mnemonicParsing="false" text="Add">
          <font>
             <Font name="Book Antiqua" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="66.0" fitWidth="65.0" layoutX="448.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/shopaholic.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="65.0" fitWidth="65.0" layoutX="138.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/business.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="65.0" fitWidth="72.0" layoutX="371.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/sunbathing.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="65.0" fitWidth="105.0" layoutX="219.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/museum.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="65.0" fitWidth="72.0" layoutX="524.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/national-park.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="65.0" fitWidth="65.0" layoutX="294.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/religion.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="backButton" layoutX="24.0" layoutY="24.0" mnemonicParsing="false" onAction="#goBack" text="Go Back">
+         <font>
+            <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
    </children>

@@ -48,8 +48,8 @@
             <Font name="Book Antiqua Bold Italic" size="14.0" />
          </font>
       </Label>
-      <TextField layoutX="300.0" layoutY="138.0" prefHeight="25.0" prefWidth="177.0" />
-      <Button layoutX="315.0" layoutY="358.0" mnemonicParsing="false" text="Add">
+      <TextField fx:id="companyName" layoutX="300.0" layoutY="138.0" prefHeight="25.0" prefWidth="177.0" />
+      <Button fx:id="addCompanyButton" layoutX="315.0" layoutY="358.0" mnemonicParsing="false" text="Add">
          <font>
             <Font name="Book Antiqua" size="14.0" />
          </font>
@@ -74,8 +74,13 @@
             <Font name="Book Antiqua" size="14.0" />
          </font>
       </Label>
-      <TextField layoutX="300.0" layoutY="177.0" prefHeight="25.0" prefWidth="177.0" />
-      <TextField layoutX="300.0" layoutY="257.0" prefHeight="25.0" prefWidth="177.0" />
-      <TextField layoutX="300.0" layoutY="217.0" prefHeight="25.0" prefWidth="177.0" />
+      <TextField fx:id="username" layoutX="300.0" layoutY="177.0" prefHeight="25.0" prefWidth="177.0" />
+      <TextField fx:id="honorarium" layoutX="300.0" layoutY="257.0" prefHeight="25.0" prefWidth="177.0" />
+      <TextField fx:id="password" layoutX="300.0" layoutY="217.0" prefHeight="25.0" prefWidth="177.0" />
+      <Button fx:id="backButton" layoutX="24.0" layoutY="24.0" mnemonicParsing="false" onAction="#goBack" text="Go Back">
+         <font>
+            <Font name="Book Antiqua" size="13.0" />
+         </font>
+      </Button>
    </children>
 </Pane>

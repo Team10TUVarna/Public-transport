@@ -45,12 +45,12 @@
             </ImageView>
          </children>
       </Pane>
-      <Label layoutX="152.0" layoutY="355.0" prefHeight="28.0" prefWidth="360.0" text="Please, make sure you filled all text fields." textFill="#233d48">
+      <Label layoutX="152.0" layoutY="355.0" prefHeight="28.0" prefWidth="360.0" text="Please, make sure you filled all fields." textFill="#233d48">
          <font>
             <Font name="Book Antiqua Bold Italic" size="14.0" />
          </font>
       </Label>
-      <Button layoutX="479.0" layoutY="352.0" mnemonicParsing="false" text="Add">
+      <Button fx:id="addTripButton" layoutX="479.0" layoutY="352.0" mnemonicParsing="false" text="Add">
          <font>
             <Font name="Book Antiqua" size="14.0" />
          </font>
@@ -70,14 +70,14 @@
             <Font name="Book Antiqua" size="14.0" />
          </font>
       </Label>
-      <TextField layoutX="351.0" layoutY="159.0" prefHeight="25.0" prefWidth="175.0" />
-      <DatePicker layoutX="351.0" layoutY="85.0" prefHeight="25.0" prefWidth="175.0" />
+      <TextField fx:id="capacity" layoutX="351.0" layoutY="159.0" prefHeight="25.0" prefWidth="175.0" />
+      <DatePicker fx:id="departure" layoutX="351.0" layoutY="85.0" prefHeight="25.0" prefWidth="175.0" />
       <Label layoutX="152.0" layoutY="122.0" prefHeight="28.0" prefWidth="187.0" text="Date and Time of Arrival:" textFill="#233d48">
          <font>
             <Font name="Book Antiqua" size="14.0" />
          </font>
       </Label>
-      <DatePicker layoutX="352.0" layoutY="122.0" prefHeight="25.0" prefWidth="175.0" />
+      <DatePicker fx:id="arrival" layoutX="352.0" layoutY="122.0" prefHeight="25.0" prefWidth="175.0" />
       <Label layoutX="153.0" layoutY="307.0" prefHeight="28.0" prefWidth="187.0" text="To:" textFill="#233d48">
          <font>
             <Font name="Book Antiqua" size="14.0" />
@@ -93,9 +93,19 @@
             <Font name="Book Antiqua" size="14.0" />
          </font>
       </Label>
-      <ComboBox layoutX="351.0" layoutY="196.0" prefHeight="25.0" prefWidth="175.0" />
-      <ComboBox layoutX="351.0" layoutY="233.0" prefHeight="25.0" prefWidth="175.0" />
-      <ComboBox layoutX="351.0" layoutY="270.0" prefHeight="25.0" prefWidth="175.0" />
-      <ComboBox layoutX="351.0" layoutY="307.0" prefHeight="25.0" prefWidth="175.0" />
+      <ComboBox fx:id="tripType" layoutX="351.0" layoutY="196.0" prefHeight="25.0" prefWidth="175.0" />
+      <ComboBox fx:id="transportType" layoutX="351.0" layoutY="233.0" prefHeight="25.0" prefWidth="175.0" />
+      <ComboBox fx:id="locationFrom" layoutX="351.0" layoutY="270.0" prefHeight="25.0" prefWidth="175.0" />
+      <ComboBox fx:id="locationTo" layoutX="351.0" layoutY="307.0" prefHeight="25.0" prefWidth="175.0" />
+      <ImageView fitHeight="78.0" fitWidth="65.0" layoutX="529.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/traveler.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="backButton" layoutX="24.0" layoutY="24.0" mnemonicParsing="false" onAction="#goBack" text="Go Back">
+         <font>
+            <Font name="Book Antiqua" size="13.0" />
+         </font>
+      </Button>
    </children>
 </Pane>
