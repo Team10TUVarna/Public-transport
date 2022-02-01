@@ -28,6 +28,9 @@ public class Company {
     @OneToMany(mappedBy = "companyId")
     Set<Request> requestSet3;
 
+    @OneToMany(mappedBy = "companyId")
+    Set<Trip> tripSet3;
+
     public Company() {
     }
 

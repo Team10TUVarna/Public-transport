@@ -28,30 +28,26 @@ public class Trip {
     private Location tripTypeId;
 
     @ManyToOne
-    @JoinColumn(name = "routeId", nullable = false)
-    private Location routeId;
-
-    @ManyToOne
     @JoinColumn(name = "transportTypeId", nullable = false)
     private Location transportTypeId;
+
+    @ManyToOne
+    @JoinColumn(name = "companyId", nullable = false)
+    private Trip companyId;
+
+    @ManyToOne
+    @JoinColumn(name = "locationFromId", nullable = false)
+    private Location locationFrom;
+
+    @ManyToOne
+    @JoinColumn(name = "locationToId", nullable = false)
+    private Location locationTo;
 
     @OneToMany(mappedBy = "tripId")
     Set<Request> requestSet1;
 
-    @Override
-    public String toString() {
-        return "Trip{" +
-                "tripId=" + tripId +
-                ", departure=" + departure +
-                ", arrival=" + arrival +
-                ", capacity=" + capacity +
-                ", tripTypeId=" + tripTypeId +
-                ", routeId=" + routeId +
-                ", transportTypeId=" + transportTypeId +
-                ", requestSet1=" + requestSet1 +
-                ", ticketSet1=" + ticketSet1 +
-                '}';
-    }
+    @OneToMany(mappedBy = "tripId")
+    Set<Ticket> ticketSet1;
 
     public int getTripId() {
         return tripId;
@@ -93,20 +89,36 @@ public class Trip {
         this.tripTypeId = tripTypeId;
     }
 
-    public Location getRouteId() {
-        return routeId;
-    }
-
-    public void setRouteId(Location routeId) {
-        this.routeId = routeId;
-    }
-
     public Location getTransportTypeId() {
         return transportTypeId;
     }
 
     public void setTransportTypeId(Location transportTypeId) {
         this.transportTypeId = transportTypeId;
+    }
+
+    public Trip getCompanyId() {
+        return companyId;
+    }
+
+    public void setCompanyId(Trip companyId) {
+        this.companyId = companyId;
+    }
+
+    public Location getLocationFrom() {
+        return locationFrom;
+    }
+
+    public void setLocationFrom(Location locationFrom) {
+        this.locationFrom = locationFrom;
+    }
+
+    public Location getLocationTo() {
+        return locationTo;
+    }
+
+    public void setLocationTo(Location locationTo) {
+        this.locationTo = locationTo;
     }
 
     public Set<Request> getRequestSet1() {
@@ -125,6 +137,20 @@ public class Trip {
         this.ticketSet1 = ticketSet1;
     }
 
-    @OneToMany(mappedBy = "tripId")
-    Set<Ticket> ticketSet1;
+    @Override
+    public String toString() {
+        return "Trip{" +
+                "tripId=" + tripId +
+                ", departure=" + departure +
+                ", arrival=" + arrival +
+                ", capacity=" + capacity +
+                ", tripTypeId=" + tripTypeId +
+                ", transportTypeId=" + transportTypeId +
+                ", companyId=" + companyId +
+                ", locationFrom=" + locationFrom +
+                ", locationTo=" + locationTo +
+                ", requestSet1=" + requestSet1 +
+                ", ticketSet1=" + ticketSet1 +
+                '}';
+    }
 }

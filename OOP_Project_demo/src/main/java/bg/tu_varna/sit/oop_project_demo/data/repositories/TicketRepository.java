@@ -1,7 +1,6 @@
 package bg.tu_varna.sit.oop_project_demo.data.repositories;
 
 import bg.tu_varna.sit.oop_project_demo.data.access.Connection;
-import bg.tu_varna.sit.oop_project_demo.data.entities.Route;
 import bg.tu_varna.sit.oop_project_demo.data.entities.Ticket;
 import org.apache.log4j.Logger;
 import org.hibernate.Session;
@@ -9,7 +8,6 @@ import org.hibernate.Transaction;
 
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Optional;
 
 public class TicketRepository implements DAORepository<Ticket>{
     private static final Logger log = Logger.getLogger(TicketRepository.class);

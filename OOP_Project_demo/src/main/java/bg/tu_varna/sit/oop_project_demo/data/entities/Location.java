@@ -16,10 +16,20 @@ public class Location {
     private String locationName;
 
     @OneToMany(mappedBy = "locationFrom")
-    Set<Route> routeSet1;
+    Set<Trip> tripSet1;
 
     @OneToMany(mappedBy = "locationTo")
-    Set<Route> routeSet2;
+    Set<Trip> tripSet2;
+
+    @Override
+    public String toString() {
+        return "Location{" +
+                "locationId=" + locationId +
+                ", locationName='" + locationName + '\'' +
+                ", tripSet1=" + tripSet1 +
+                ", tripSet2=" + tripSet2 +
+                '}';
+    }
 
     public int getLocationId() {
         return locationId;
@@ -37,29 +47,19 @@ public class Location {
         this.locationName = locationName;
     }
 
-    public Set<Route> getRouteSet1() {
-        return routeSet1;
+    public Set<Trip> getTripSet1() {
+        return tripSet1;
     }
 
-    public void setRouteSet1(Set<Route> routeSet1) {
-        this.routeSet1 = routeSet1;
+    public void setTripSet1(Set<Trip> tripSet1) {
+        this.tripSet1 = tripSet1;
     }
 
-    public Set<Route> getRouteSet2() {
-        return routeSet2;
+    public Set<Trip> getTripSet2() {
+        return tripSet2;
     }
 
-    public void setRouteSet2(Set<Route> routeSet2) {
-        this.routeSet2 = routeSet2;
-    }
-
-    @Override
-    public String toString() {
-        return "Location{" +
-                "locationId=" + locationId +
-                ", locationName='" + locationName + '\'' +
-                ", routeSet1=" + routeSet1 +
-                ", routeSet2=" + routeSet2 +
-                '}';
+    public void setTripSet2(Set<Trip> tripSet2) {
+        this.tripSet2 = tripSet2;
     }
 }

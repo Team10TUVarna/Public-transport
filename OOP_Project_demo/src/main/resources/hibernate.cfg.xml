@@ -18,7 +18,6 @@
         <mapping class="bg.tu_varna.sit.oop_project_demo.data.entities.Location"/>
         <mapping class="bg.tu_varna.sit.oop_project_demo.data.entities.Notification"/>
         <mapping class="bg.tu_varna.sit.oop_project_demo.data.entities.Request"/>
-        <mapping class="bg.tu_varna.sit.oop_project_demo.data.entities.Route"/>
         <mapping class="bg.tu_varna.sit.oop_project_demo.data.entities.Ticket"/>
         <mapping class="bg.tu_varna.sit.oop_project_demo.data.entities.TransportType"/>
         <mapping class="bg.tu_varna.sit.oop_project_demo.data.entities.Trip"/>
