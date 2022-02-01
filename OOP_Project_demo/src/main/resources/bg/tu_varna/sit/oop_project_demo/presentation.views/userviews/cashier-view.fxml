@@ -22,6 +22,11 @@
                   <Image url="@../../images/logout.png" />
                </image>
             </ImageView>
+            <Label fx:id="cashierName" layoutX="25.0" layoutY="15.0" text="Hello, " textFill="WHITE">
+               <font>
+                  <Font name="Book Antiqua" size="18.0" />
+               </font>
+            </Label>
          </children></Pane>
       <ImageView fitHeight="74.0" fitWidth="89.0" layoutX="512.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -29,41 +34,31 @@
          </image>
       </ImageView>
       <Separator layoutX="121.0" layoutY="101.0" prefHeight="8.0" prefWidth="479.0" style="-fx-background-color: #375E72FF;" />
-      <Button fx:id="createCompany" layoutX="156.0" layoutY="62.0" mnemonicParsing="false" text="Create Form">
+      <Button fx:id="createCompany" layoutX="154.0" layoutY="62.0" mnemonicParsing="false" text="Create Form">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
       <Separator layoutX="121.0" layoutY="197.0" prefHeight="8.0" prefWidth="479.0" style="-fx-background-color: #375E72FF;" />
       <Separator layoutX="121.0" layoutY="303.0" prefHeight="8.0" prefWidth="479.0" style="-fx-background-color: #375E72FF;" />
-      <Button layoutX="154.0" layoutY="360.0" mnemonicParsing="false" text="Check Notifications">
+      <Button layoutX="154.0" layoutY="331.0" mnemonicParsing="false" text="Cancelled Trips">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <Label layoutX="140.0" layoutY="322.0" prefHeight="32.0" prefWidth="296.0" text="Notifications For Cancelled Trip" textFill="#375e72">
-         <font>
-            <Font name="Book Antiqua Bold" size="15.0" />
-         </font>
-      </Label>
       <Button layoutX="154.0" layoutY="237.0" mnemonicParsing="false" text="Trips Report ">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <Button fx:id="createCompany1" layoutX="314.0" layoutY="62.0" mnemonicParsing="false" text="Update Form">
-         <font>
-            <Font name="Book Antiqua" size="13.0" />
-         </font>
-      </Button>
-      <Button fx:id="createCompany2" layoutX="467.0" layoutY="62.0" mnemonicParsing="false" text="Delete Form">
+      <Button fx:id="createCompany1" layoutX="154.0" layoutY="144.0" mnemonicParsing="false" text="Check Forms">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
       <Pane prefHeight="400.0" prefWidth="125.0" style="-fx-background-color: #375E72FF;">
          <children>
-            <Label layoutX="23.0" layoutY="60.0" prefHeight="19.0" prefWidth="101.0" text="Purchase Form" textFill="WHITE">
+            <Label layoutX="38.0" layoutY="41.0" prefHeight="59.0" prefWidth="76.0" text="Add Purchase Form" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                <font>
                   <Font name="Book Antiqua" size="15.0" />
                </font>
@@ -73,7 +68,7 @@
                   <Font name="Book Antiqua" size="15.0" />
                </font>
             </Label>
-            <ImageView fitHeight="22.0" fitWidth="22.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="25.0" fitWidth="40.0" layoutX="9.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/create-form.png" />
                </image>
@@ -81,6 +76,41 @@
             <ImageView fitHeight="25.0" fitWidth="22.0" layoutX="18.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/report.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="52.0" layoutY="168.0" text="Delete" textFill="WHITE">
+               <font>
+                  <Font name="Book Antiqua" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="52.0" layoutY="120.0" text="Update" textFill="WHITE">
+               <font>
+                  <Font name="Book Antiqua" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="25.0" fitWidth="30.0" layoutX="21.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/update.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="36.0" fitWidth="30.0" layoutX="20.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/delete.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="62.0" layoutY="144.0" text="Or" textFill="WHITE">
+               <font>
+                  <Font name="Book Antiqua" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="32.0" layoutY="331.0" text="Notifications" textFill="WHITE">
+               <font>
+                  <Font name="Book Antiqua" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="19.0" fitWidth="22.0" layoutX="7.0" layoutY="331.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/notification.png" />
                </image>
             </ImageView>
          </children>

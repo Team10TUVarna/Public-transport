@@ -22,6 +22,11 @@
                   <Image url="@../../images/logout.png" />
                </image>
             </ImageView>
+            <Label fx:id="distributorName" layoutX="25.0" layoutY="15.0" text="Hello, " textFill="WHITE">
+               <font>
+                  <Font name="Book Antiqua" size="18.0" />
+               </font>
+            </Label>
          </children></Pane>
       <ImageView fitHeight="74.0" fitWidth="89.0" layoutX="512.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -30,8 +35,7 @@
       </ImageView>
       <Separator layoutX="121.0" layoutY="88.0" prefHeight="8.0" prefWidth="479.0" style="-fx-background-color: #375E72FF;" />
       <Separator layoutX="121.0" layoutY="140.0" prefHeight="8.0" prefWidth="479.0" style="-fx-background-color: #375E72FF;" />
-      <Separator layoutX="121.0" layoutY="190.0" prefHeight="8.0" prefWidth="479.0" style="-fx-background-color: #375E72FF;" />
-      <Button layoutX="141.0" layoutY="51.0" mnemonicParsing="false" text="Create Cashier">
+      <Button fx:id="addCashierButton" layoutX="187.0" layoutY="51.0" mnemonicParsing="false" text="Create Cashier">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
@@ -46,7 +50,7 @@
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="340.0" layoutY="105.0" mnemonicParsing="false" text="Button">
+      <Button layoutX="294.0" layoutY="105.0" mnemonicParsing="false" text="Add Ticket Request">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
@@ -82,20 +86,20 @@
          </font>
       </Button>
       <Separator layoutX="121.0" layoutY="242.0" prefHeight="8.0" prefWidth="479.0" style="-fx-background-color: #375E72FF;" />
-      <Button layoutX="148.0" layoutY="264.0" mnemonicParsing="false" text="Trips Report">
+      <Button layoutX="187.0" layoutY="264.0" mnemonicParsing="false" text="Trips Report">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
       <Separator layoutX="121.0" layoutY="301.0" prefHeight="8.0" prefWidth="479.0" style="-fx-background-color: #375E72FF;" />
-      <Button layoutX="150.0" layoutY="364.0" mnemonicParsing="false" text="Cancelled Trip">
+      <Button layoutX="150.0" layoutY="364.0" mnemonicParsing="false" text="Cancelled Trips">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
       <Pane prefHeight="400.0" prefWidth="125.0" style="-fx-background-color: #375E72FF;">
          <children>
-            <Label layoutX="37.0" layoutY="57.0" text="Cashiers" textFill="WHITE">
+            <Label layoutX="53.0" layoutY="62.0" text="Cashiers" textFill="WHITE">
                <font>
                   <Font name="Book Antiqua" size="15.0" />
                </font>
@@ -115,7 +119,7 @@
                   <Font name="Book Antiqua" size="15.0" />
                </font>
             </Label>
-            <Label layoutX="54.0" layoutY="211.0" text="Delete" textFill="WHITE">
+            <Label layoutX="54.0" layoutY="204.0" text="Delete" textFill="WHITE">
                <font>
                   <Font name="Book Antiqua" size="15.0" />
                </font>
@@ -125,12 +129,12 @@
                   <Font name="Book Antiqua" size="15.0" />
                </font>
             </Label>
-            <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="8.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="24.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/users.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="25.0" fitWidth="22.0" layoutX="26.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="25.0" fitWidth="22.0" layoutX="24.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/add.png" />
                </image>
@@ -140,12 +144,12 @@
                   <Image url="@../../images/update.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="36.0" fitWidth="30.0" layoutX="20.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="36.0" fitWidth="30.0" layoutX="20.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/delete.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="25.0" fitWidth="22.0" layoutX="23.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="25.0" fitWidth="22.0" layoutX="24.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/report.png" />
                </image>
@@ -155,24 +159,19 @@
                   <Image url="@../../images/notification.png" />
                </image>
             </ImageView>
+            <Label layoutX="64.0" layoutY="181.0" text="Or" textFill="WHITE">
+               <font>
+                  <Font name="Book Antiqua" size="15.0" />
+               </font>
+            </Label>
          </children>
       </Pane>
-      <Button layoutX="253.0" layoutY="51.0" mnemonicParsing="false" text="Update Cashier">
-         <font>
-            <Font name="Book Antiqua" size="13.0" />
-         </font>
-      </Button>
-      <Button layoutX="372.0" layoutY="51.0" mnemonicParsing="false" text="Delete Cashier">
-         <font>
-            <Font name="Book Antiqua" size="13.0" />
-         </font>
-      </Button>
       <Button layoutX="277.0" layoutY="364.0" mnemonicParsing="false" text="Unsold Tickets">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="485.0" layoutY="51.0" mnemonicParsing="false" text="View Cashiers">
+      <Button fx:id="checkCashiersButton" layoutX="360.0" layoutY="51.0" mnemonicParsing="false" text="Check, Update, Delete Cashiers">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
