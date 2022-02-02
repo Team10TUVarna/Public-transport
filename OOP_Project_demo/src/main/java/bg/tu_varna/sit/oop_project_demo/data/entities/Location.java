@@ -1,6 +1,7 @@
 package bg.tu_varna.sit.oop_project_demo.data.entities;
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Objects;
 import java.util.Set;
 
 @Table(name = "Location")
@@ -61,5 +62,18 @@ public class Location {
 
     public void setTripSet2(Set<Trip> tripSet2) {
         this.tripSet2 = tripSet2;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Location location = (Location) o;
+        return Objects.equals(locationName, location.locationName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(locationName);
     }
 }

@@ -15,6 +15,7 @@ public class Constants {
         public static final String ADD_CASHIER = "/bg/tu_varna/sit/oop_project_demo/presentation.views/add/add-cashier.fxml";
         public static final String ADD_DISTRIBUTOR = "/bg/tu_varna/sit/oop_project_demo/presentation.views/add/add-distributor.fxml";
         public static final String ADD_COMPANY = "/bg/tu_varna/sit/oop_project_demo/presentation.views/add/add-company.fxml";
+        public static final String ADD_LOCATION = "/bg/tu_varna/sit/oop_project_demo/presentation.views/add/add-location.fxml";
 
     }
 

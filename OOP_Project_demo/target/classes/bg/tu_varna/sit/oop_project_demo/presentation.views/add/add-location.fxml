@@ -8,11 +8,11 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E2F2FA;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E2F2FA;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bg.tu_varna.sit.oop_project_demo.presentation.controllers.AddLocationController">
    <children>
       <Pane layoutX="101.0" layoutY="-8.0" prefHeight="112.0" prefWidth="500.0" style="-fx-background-color: #375E72FF;">
          <children>
-            <Button fx:id="logout" layoutX="431.0" layoutY="17.0" mnemonicParsing="false" style="-fx-background-color: transperent;" text="Log Out" textFill="WHITE">
+            <Button fx:id="logout" layoutX="431.0" layoutY="17.0" mnemonicParsing="false" onAction="#onLogoutButtonClick" style="-fx-background-color: transperent;" text="Log Out" textFill="WHITE">
                <font>
                   <Font name="Book Antiqua" size="13.0" />
                </font>
@@ -48,8 +48,8 @@
             <Font name="Book Antiqua Bold Italic" size="14.0" />
          </font>
       </Label>
-      <TextField fx:id="location" layoutX="227.0" layoutY="202.0" prefHeight="25.0" prefWidth="177.0" />
-      <Button fx:id="addLocationButton" layoutX="428.0" layoutY="200.0" mnemonicParsing="false" text="Add">
+      <TextField fx:id="locationAdd" layoutX="227.0" layoutY="202.0" prefHeight="25.0" prefWidth="177.0" />
+      <Button fx:id="addLocationButton" layoutX="428.0" layoutY="200.0" mnemonicParsing="false" onAction="#onAddLocationButtonClick" text="Add">
          <font>
             <Font name="Book Antiqua" size="14.0" />
          </font>
@@ -59,7 +59,7 @@
             <Image url="@../../images/icons8-location-80.png" />
          </image>
       </ImageView>
-      <Button fx:id="backButton" layoutX="24.0" layoutY="24.0" mnemonicParsing="false" onAction="#goBack" text="Go Back">
+      <Button fx:id="backButton" layoutX="24.0" layoutY="24.0" mnemonicParsing="false" onAction="#onGoBackButtonClick" text="Go Back">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>

@@ -7,7 +7,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 import static bg.tu_varna.sit.oop_project_demo.common.Constants.User.trackUser;
@@ -19,6 +18,9 @@ public class AdminViewController {
 
     @FXML
     private Button clientsOperationsButton;
+
+    @FXML
+    private Button addLocationButton;
 
     @FXML
     private Label adminName;
@@ -44,6 +46,9 @@ public class AdminViewController {
             e.printStackTrace();
         }
     }
+    public void onAddLocationButtonClick(){
+        loadNewPage(ADD_LOCATION);
+    }
 
     public void onLogoutButtonClick(ActionEvent event){
         trackUser = 0;
@@ -68,8 +73,6 @@ public class AdminViewController {
         }
     }
 
-    /*public AdminViewController(Stage stage) {
-    }*/
 
 
 }

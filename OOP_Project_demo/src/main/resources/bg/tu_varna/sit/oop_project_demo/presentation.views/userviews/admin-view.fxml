@@ -151,7 +151,7 @@
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="451.0" layoutY="97.0" mnemonicParsing="false" text="Add Location">
+      <Button fx:id="addLocationButton" layoutX="451.0" layoutY="97.0" mnemonicParsing="false" onAction="#onAddLocationButtonClick" text="Add Location">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
