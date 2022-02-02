@@ -1,4 +1,4 @@
-package bg.tu_varna.sit.oop_project_demo.presentation.controllers.add;
+package bg.tu_varna.sit.oop_project_demo.presentation.controllers;
 
 import bg.tu_varna.sit.oop_project_demo.business.services.CashierService;
 import bg.tu_varna.sit.oop_project_demo.presentation.models.CashierListViewModel;
