@@ -6,7 +6,7 @@ import java.util.Set;
 @Table(name = "Request")
 @Entity
 public class Request {
-    private static final long serialVersionUID=1L;
+    private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "requestId", nullable = false)
@@ -20,15 +20,15 @@ public class Request {
 
     @ManyToOne
     @JoinColumn(name = "tripId", nullable = false)
-    private Location tripId;
+    private Trip tripId;
 
     @ManyToOne
     @JoinColumn(name = "distributorId", nullable = false)
-    private Location distributorId;
+    private Distributor distributorId;
 
     @ManyToOne
     @JoinColumn(name = "companyId", nullable = false)
-    private Location companyId;
+    private Company companyId;
 
     @Override
     public String toString() {
@@ -66,27 +66,29 @@ public class Request {
         this.status = status;
     }
 
-    public Location getTripId() {
+    public Trip getTripId() {
         return tripId;
     }
 
-    public void setTripId(Location tripId) {
+    public void setTripId(Trip tripId) {
         this.tripId = tripId;
     }
 
-    public Location getDistributorId() {
+    public Distributor getDistributorId() {
         return distributorId;
     }
 
-    public void setDistributorId(Location distributorId) {
+    public void setDistributorId(Distributor distributorId) {
         this.distributorId = distributorId;
     }
 
-    public Location getCompanyId() {
+    public Company getCompanyId() {
         return companyId;
     }
 
-    public void setCompanyId(Location companyId) {
+    public void setCompanyId(Company companyId) {
         this.companyId = companyId;
     }
 }
+
+

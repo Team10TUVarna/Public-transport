@@ -6,6 +6,16 @@ public class CashierListViewModel {
     private String username;
     private String password;
 
+    private String cashierName;
+    private double honorarium;
+
+    public CashierListViewModel(String username, String password, String cashierName, double honorarium) {
+        this.username = username;
+        this.password = password;
+        this.cashierName = cashierName;
+        this.honorarium = honorarium;
+    }
+
     public CashierListViewModel() {
 
     }
@@ -42,6 +52,22 @@ public class CashierListViewModel {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getCashierName() {
+        return cashierName;
+    }
+
+    public void setCashierName(String cashierName) {
+        this.cashierName = cashierName;
+    }
+
+    public double getHonorarium() {
+        return honorarium;
+    }
+
+    public void setHonorarium(double honorarium) {
+        this.honorarium = honorarium;
     }
 
     @Override

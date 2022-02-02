@@ -44,13 +44,13 @@
             </ImageView>
          </children>
       </Pane>
-      <TextField fx:id="ticketID" layoutX="311.0" layoutY="338.0" prefHeight="25.0" prefWidth="116.0" />
-      <Button fx:id="deleteTicketButton" layoutX="463.0" layoutY="335.0" mnemonicParsing="false" text="Delete">
+      <TextField fx:id="ticketID" layoutX="322.0" layoutY="301.0" prefHeight="25.0" prefWidth="116.0" />
+      <Button fx:id="deleteTicketButton" layoutX="474.0" layoutY="335.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="65.0" text="Delete">
          <font>
             <Font name="Book Antiqua" size="14.0" />
          </font>
       </Button>
-      <Label layoutX="204.0" layoutY="337.0" prefHeight="28.0" prefWidth="77.0" text="Ticket ID:" textFill="#233d48">
+      <Label layoutX="176.0" layoutY="300.0" prefHeight="28.0" prefWidth="77.0" text="Ticket ID:" textFill="#233d48">
          <font>
             <Font name="Book Antiqua" size="14.0" />
          </font>
@@ -60,6 +60,17 @@
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <ListView fx:id="listView" layoutX="125.0" layoutY="104.0" prefHeight="202.0" prefWidth="476.0" style="-fx-background-color: transperent;" />
+      <ListView fx:id="listView" layoutX="125.0" layoutY="104.0" prefHeight="180.0" prefWidth="476.0" style="-fx-background-color: transperent;" />
+      <TextField fx:id="customerName" layoutX="322.0" layoutY="338.0" prefHeight="25.0" prefWidth="116.0" />
+      <Button fx:id="updateTicketButton" layoutX="474.0" layoutY="298.0" mnemonicParsing="false" text="Update">
+         <font>
+            <Font name="Book Antiqua" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="176.0" layoutY="337.0" prefHeight="28.0" prefWidth="116.0" text="Customer Name:" textFill="#233d48">
+         <font>
+            <Font name="Book Antiqua" size="14.0" />
+         </font>
+      </Label>
    </children>
 </Pane>

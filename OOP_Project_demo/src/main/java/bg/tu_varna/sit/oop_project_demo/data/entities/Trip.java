@@ -33,7 +33,7 @@ public class Trip {
 
     @ManyToOne
     @JoinColumn(name = "companyId", nullable = false)
-    private Trip companyId;
+    private Company companyId;
 
     @ManyToOne
     @JoinColumn(name = "locationFromId", nullable = false)
@@ -97,11 +97,11 @@ public class Trip {
         this.transportTypeId = transportTypeId;
     }
 
-    public Trip getCompanyId() {
+    public Company getCompanyId() {
         return companyId;
     }
 
-    public void setCompanyId(Trip companyId) {
+    public void setCompanyId(Company companyId) {
         this.companyId = companyId;
     }
 

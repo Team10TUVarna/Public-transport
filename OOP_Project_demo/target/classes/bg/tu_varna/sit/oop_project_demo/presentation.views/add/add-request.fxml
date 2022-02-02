@@ -83,7 +83,7 @@
       <ComboBox fx:id="trip" layoutX="300.0" layoutY="164.0" prefHeight="25.0" prefWidth="177.0" />
       <ComboBox fx:id="distributor" layoutX="300.0" layoutY="204.0" prefHeight="25.0" prefWidth="177.0" />
       <ComboBox fx:id="company" layoutX="300.0" layoutY="244.0" prefHeight="25.0" prefWidth="177.0" />
-      <TextField fx:id="status" layoutX="300.0" layoutY="284.0" prefHeight="25.0" prefWidth="177.0" />
+      <TextField fx:id="status" disable="true" layoutX="300.0" layoutY="284.0" prefHeight="25.0" prefWidth="177.0" text="pending" />
       <ImageView fitHeight="90.0" fitWidth="65.0" layoutX="512.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../images/request.png" />

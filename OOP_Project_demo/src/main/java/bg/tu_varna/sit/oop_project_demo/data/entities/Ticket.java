@@ -24,7 +24,11 @@ public class Ticket {
 
     @ManyToOne
     @JoinColumn(name = "cashierId", nullable = false)
-    private Location cashierId;
+    private Cashier cashierId;
+
+    @ManyToOne
+    @JoinColumn(name = "tripId", nullable = false)
+    private Trip tripId;
 
     @Override
     public String toString() {
@@ -70,26 +74,19 @@ public class Ticket {
         this.purchaseDate = purchaseDate;
     }
 
-    public Location getCashierId() {
+    public Cashier getCashierId() {
         return cashierId;
     }
 
-    public void setCashierId(Location cashierId) {
+    public void setCashierId(Cashier cashierId) {
         this.cashierId = cashierId;
     }
 
-    public Location getTripId() {
+    public Trip getTripId() {
         return tripId;
     }
 
-    public void setTripId(Location tripId) {
+    public void setTripId(Trip tripId) {
         this.tripId = tripId;
     }
-
-    @ManyToOne
-    @JoinColumn(name = "tripId", nullable = false)
-    private Location tripId;
-
-
-
 }

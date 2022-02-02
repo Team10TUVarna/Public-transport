@@ -48,7 +48,7 @@ public class CashierService {
     }
 
     public int createCashier(CashierListViewModel a){
-        Cashier cashier=new Cashier(a.getUsername(),a.getPassword());
+        Cashier cashier=new Cashier(a.getCashierName(),a.getUsername(), a.getPassword(), a.getHonorarium());
         if(checkIfCashierExists(cashier)){
             log.info("Cashier "+a+" already exists!");
             return 0;

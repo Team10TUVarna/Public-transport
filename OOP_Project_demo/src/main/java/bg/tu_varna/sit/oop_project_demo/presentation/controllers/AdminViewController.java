@@ -11,8 +11,7 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 import static bg.tu_varna.sit.oop_project_demo.common.Constants.User.trackUser;
-import static bg.tu_varna.sit.oop_project_demo.common.Constants.View.ADD_CLIENTS;
-import static bg.tu_varna.sit.oop_project_demo.common.Constants.View.HELLO_VIEW;
+import static bg.tu_varna.sit.oop_project_demo.common.Constants.View.*;
 
 public class AdminViewController {
     public AdminViewController() {
@@ -28,7 +27,22 @@ public class AdminViewController {
     private Button logout;
 
     public void onClientsOperationsButtonClick(ActionEvent event) {
-        loadNewPage(ADD_CLIENTS);
+        try {
+            trackUser = 1;
+            Stage s = (Stage) clientsOperationsButton.getScene().getWindow();
+            s.close();
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(ADD_CLIENTS));
+            Stage stage = new Stage();
+            //fxmlLoader.setController(new AdminViewController());
+            Parent root1 = (Parent) fxmlLoader.load();
+            stage.setScene(new Scene(root1));
+            stage.setResizable(false);
+            stage.setWidth(615);
+            stage.setHeight(440);
+            stage.show();
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public void onLogoutButtonClick(ActionEvent event){

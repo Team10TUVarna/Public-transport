@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E2F2FA;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E2F2FA;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bg.tu_varna.sit.oop_project_demo.presentation.controllers.ClientsOperationsController">
    <children>
       <Pane layoutX="101.0" layoutY="-8.0" prefHeight="112.0" prefWidth="500.0" style="-fx-background-color: #375E72FF;">
          <children>
@@ -95,7 +95,7 @@
             <Separator layoutX="124.0" layoutY="51.0" orientation="VERTICAL" prefHeight="349.0" prefWidth="0.0" style="-fx-background-color: #375E72FF;" />
          </children>
       </Pane>
-      <Button fx:id="createCompany11" layoutX="155.0" layoutY="130.0" mnemonicParsing="false" text="Add Company">
+      <Button fx:id="addCompanyButton" layoutX="155.0" layoutY="130.0" mnemonicParsing="false" text="Add Company">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
@@ -115,7 +115,7 @@
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <Button fx:id="createCompany111" layoutX="318.0" layoutY="130.0" mnemonicParsing="false" text="Add Distributor">
+      <Button fx:id="addDistributorButton" layoutX="318.0" layoutY="130.0" mnemonicParsing="false" text="Add Distributor">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
@@ -135,7 +135,7 @@
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <Button fx:id="createCompany112" layoutX="482.0" layoutY="130.0" mnemonicParsing="false" text="Add Cashier">
+      <Button fx:id="addCashierButton" layoutX="482.0" layoutY="130.0" mnemonicParsing="false" onAction="#onAddCashierButtonClick" text="Add Cashier">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>

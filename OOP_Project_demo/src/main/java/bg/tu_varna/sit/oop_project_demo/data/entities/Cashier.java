@@ -36,6 +36,13 @@ public class Cashier {
 
     }
 
+    public Cashier(String cashierName, String username, String password, double honorarium) {
+        this.cashierName = cashierName;
+        this.username = username;
+        this.password = password;
+        this.honorarium = honorarium;
+    }
+
     @Override
     public String toString() {
         return "Cashier{" +

@@ -12,6 +12,7 @@ public class Constants {
         public static final String COMPANY_VIEW = "/bg/tu_varna/sit/oop_project_demo/presentation.views/userviews/company-view.fxml";
         public static final String DISTRIBUTOR_VIEW = "/bg/tu_varna/sit/oop_project_demo/presentation.views/userviews/distributor-view.fxml";
         public static final String ADD_CLIENTS = "/bg/tu_varna/sit/oop_project_demo/presentation.views/admin-clients.fxml";
+        public static final String ADD_CASHIER = "/bg/tu_varna/sit/oop_project_demo/presentation.views/add/add-cashier.fxml";
 
     }
 
