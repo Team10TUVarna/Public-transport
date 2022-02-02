@@ -95,7 +95,7 @@
             <Separator layoutX="124.0" layoutY="51.0" orientation="VERTICAL" prefHeight="349.0" prefWidth="0.0" style="-fx-background-color: #375E72FF;" />
          </children>
       </Pane>
-      <Button fx:id="addCompanyButton" layoutX="155.0" layoutY="130.0" mnemonicParsing="false" text="Add Company">
+      <Button fx:id="addCompanyButton" layoutX="155.0" layoutY="130.0" mnemonicParsing="false" onAction="#onAddCompanyButtonClick" text="Add Company">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>

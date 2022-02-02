@@ -40,6 +40,13 @@ public class Company {
         this.password = password;
     }
 
+    public Company(String companyName, String username, String password, double honorarium) {
+        this.companyName = companyName;
+        this.username = username;
+        this.password = password;
+        this.honorarium = honorarium;
+    }
+
     @Override
     public String toString() {
         return "Company{" +

@@ -55,7 +55,7 @@ public class AddCashierController {
             } catch (Exception e) {
                 e.printStackTrace();
             }*/
-            Alert alert=new Alert(Alert.AlertType.WARNING,"Cashier already exists!", ButtonType.CLOSE);
+            Alert alert=new Alert(Alert.AlertType.ERROR,"Cashier already exists!", ButtonType.CLOSE);
             /*DialogPane dialogPane = alert.getDialogPane();
             dialogPane.getStylesheets().add("Alerts.css");
             dialogPane.getStyleClass().add("Alert");*/

@@ -42,7 +42,7 @@ public class CompanyService {
     }
 
     public int createCompany(CompanyListViewModel a){
-        Company company=new Company(a.getUsername(),a.getPassword());
+        Company company=new Company(a.getCompanyName(), a.getUsername(),a.getPassword(),a.getHonorarium());
         if(checkIfCompanyExists(company)){
             log.info("Company "+a+" already exists!");
             return 0;

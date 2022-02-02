@@ -1,8 +1,8 @@
 package bg.tu_varna.sit.oop_project_demo.presentation.controllers;
 
-import bg.tu_varna.sit.oop_project_demo.business.services.CashierService;
+import bg.tu_varna.sit.oop_project_demo.business.services.CompanyService;
 import bg.tu_varna.sit.oop_project_demo.business.services.DistributorService;
-import bg.tu_varna.sit.oop_project_demo.presentation.models.CashierListViewModel;
+import bg.tu_varna.sit.oop_project_demo.presentation.models.CompanyListViewModel;
 import bg.tu_varna.sit.oop_project_demo.presentation.models.DistributorListViewModel;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -19,17 +19,16 @@ import static bg.tu_varna.sit.oop_project_demo.common.Constants.User.trackUser;
 import static bg.tu_varna.sit.oop_project_demo.common.Constants.View.*;
 import static bg.tu_varna.sit.oop_project_demo.common.Constants.View.CASHIER_VIEW;
 
-public class AddDistributorController {
-    private final DistributorService service=DistributorService.getInstance();
-
+public class AddCompanyController {
+    private final CompanyService service=CompanyService.getInstance();
     @FXML
-    private Button addDistributorButton;
+    private Button addCompanyButton;
 
     @FXML
     private Button backButton;
 
     @FXML
-    private TextField distributorName;
+    private TextField companyName;
 
     @FXML
     private TextField honorarium;
@@ -43,10 +42,11 @@ public class AddDistributorController {
     @FXML
     private TextField username;
 
-    public void onAddDistributorButtonClick(ActionEvent actionEvent)
-    {
-        DistributorListViewModel distributor=new DistributorListViewModel(username.getText(),password.getText(), distributorName.getText(), Double.parseDouble(honorarium.getText()));
-        int res=service.createDistributor(distributor);
+
+
+    public void onAddCompanyButtonClick(ActionEvent event) {
+        CompanyListViewModel company=new CompanyListViewModel(username.getText(),password.getText(), companyName.getText(), Double.parseDouble(honorarium.getText()));
+        int res=service.createCompany(company);
         if(res==0){
             /*try {
                 s.close();
@@ -60,7 +60,7 @@ public class AddDistributorController {
             } catch (Exception e) {
                 e.printStackTrace();
             }*/
-            Alert alert=new Alert(Alert.AlertType.ERROR,"Distributor already exists!", ButtonType.CLOSE);
+            Alert alert=new Alert(Alert.AlertType.ERROR,"Company already exists!", ButtonType.CLOSE);
             /*DialogPane dialogPane = alert.getDialogPane();
             dialogPane.getStylesheets().add("Alerts.css");
             dialogPane.getStyleClass().add("Alert");*/
@@ -72,7 +72,7 @@ public class AddDistributorController {
                 case 2 -> loadNewPage(OPERATOR_VIEW);
                 case 3 -> loadNewPage(WAREHOUSEHOST_VIEW);
             }*/
-            Alert alert=new Alert(Alert.AlertType.CONFIRMATION,"Distributor added", ButtonType.OK);
+            Alert alert=new Alert(Alert.AlertType.CONFIRMATION,"Company added", ButtonType.OK);
             /*DialogPane dialogPane = alert.getDialogPane();
             dialogPane.getStylesheets().add("Alerts.css");
             dialogPane.getStyleClass().add("Alert");*/

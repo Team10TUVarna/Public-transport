@@ -7,8 +7,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
-import static bg.tu_varna.sit.oop_project_demo.common.Constants.View.ADD_CASHIER;
-import static bg.tu_varna.sit.oop_project_demo.common.Constants.View.ADD_DISTRIBUTOR;
+import static bg.tu_varna.sit.oop_project_demo.common.Constants.View.*;
 
 public class ClientsOperationsController {
     @FXML
@@ -27,6 +26,10 @@ public class ClientsOperationsController {
 
     public void onAddCashierButtonClick(){
         loadNewPage(ADD_CASHIER);
+    }
+
+    public void onAddCompanyButtonClick(){
+        loadNewPage(ADD_COMPANY);
     }
 
     public void loadNewPage(String path){

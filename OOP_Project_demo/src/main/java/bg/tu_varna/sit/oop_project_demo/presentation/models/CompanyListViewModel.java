@@ -6,6 +6,16 @@ public class CompanyListViewModel {
     private String username;
     private String password;
 
+    private String companyName;
+    private double honorarium;
+
+    public CompanyListViewModel(String username, String password, String companyName, double honorarium) {
+        this.username = username;
+        this.password = password;
+        this.companyName = companyName;
+        this.honorarium = honorarium;
+    }
+
     public CompanyListViewModel(String username, String password) {
         this.username = username;
         this.password = password;
@@ -28,6 +38,22 @@ public class CompanyListViewModel {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getCompanyName() {
+        return companyName;
+    }
+
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
+    }
+
+    public double getHonorarium() {
+        return honorarium;
+    }
+
+    public void setHonorarium(double honorarium) {
+        this.honorarium = honorarium;
     }
 
     @Override
