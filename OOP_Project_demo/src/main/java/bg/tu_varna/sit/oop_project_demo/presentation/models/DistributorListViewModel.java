@@ -5,6 +5,8 @@ import java.util.Objects;
 public class DistributorListViewModel {
     private String username;
     private String password;
+    private String distributorName;
+    private double honorarium;
 
     public DistributorListViewModel(String username, String password) {
         this.username = username;
@@ -12,6 +14,13 @@ public class DistributorListViewModel {
     }
 
     public DistributorListViewModel() { }
+
+    public DistributorListViewModel(String username, String password, String distributorName, double honorarium) {
+        this.username = username;
+        this.password = password;
+        this.distributorName = distributorName;
+        this.honorarium = honorarium;
+    }
 
     @Override
     public boolean equals(Object o) {
@@ -40,6 +49,22 @@ public class DistributorListViewModel {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getDistributorName() {
+        return distributorName;
+    }
+
+    public void setDistributorName(String distributorName) {
+        this.distributorName = distributorName;
+    }
+
+    public double getHonorarium() {
+        return honorarium;
+    }
+
+    public void setHonorarium(double honorarium) {
+        this.honorarium = honorarium;
     }
 
     @Override

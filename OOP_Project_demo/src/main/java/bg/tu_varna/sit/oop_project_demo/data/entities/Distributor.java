@@ -3,6 +3,7 @@ package bg.tu_varna.sit.oop_project_demo.data.entities;
 import javax.persistence.*;
 
 import java.io.Serializable;
+import java.util.Objects;
 import java.util.Set;
 
 @Table(name = "Distributor")
@@ -35,6 +36,13 @@ public class Distributor {
     public Distributor(String username, String password) {
         this.username = username;
         this.password = password;
+    }
+
+    public Distributor(String distributorName, String username, String password, double honorarium) {
+        this.distributorName = distributorName;
+        this.username = username;
+        this.password = password;
+        this.honorarium = honorarium;
     }
 
     @Override
@@ -95,5 +103,18 @@ public class Distributor {
 
     public void setRequestSet2(Set<Request> requestSet2) {
         this.requestSet2 = requestSet2;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Distributor that = (Distributor) o;
+        return Objects.equals(username, that.username);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(username);
     }
 }

@@ -2,6 +2,7 @@ package bg.tu_varna.sit.oop_project_demo.data.entities;
 import javax.persistence.*;
 
 import java.io.Serializable;
+import java.util.Objects;
 import java.util.Set;
 
 @Table(name = "Company")
@@ -97,5 +98,18 @@ public class Company {
 
     public void setRequestSet3(Set<Request> requestSet3) {
         this.requestSet3 = requestSet3;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Company company = (Company) o;
+        return Objects.equals(username, company.username);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(username);
     }
 }

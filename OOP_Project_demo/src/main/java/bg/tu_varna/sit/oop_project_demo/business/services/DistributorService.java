@@ -45,7 +45,7 @@ public class DistributorService {
     }
 
     public int createDistributor(DistributorListViewModel a){
-        Distributor distributor=new Distributor(a.getUsername(),a.getPassword());
+        Distributor distributor=new Distributor(a.getDistributorName(), a.getUsername(),a.getPassword(),a.getHonorarium());
         if(checkIfDistributorExists(distributor)){
             log.info("Distributor "+a+" already exists!");
             return 0;
