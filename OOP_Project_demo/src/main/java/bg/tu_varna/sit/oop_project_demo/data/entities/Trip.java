@@ -25,11 +25,11 @@ public class Trip {
 
     @ManyToOne
     @JoinColumn(name = "tripTypeId", nullable = false)
-    private Location tripTypeId;
+    private TripType tripTypeId;
 
     @ManyToOne
     @JoinColumn(name = "transportTypeId", nullable = false)
-    private Location transportTypeId;
+    private TransportType transportTypeId;
 
     @ManyToOne
     @JoinColumn(name = "companyId", nullable = false)
@@ -81,19 +81,19 @@ public class Trip {
         this.capacity = capacity;
     }
 
-    public Location getTripTypeId() {
+    public TripType getTripTypeId() {
         return tripTypeId;
     }
 
-    public void setTripTypeId(Location tripTypeId) {
+    public void setTripTypeId(TripType tripTypeId) {
         this.tripTypeId = tripTypeId;
     }
 
-    public Location getTransportTypeId() {
+    public TransportType getTransportTypeId() {
         return transportTypeId;
     }
 
-    public void setTransportTypeId(Location transportTypeId) {
+    public void setTransportTypeId(TransportType transportTypeId) {
         this.transportTypeId = transportTypeId;
     }
 
