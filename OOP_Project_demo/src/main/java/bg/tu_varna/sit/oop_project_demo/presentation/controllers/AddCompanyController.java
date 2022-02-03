@@ -81,12 +81,14 @@ public class AddCompanyController {
     }
 
     public void goBack(){
-        switch (trackUser){
-            case 1: loadNewPage(ADMIN_VIEW);
-            case 2: loadNewPage(COMPANY_VIEW);
-            case 3: loadNewPage(DISTRIBUTOR_VIEW);
-            case 4: loadNewPage(CASHIER_VIEW);
-        }
+        if (trackUser == 1)
+            loadNewPage(ADMIN_VIEW);
+        if (trackUser == 2)
+            loadNewPage(COMPANY_VIEW);
+        if (trackUser == 3)
+            loadNewPage(DISTRIBUTOR_VIEW);
+        if (trackUser == 4)
+            loadNewPage(CASHIER_VIEW);
     }
 
     public void loadNewPage(String path){

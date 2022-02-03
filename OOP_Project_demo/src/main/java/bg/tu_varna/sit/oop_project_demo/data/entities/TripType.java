@@ -2,6 +2,7 @@ package bg.tu_varna.sit.oop_project_demo.data.entities;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Objects;
 import java.util.Set;
 
 @Table(name = "TripType")
@@ -15,6 +16,13 @@ public class TripType {
 
     @Column(name = "tripTypeName", nullable = false)
     private String tripTypeName;
+
+    public TripType(String tripTypeName) {
+        this.tripTypeName = tripTypeName;
+    }
+
+    public TripType() {
+    }
 
     @Override
     public String toString() {
@@ -51,4 +59,18 @@ public class TripType {
 
     @OneToMany(mappedBy = "tripTypeId")
     Set<Trip> tripSet1;
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        TripType tripType = (TripType) o;
+        return Objects.equals(tripTypeName, tripType.tripTypeName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(tripTypeName);
+    }
 }

@@ -49,6 +49,9 @@ public class AdminViewController {
     public void onAddLocationButtonClick(){
         loadNewPage(ADD_LOCATION);
     }
+    public void onAddTripTypeButtonClick(){
+        loadNewPage(ADD_TRIPTYPE);
+    }
 
     public void onLogoutButtonClick(ActionEvent event){
         trackUser = 0;

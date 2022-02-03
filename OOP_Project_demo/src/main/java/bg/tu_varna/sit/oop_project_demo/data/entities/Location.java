@@ -22,6 +22,14 @@ public class Location {
     @OneToMany(mappedBy = "locationTo")
     Set<Trip> tripSet2;
 
+    public Location(String locationName) {
+        this.locationName = locationName;
+    }
+
+    public Location() {
+
+    }
+
     @Override
     public String toString() {
         return "Location{" +

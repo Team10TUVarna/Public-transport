@@ -1,8 +1,7 @@
 package bg.tu_varna.sit.oop_project_demo.presentation.controllers;
 
-import bg.tu_varna.sit.oop_project_demo.business.services.LocationService;
-import bg.tu_varna.sit.oop_project_demo.presentation.models.CompanyListViewModel;
-import bg.tu_varna.sit.oop_project_demo.presentation.models.LocationListViewModel;
+import bg.tu_varna.sit.oop_project_demo.business.services.TripTypeService;
+import bg.tu_varna.sit.oop_project_demo.presentation.models.TripTypeListViewModel;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -17,29 +16,30 @@ import javafx.stage.Stage;
 import static bg.tu_varna.sit.oop_project_demo.common.Constants.User.trackUser;
 import static bg.tu_varna.sit.oop_project_demo.common.Constants.View.*;
 
-public class AddLocationController {
-    private final LocationService service= LocationService.getInstance();
+public class AddTripTypeController {
+    private final TripTypeService service= TripTypeService.getInstance();
     @FXML
-    private Button addLocationButton;
+    private Button addTripTypeButton;
 
     @FXML
     private Button backButton;
 
     @FXML
-    private TextField locationAdd;
-
-    @FXML
     private Button logout;
 
-    public void onAddLocationButtonClick(ActionEvent event) {
-        LocationListViewModel location=new LocationListViewModel(locationAdd.getText());
-        int res=service.createLocation(location);
+    @FXML
+    private TextField tripType;
+
+
+    public void onAddTripTypeButtonClick(ActionEvent event) {
+        TripTypeListViewModel tripTypeListViewModel=new TripTypeListViewModel(tripType.getText());
+        int res=service.createTripType(tripTypeListViewModel);
         if(res==0){
-            Alert alert=new Alert(Alert.AlertType.ERROR,"Location already exists!", ButtonType.CLOSE);
+            Alert alert=new Alert(Alert.AlertType.ERROR,"Trip type already exists!", ButtonType.CLOSE);
             alert.show();
         }
         else{
-            Alert alert=new Alert(Alert.AlertType.CONFIRMATION,"Location added", ButtonType.OK);
+            Alert alert=new Alert(Alert.AlertType.CONFIRMATION,"Trip type added", ButtonType.OK);
             alert.show();
         }
     }
@@ -58,12 +58,13 @@ public class AddLocationController {
 
 
     public void onLogoutButtonClick(ActionEvent event) {
+        trackUser = 0;
         loadNewPage(HELLO_VIEW);
     }
 
     public void loadNewPage(String path){
         try {
-            Stage s = (Stage) addLocationButton.getScene().getWindow();
+            Stage s = (Stage) addTripTypeButton.getScene().getWindow();
             s.close();
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(path));
             Stage stage = new Stage();
@@ -78,4 +79,5 @@ public class AddLocationController {
             e.printStackTrace();
         }
     }
+
 }
