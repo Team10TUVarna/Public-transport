@@ -2,6 +2,7 @@ package bg.tu_varna.sit.oop_project_demo.data.entities;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Objects;
 import java.util.Set;
 
 @Table(name = "TransportType")
@@ -52,4 +53,23 @@ public class TransportType {
     @OneToMany(mappedBy = "transportTypeId")
     Set<Trip> tripSet2;
 
+    public TransportType() {
+    }
+
+    public TransportType(String transportTypeName) {
+        this.transportTypeName = transportTypeName;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        TransportType that = (TransportType) o;
+        return Objects.equals(transportTypeName, that.transportTypeName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(transportTypeName);
+    }
 }
