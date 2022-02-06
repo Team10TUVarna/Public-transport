@@ -2,7 +2,7 @@ package bg.tu_varna.sit.oop_project_demo.data.entities;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Set;
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 @Table(name = "Trip")
@@ -15,10 +15,10 @@ public class Trip {
     private int tripId;
 
     @Column(name = "departure", nullable = false)
-    private LocalDateTime departure;
+    private LocalDate departure;
 
     @Column(name = "arrival", nullable = false)
-    private LocalDateTime arrival;
+    private LocalDate arrival;
 
     @Column(name = "capacity", nullable = false)
     private int capacity;
@@ -43,6 +43,12 @@ public class Trip {
     @JoinColumn(name = "locationToId", nullable = false)
     private Location locationTo;
 
+    @Column(name = "timeOfDeparture", nullable = false)
+    private String timeOfDeparture;
+
+    @Column(name = "timeOfArrival", nullable = false)
+    private String timeOfArrival;
+
     @OneToMany(mappedBy = "tripId")
     Set<Request> requestSet1;
 
@@ -55,22 +61,6 @@ public class Trip {
 
     public void setTripId(int tripId) {
         this.tripId = tripId;
-    }
-
-    public LocalDateTime getDeparture() {
-        return departure;
-    }
-
-    public void setDeparture(LocalDateTime departure) {
-        this.departure = departure;
-    }
-
-    public LocalDateTime getArrival() {
-        return arrival;
-    }
-
-    public void setArrival(LocalDateTime arrival) {
-        this.arrival = arrival;
     }
 
     public int getCapacity() {
@@ -119,6 +109,38 @@ public class Trip {
 
     public void setLocationTo(Location locationTo) {
         this.locationTo = locationTo;
+    }
+
+    public LocalDate getDeparture() {
+        return departure;
+    }
+
+    public void setDeparture(LocalDate departure) {
+        this.departure = departure;
+    }
+
+    public LocalDate getArrival() {
+        return arrival;
+    }
+
+    public void setArrival(LocalDate arrival) {
+        this.arrival = arrival;
+    }
+
+    public String getTimeOfDeparture() {
+        return timeOfDeparture;
+    }
+
+    public void setTimeOfDeparture(String timeOfDeparture) {
+        this.timeOfDeparture = timeOfDeparture;
+    }
+
+    public String getTimeOfArrival() {
+        return timeOfArrival;
+    }
+
+    public void setTimeOfArrival(String timeOfArrival) {
+        this.timeOfArrival = timeOfArrival;
     }
 
     public Set<Request> getRequestSet1() {

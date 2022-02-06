@@ -18,6 +18,7 @@ public class Constants {
         public static final String ADD_LOCATION = "/bg/tu_varna/sit/oop_project_demo/presentation.views/add/add-location.fxml";
         public static final String ADD_TRIPTYPE = "/bg/tu_varna/sit/oop_project_demo/presentation.views/add/add-triptype.fxml";
         public static final String ADD_TRANSPORTTYPE = "/bg/tu_varna/sit/oop_project_demo/presentation.views/add/add-transporttype.fxml";
+        public static final String ADD_TRIP = "/bg/tu_varna/sit/oop_project_demo/presentation.views/add/add-trip.fxml";
     }
 
     public static class Configurations {

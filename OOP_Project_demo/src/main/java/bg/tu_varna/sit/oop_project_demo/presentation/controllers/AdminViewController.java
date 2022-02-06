@@ -52,6 +52,10 @@ public class AdminViewController {
     public void onAddTripTypeButtonClick(){
         loadNewPage(ADD_TRIPTYPE);
     }
+
+    public void onAddTripButtonClick(){
+        loadNewPage(ADD_TRIP);
+    }
     public void onAddTransportTypeButtonClick(){
         loadNewPage(ADD_TRANSPORTTYPE);
     }
