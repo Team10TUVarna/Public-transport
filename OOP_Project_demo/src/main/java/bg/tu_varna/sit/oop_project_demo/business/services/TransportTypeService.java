@@ -1,11 +1,16 @@
 package bg.tu_varna.sit.oop_project_demo.business.services;
 
+import bg.tu_varna.sit.oop_project_demo.data.entities.Location;
 import bg.tu_varna.sit.oop_project_demo.data.entities.TransportType;
 import bg.tu_varna.sit.oop_project_demo.data.repositories.TransportTypeRepository;
+import bg.tu_varna.sit.oop_project_demo.presentation.models.LocationListViewModel;
 import bg.tu_varna.sit.oop_project_demo.presentation.models.TransportTypeListViewModel;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import org.apache.log4j.Logger;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class TransportTypeService {
     private static final Logger log=Logger.getLogger(TransportTypeService.class);
@@ -73,5 +78,14 @@ public class TransportTypeService {
         }
         log.error("Transport type not found!");
         return null;
+    }
+
+    public ObservableList<TransportTypeListViewModel> getAllTransportTypes() {
+        List<TransportType> l = repository.getAll();
+
+        return FXCollections.observableList(
+                l.stream().map(w -> new TransportTypeListViewModel(
+                        w.getTransportTypeName()
+                )).collect(Collectors.toList()));
     }
 }

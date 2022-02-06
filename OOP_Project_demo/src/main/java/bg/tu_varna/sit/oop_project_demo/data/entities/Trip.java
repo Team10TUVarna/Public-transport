@@ -1,6 +1,7 @@
 package bg.tu_varna.sit.oop_project_demo.data.entities;
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Objects;
 import java.util.Set;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -171,8 +172,39 @@ public class Trip {
                 ", companyId=" + companyId +
                 ", locationFrom=" + locationFrom +
                 ", locationTo=" + locationTo +
+                ", timeOfDeparture='" + timeOfDeparture + '\'' +
+                ", timeOfArrival='" + timeOfArrival + '\'' +
                 ", requestSet1=" + requestSet1 +
                 ", ticketSet1=" + ticketSet1 +
                 '}';
+    }
+
+    public Trip() {
+    }
+
+    public Trip(LocalDate departure, LocalDate arrival, int capacity, TripType tripTypeId, TransportType transportTypeId, Company companyId, Location locationFrom, Location locationTo, String timeOfDeparture, String timeOfArrival) {
+        this.departure = departure;
+        this.arrival = arrival;
+        this.capacity = capacity;
+        this.tripTypeId = tripTypeId;
+        this.transportTypeId = transportTypeId;
+        this.companyId = companyId;
+        this.locationFrom = locationFrom;
+        this.locationTo = locationTo;
+        this.timeOfDeparture = timeOfDeparture;
+        this.timeOfArrival = timeOfArrival;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Trip trip = (Trip) o;
+        return capacity == trip.capacity && Objects.equals(departure, trip.departure) && Objects.equals(arrival, trip.arrival) && Objects.equals(tripTypeId, trip.tripTypeId) && Objects.equals(transportTypeId, trip.transportTypeId) && Objects.equals(companyId, trip.companyId) && Objects.equals(locationFrom, trip.locationFrom) && Objects.equals(locationTo, trip.locationTo) && Objects.equals(timeOfDeparture, trip.timeOfDeparture) && Objects.equals(timeOfArrival, trip.timeOfArrival);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(departure, arrival, capacity, tripTypeId, transportTypeId, companyId, locationFrom, locationTo, timeOfDeparture, timeOfArrival);
     }
 }

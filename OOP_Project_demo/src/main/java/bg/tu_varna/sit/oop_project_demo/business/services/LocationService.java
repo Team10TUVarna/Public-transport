@@ -3,9 +3,12 @@ package bg.tu_varna.sit.oop_project_demo.business.services;
 import bg.tu_varna.sit.oop_project_demo.data.entities.Location;
 import bg.tu_varna.sit.oop_project_demo.data.repositories.LocationRepository;
 import bg.tu_varna.sit.oop_project_demo.presentation.models.LocationListViewModel;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import org.apache.log4j.Logger;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class LocationService {
     private static final Logger log=Logger.getLogger(LocationService.class);
@@ -82,5 +85,14 @@ public class LocationService {
         }
         log.error("Location not found!");
         return null;
+    }
+
+    public ObservableList<LocationListViewModel> getAllLocations() {
+        List<Location> l = repository.getAll();
+
+        return FXCollections.observableList(
+                l.stream().map(w -> new LocationListViewModel(
+                        w.getLocationName()
+                )).collect(Collectors.toList()));
     }
 }

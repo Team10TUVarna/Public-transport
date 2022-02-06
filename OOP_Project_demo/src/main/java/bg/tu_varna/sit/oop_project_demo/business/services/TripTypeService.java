@@ -1,11 +1,16 @@
 package bg.tu_varna.sit.oop_project_demo.business.services;
 
+import bg.tu_varna.sit.oop_project_demo.data.entities.TransportType;
 import bg.tu_varna.sit.oop_project_demo.data.entities.TripType;
 import bg.tu_varna.sit.oop_project_demo.data.repositories.TripTypeRepository;
+import bg.tu_varna.sit.oop_project_demo.presentation.models.TransportTypeListViewModel;
 import bg.tu_varna.sit.oop_project_demo.presentation.models.TripTypeListViewModel;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import org.apache.log4j.Logger;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class TripTypeService {
     private static final Logger log=Logger.getLogger(TripTypeService.class);
@@ -42,15 +47,15 @@ public class TripTypeService {
     }*/
 
     public int createTripType(TripTypeListViewModel a){
-        TripType location=new TripType(a.getTripTypeName());
-        if(checkIfTripTypeExists(location)){
+        TripType tripType=new TripType(a.getTripTypeName());
+        if(checkIfTripTypeExists(tripType)){
             log.info("TripType "+a+" already exists!");
             return 0;
         }
         else {
             try{
-                repository.save(location);
-                log.info("TripType "+location.getTripTypeName()+" created!");
+                repository.save(tripType);
+                log.info("TripType "+tripType.getTripTypeName()+" created!");
             }
             catch (Exception e) {
                 e.printStackTrace();
@@ -82,5 +87,14 @@ public class TripTypeService {
         }
         log.error("TripType not found!");
         return null;
+    }
+
+    public ObservableList<TripTypeListViewModel> getAllTripTypes() {
+        List<TripType> l = repository.getAll();
+
+        return FXCollections.observableList(
+                l.stream().map(w -> new TripTypeListViewModel(
+                        w.getTripTypeName()
+                )).collect(Collectors.toList()));
     }
 }

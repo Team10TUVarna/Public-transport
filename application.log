@@ -35,3 +35,54 @@
 [JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.data.repositories.CompanyRepository  - Company save error. could not execute statement
 [JavaFX Application Thread] ERROR org.hibernate.AssertionFailure  - HHH000099: an assertion failure occurred (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session): org.hibernate.AssertionFailure: null id in bg.tu_varna.sit.oop_project_demo.data.entities.Company entry (don't flush the Session after an exception occurs)
 [JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.business.services.CompanyService  - Create company error!
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.business.services.CompanyService  - Company not found!
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.data.repositories.TripRepository  - Trip save error. not-null property references a null or transient value : bg.tu_varna.sit.oop_project_demo.data.entities.Trip.companyId
+[JavaFX Application Thread] ERROR org.hibernate.AssertionFailure  - HHH000099: an assertion failure occurred (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session): org.hibernate.AssertionFailure: null id in bg.tu_varna.sit.oop_project_demo.data.entities.Trip entry (don't flush the Session after an exception occurs)
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.business.services.TripService  - Create trip error!
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.business.services.CompanyService  - Company not found!
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.data.repositories.TripRepository  - Trip save error. not-null property references a null or transient value : bg.tu_varna.sit.oop_project_demo.data.entities.Trip.companyId
+[JavaFX Application Thread] ERROR org.hibernate.AssertionFailure  - HHH000099: an assertion failure occurred (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session): org.hibernate.AssertionFailure: null id in bg.tu_varna.sit.oop_project_demo.data.entities.Trip entry (don't flush the Session after an exception occurs)
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.business.services.TripService  - Create trip error!
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.business.services.CompanyService  - Company not found!
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.data.repositories.TripRepository  - Trip save error. not-null property references a null or transient value : bg.tu_varna.sit.oop_project_demo.data.entities.Trip.companyId
+[JavaFX Application Thread] ERROR org.hibernate.AssertionFailure  - HHH000099: an assertion failure occurred (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session): org.hibernate.AssertionFailure: null id in bg.tu_varna.sit.oop_project_demo.data.entities.Trip entry (don't flush the Session after an exception occurs)
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.business.services.TripService  - Create trip error!
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.business.services.CompanyService  - Company not found!
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.data.repositories.TripRepository  - Trip save error. not-null property references a null or transient value : bg.tu_varna.sit.oop_project_demo.data.entities.Trip.companyId
+[JavaFX Application Thread] ERROR org.hibernate.AssertionFailure  - HHH000099: an assertion failure occurred (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session): org.hibernate.AssertionFailure: null id in bg.tu_varna.sit.oop_project_demo.data.entities.Trip entry (don't flush the Session after an exception occurs)
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.business.services.TripService  - Create trip error!
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.business.services.CompanyService  - Company not found!
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.business.services.CompanyService  - Company not found!
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.data.repositories.TripRepository  - Trip save error. not-null property references a null or transient value : bg.tu_varna.sit.oop_project_demo.data.entities.Trip.companyId
+[JavaFX Application Thread] ERROR org.hibernate.AssertionFailure  - HHH000099: an assertion failure occurred (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session): org.hibernate.AssertionFailure: null id in bg.tu_varna.sit.oop_project_demo.data.entities.Trip entry (don't flush the Session after an exception occurs)
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.business.services.TripService  - Create trip error!
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.business.services.CompanyService  - Company not found!
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.data.repositories.TripRepository  - Trip save error. not-null property references a null or transient value : bg.tu_varna.sit.oop_project_demo.data.entities.Trip.companyId
+[JavaFX Application Thread] ERROR org.hibernate.AssertionFailure  - HHH000099: an assertion failure occurred (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session): org.hibernate.AssertionFailure: null id in bg.tu_varna.sit.oop_project_demo.data.entities.Trip entry (don't flush the Session after an exception occurs)
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.business.services.TripService  - Create trip error!
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.business.services.CompanyService  - Company not found!
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.data.repositories.TripRepository  - Trip save error. not-null property references a null or transient value : bg.tu_varna.sit.oop_project_demo.data.entities.Trip.companyId
+[JavaFX Application Thread] ERROR org.hibernate.AssertionFailure  - HHH000099: an assertion failure occurred (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session): org.hibernate.AssertionFailure: null id in bg.tu_varna.sit.oop_project_demo.data.entities.Trip entry (don't flush the Session after an exception occurs)
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.business.services.TripService  - Create trip error!
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.business.services.CompanyService  - Company not found!
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.data.repositories.TripRepository  - Trip save error. not-null property references a null or transient value : bg.tu_varna.sit.oop_project_demo.data.entities.Trip.companyId
+[JavaFX Application Thread] ERROR org.hibernate.AssertionFailure  - HHH000099: an assertion failure occurred (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session): org.hibernate.AssertionFailure: null id in bg.tu_varna.sit.oop_project_demo.data.entities.Trip entry (don't flush the Session after an exception occurs)
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.business.services.TripService  - Create trip error!
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.business.services.CompanyService  - Company not found!
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.business.services.CompanyService  - Company login error!
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.business.services.CompanyService  - Company not found!
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.data.repositories.TripRepository  - Trip save error. not-null property references a null or transient value : bg.tu_varna.sit.oop_project_demo.data.entities.Trip.companyId
+[JavaFX Application Thread] ERROR org.hibernate.AssertionFailure  - HHH000099: an assertion failure occurred (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session): org.hibernate.AssertionFailure: null id in bg.tu_varna.sit.oop_project_demo.data.entities.Trip entry (don't flush the Session after an exception occurs)
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.business.services.TripService  - Create trip error!
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.business.services.CompanyService  - Company not found!
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.business.services.CompanyService  - Company login error!
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.business.services.CompanyService  - Company not found!
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.business.services.CompanyService  - Company login error!
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.business.services.CompanyService  - Company not found!
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.data.repositories.TripRepository  - Trip save error. not-null property references a null or transient value : bg.tu_varna.sit.oop_project_demo.data.entities.Trip.companyId
+[JavaFX Application Thread] ERROR org.hibernate.AssertionFailure  - HHH000099: an assertion failure occurred (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session): org.hibernate.AssertionFailure: null id in bg.tu_varna.sit.oop_project_demo.data.entities.Trip entry (don't flush the Session after an exception occurs)
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.business.services.TripService  - Create trip error!
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.business.services.CompanyService  - Company not found!
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.data.repositories.TripRepository  - Trip save error. not-null property references a null or transient value : bg.tu_varna.sit.oop_project_demo.data.entities.Trip.companyId
+[JavaFX Application Thread] ERROR org.hibernate.AssertionFailure  - HHH000099: an assertion failure occurred (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session): org.hibernate.AssertionFailure: null id in bg.tu_varna.sit.oop_project_demo.data.entities.Trip entry (don't flush the Session after an exception occurs)
+[JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.business.services.TripService  - Create trip error!

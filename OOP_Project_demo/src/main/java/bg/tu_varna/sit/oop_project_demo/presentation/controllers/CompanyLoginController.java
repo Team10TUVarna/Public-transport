@@ -10,6 +10,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+
+import static bg.tu_varna.sit.oop_project_demo.common.Constants.User.loggedCompanyUsername;
 import static bg.tu_varna.sit.oop_project_demo.common.Constants.User.trackUser;
 import static bg.tu_varna.sit.oop_project_demo.common.Constants.View.*;
 
@@ -36,11 +38,12 @@ public class CompanyLoginController {
         {
             try {
                 trackUser = 2;
+                loggedCompanyUsername = companyToLogIn.getUsername();
+                System.out.println("Logged company username: " + loggedCompanyUsername);
                 Stage s = (Stage) loginButton.getScene().getWindow();
                 s.close();
                 FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(COMPANY_VIEW));
                 Stage stage = new Stage();
-                //fxmlLoader.setController(new AdminViewController());
                 Parent root1 = (Parent) fxmlLoader.load();
                 stage.setScene(new Scene(root1));
                 stage.setResizable(false);
@@ -53,10 +56,7 @@ public class CompanyLoginController {
         }
         else{
             Alert alert=new Alert(Alert.AlertType.INFORMATION,"No such user!", ButtonType.OK);
-            /*DialogPane dialogPane = alert.getDialogPane();
-            dialogPane.getStylesheets().add("Alerts.css");
-            dialogPane.getStyleClass().add("Alert");
-            alert.show();*/
+            alert.show();
             username.setText("");
             password.setText("");
         }

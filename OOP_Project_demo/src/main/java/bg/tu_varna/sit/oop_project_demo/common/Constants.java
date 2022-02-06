@@ -31,5 +31,6 @@ public class Constants {
 
     public static class User {
         public static int trackUser = 0;
+        public static String loggedCompanyUsername = "";
     }
 }

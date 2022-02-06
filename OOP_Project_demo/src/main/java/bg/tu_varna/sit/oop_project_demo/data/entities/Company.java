@@ -47,6 +47,14 @@ public class Company {
         this.honorarium = honorarium;
     }
 
+    /*public Company(int companyId, String companyName, String username, String password, double honorarium) {
+        this.companyId = companyId;
+        this.companyName = companyName;
+        this.username = username;
+        this.password = password;
+        this.honorarium = honorarium;
+    }*/
+
     @Override
     public String toString() {
         return "Company{" +
