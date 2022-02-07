@@ -13,6 +13,7 @@ import javafx.scene.control.*;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
+import static bg.tu_varna.sit.oop_project_demo.common.Constants.User.loggedDistributorUsername;
 import static bg.tu_varna.sit.oop_project_demo.common.Constants.View.*;
 import static bg.tu_varna.sit.oop_project_demo.common.Constants.User.trackUser;
 
@@ -39,6 +40,7 @@ public class DistributorLoginController {
         {
             try {
                 trackUser = 3;
+                loggedDistributorUsername = distributorToLogIn.getUsername();
                 Stage s = (Stage) loginButton.getScene().getWindow();
                 s.close();
                 FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(DISTRIBUTOR_VIEW));

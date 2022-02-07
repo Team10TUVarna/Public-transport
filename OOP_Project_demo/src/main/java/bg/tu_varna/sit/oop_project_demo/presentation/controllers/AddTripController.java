@@ -91,6 +91,12 @@ public class AddTripController implements Initializable {
         }
     }
 
+    public void onLogoutButtonClick()
+    {
+        trackUser = 0;
+        loadNewPage(HELLO_VIEW);
+    }
+
     public void onGoBackButtonClick(){
         if (trackUser == 1)
             loadNewPage(ADMIN_VIEW);

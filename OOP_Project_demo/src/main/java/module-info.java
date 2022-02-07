@@ -27,4 +27,8 @@ module bg.tu_varna.sit.oop_project_demo {
 
     exports bg.tu_varna.sit.oop_project_demo.presentation.controllers;
     opens bg.tu_varna.sit.oop_project_demo.presentation.controllers to javafx.fxml;
+
+    exports bg.tu_varna.sit.oop_project_demo.presentation.models;
+    opens  bg.tu_varna.sit.oop_project_demo.presentation.models to javafx.base;
+
 }

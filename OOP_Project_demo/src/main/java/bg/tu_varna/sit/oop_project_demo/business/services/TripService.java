@@ -88,6 +88,26 @@ public class TripService {
                         w.getTripTypeName()
                 )).collect(Collectors.toList()));
     }*/
+
+    public ObservableList<TripListViewModel> getAllTrips() {
+        List<Trip> l = repository.getAll();
+
+        return FXCollections.observableList(
+                l.stream().map(w -> new TripListViewModel(
+                        w.getDeparture(),
+                        w.getArrival(),
+                        w.getCapacity(),
+                        w.getTripTypeId(),
+                        w.getTransportTypeId(),
+                        w.getCompanyId(),
+                        w.getLocationFrom(),
+                        w.getLocationTo(),
+                        w.getTimeOfDeparture(),
+                        w.getTimeOfArrival()
+                )).collect(Collectors.toList()));
+    }
+
+
     public int createTrip(TripListViewModel a){
         TripService tripService=TripService.getInstance();
         Trip trip=new Trip(a.getDeparture(), a.getArrival(), a.getCapacity(), tripTypeService.getTripTypeByName(a.getTripTypeId().getTripTypeName()),
@@ -144,7 +164,7 @@ public class TripService {
         List<Trip> all=repository.getAll();
         Trip temp=new Trip(trip.getDeparture(), trip.getArrival(), trip.getCapacity(), tripTypeService.getTripTypeByName(trip.getTripTypeId().getTripTypeName()),
                 transportTypeService.getTransportTypeByName(trip.getTransportTypeId().getTransportTypeName()),
-                companyService.getCompanyByName(trip.getCompanyId().getCompanyName()),locationService.getLocationByName(trip.getLocationFrom().getLocationName()),
+                companyService.getCompanyByName(trip.getCompanyId().getUsername()),locationService.getLocationByName(trip.getLocationFrom().getLocationName()),
                 locationService.getLocationByName(trip.getLocationTo().getLocationName()), trip.getTimeOfDeparture(), trip.getTimeOfArrival());
         for(Trip p:all){
             if(p.equals(temp)){

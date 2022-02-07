@@ -115,6 +115,14 @@ public class Company {
         this.requestSet3 = requestSet3;
     }
 
+    public Set<Trip> getTripSet3() {
+        return tripSet3;
+    }
+
+    public void setTripSet3(Set<Trip> tripSet3) {
+        this.tripSet3 = tripSet3;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

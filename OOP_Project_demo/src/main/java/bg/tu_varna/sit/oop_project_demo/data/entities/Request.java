@@ -89,6 +89,19 @@ public class Request {
     public void setCompanyId(Company companyId) {
         this.companyId = companyId;
     }
+
+    public Request() {
+    }
+
+    public Request(int ticketCount, String status, Trip tripId, Distributor distributorId, Company companyId) {
+        this.ticketCount = ticketCount;
+        this.status = status;
+        this.tripId = tripId;
+        this.distributorId = distributorId;
+        this.companyId = companyId;
+    }
+
+
 }
 
 
