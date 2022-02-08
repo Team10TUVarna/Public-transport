@@ -41,7 +41,7 @@
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="484.0" layoutY="105.0" mnemonicParsing="false" text="Button">
+      <Button fx:id="addTripTypeButton" layoutX="451.0" layoutY="105.0" mnemonicParsing="false" text="Add Trip Type">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
