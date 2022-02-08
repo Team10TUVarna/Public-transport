@@ -35,5 +35,6 @@ public class Constants {
         public static int trackUser = 0;
         public static String loggedCompanyUsername = "";
         public static String loggedDistributorUsername = "";
+        public static String loggedCashierUsername = "";
     }
 }
