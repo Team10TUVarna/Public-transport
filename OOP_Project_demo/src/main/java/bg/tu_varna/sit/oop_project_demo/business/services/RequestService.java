@@ -3,12 +3,16 @@ package bg.tu_varna.sit.oop_project_demo.business.services;
 import bg.tu_varna.sit.oop_project_demo.data.entities.Request;
 import bg.tu_varna.sit.oop_project_demo.data.repositories.RequestRepository;
 import bg.tu_varna.sit.oop_project_demo.presentation.models.RequestListViewModel;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.Initializable;
 import org.apache.log4j.Logger;
 
 import java.net.URL;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.ResourceBundle;
+import java.util.stream.Collectors;
 
 public class RequestService {
     private static final Logger log=Logger.getLogger(RequestService.class);
@@ -60,5 +64,25 @@ public class RequestService {
         }
         log.info("No such request.");
         return null;
+    }
+
+    public ObservableList<RequestListViewModel> getPendingRequests()
+    {
+        List<Request> all = repository.getAll();
+        List<Request> res = new LinkedList<>();
+        for (Request p:all)
+        {
+            if (p.getStatus().equals("pending")){
+                res.add(p);
+            }
+        }
+        return FXCollections.observableList(
+                res.stream().map(g -> new RequestListViewModel(
+                        g.getTicketCount(),
+                        g.getStatus(),
+                        g.getTripId(),
+                        g.getDistributorId(),
+                        g.getCompanyId()
+                )).collect(Collectors.toList()));
     }
 }

@@ -1,6 +1,7 @@
 package bg.tu_varna.sit.oop_project_demo.data.entities;
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Objects;
 import java.util.Set;
 import java.time.LocalDate;
 
@@ -88,5 +89,29 @@ public class Ticket {
 
     public void setTripId(Trip tripId) {
         this.tripId = tripId;
+    }
+
+    public Ticket() {
+    }
+
+    public Ticket(int seatNumber, String customerName, LocalDate purchaseDate, Cashier cashierId, Trip tripId) {
+        this.seatNumber = seatNumber;
+        this.customerName = customerName;
+        this.purchaseDate = purchaseDate;
+        this.cashierId = cashierId;
+        this.tripId = tripId;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Ticket ticket = (Ticket) o;
+        return Objects.equals(customerName, ticket.customerName) && Objects.equals(purchaseDate, ticket.purchaseDate) && Objects.equals(cashierId, ticket.cashierId) && Objects.equals(tripId, ticket.tripId);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(customerName, purchaseDate, cashierId, tripId);
     }
 }

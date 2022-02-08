@@ -11,8 +11,7 @@ import javafx.stage.Stage;
 
 import static bg.tu_varna.sit.oop_project_demo.common.Constants.User.loggedCompanyUsername;
 import static bg.tu_varna.sit.oop_project_demo.common.Constants.User.trackUser;
-import static bg.tu_varna.sit.oop_project_demo.common.Constants.View.ADD_TRIP;
-import static bg.tu_varna.sit.oop_project_demo.common.Constants.View.HELLO_VIEW;
+import static bg.tu_varna.sit.oop_project_demo.common.Constants.View.*;
 
 public class CompanyViewController {
 
@@ -28,9 +27,15 @@ public class CompanyViewController {
     @FXML
     private Button r;
 
+    @FXML
+    private Button requestButton;
+
 
     public void onAddTripButtonClick(ActionEvent event) {
         loadNewPage(ADD_TRIP);
+    }
+    public void onRequestButtonClick(){
+        loadNewPage(ALL_REQUESTS);
     }
 
 

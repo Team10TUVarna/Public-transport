@@ -20,6 +20,7 @@ public class Constants {
         public static final String ADD_TRANSPORTTYPE = "/bg/tu_varna/sit/oop_project_demo/presentation.views/add/add-transporttype.fxml";
         public static final String ADD_TRIP = "/bg/tu_varna/sit/oop_project_demo/presentation.views/add/add-trip.fxml";
         public static final String ADD_REQUEST = "/bg/tu_varna/sit/oop_project_demo/presentation.views/add/add-request.fxml";
+        public static final String ALL_REQUESTS = "/bg/tu_varna/sit/oop_project_demo/presentation.views/viewAll/all-requests.fxml";
     }
 
     public static class Configurations {

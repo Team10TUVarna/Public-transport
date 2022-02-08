@@ -1,11 +1,19 @@
 package bg.tu_varna.sit.oop_project_demo.business.services;
 
 import bg.tu_varna.sit.oop_project_demo.data.entities.Company;
+import bg.tu_varna.sit.oop_project_demo.data.entities.Request;
 import bg.tu_varna.sit.oop_project_demo.data.repositories.CompanyRepository;
 import bg.tu_varna.sit.oop_project_demo.presentation.models.CompanyListViewModel;
+import bg.tu_varna.sit.oop_project_demo.presentation.models.RequestListViewModel;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import org.apache.log4j.Logger;
 
+import java.util.LinkedList;
 import java.util.List;
+import java.util.stream.Collectors;
+
+import static bg.tu_varna.sit.oop_project_demo.common.Constants.User.loggedCompanyUsername;
 
 public class CompanyService {
     private static final Logger log=Logger.getLogger(CompanyService.class);
@@ -82,5 +90,27 @@ public class CompanyService {
         }
         log.error("Company not found!");
         return null;
+    }
+
+    public ObservableList<RequestListViewModel> getMyPendingRequests()
+    {
+        RequestService requestService = RequestService.getInstance();
+        List<RequestListViewModel> allRequests = requestService.getPendingRequests();
+        List<RequestListViewModel> myRequests = new LinkedList<>();
+        for(RequestListViewModel p:allRequests)
+        {
+            if(p.getCompanyId().getUsername().equals(loggedCompanyUsername))
+            {
+                myRequests.add(p);
+            }
+        }
+        return FXCollections.observableList(
+                myRequests.stream().map(g -> new RequestListViewModel(
+                        g.getTicketCount(),
+                        g.getStatus(),
+                        g.getTripId(),
+                        g.getDistributorId(),
+                        g.getCompanyId()
+                )).collect(Collectors.toList()));
     }
 }
