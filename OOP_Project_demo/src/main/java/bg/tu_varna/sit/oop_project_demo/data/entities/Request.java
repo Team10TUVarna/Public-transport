@@ -1,6 +1,7 @@
 package bg.tu_varna.sit.oop_project_demo.data.entities;
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Objects;
 import java.util.Set;
 
 @Table(name = "Request")
@@ -101,7 +102,18 @@ public class Request {
         this.companyId = companyId;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Request request = (Request) o;
+        return ticketCount == request.ticketCount && Objects.equals(status, request.status) && Objects.equals(tripId, request.tripId) && Objects.equals(distributorId, request.distributorId) && Objects.equals(companyId, request.companyId);
+    }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(ticketCount, status, tripId, distributorId, companyId);
+    }
 }
 
 

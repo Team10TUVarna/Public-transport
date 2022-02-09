@@ -50,7 +50,7 @@
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <Button fx:id="addTicketRequestButton" layoutX="294.0" layoutY="105.0" mnemonicParsing="false" onAction="#onAddRequestButtonClick" text="Add Ticket Request">
+      <Button fx:id="addTicketRequestButton" layoutX="327.0" layoutY="105.0" mnemonicParsing="false" onAction="#onAddRequestButtonClick" text="Request Tickets">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>

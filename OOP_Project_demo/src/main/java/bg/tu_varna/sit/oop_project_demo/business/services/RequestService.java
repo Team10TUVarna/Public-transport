@@ -54,9 +54,10 @@ public class RequestService {
     public Request getRequest(RequestListViewModel request)
     {
         List<Request> all = repository.getAll();
+
         Request temp = new Request(request.getTicketCount(), request.getStatus(), request.getTripId(),
-                distributorService.getDistributorByName(request.getDistributorId().getUsername()),
-                companyService.getCompanyByName(request.getCompanyId().getUsername()));
+                request.getDistributorId() /*distributorService.getDistributorByName(request.getDistributorId().getUsername())*/,
+                request.getCompanyId()/*companyService.getCompanyByName(request.getCompanyId().getUsername())*/);
         for (Request p:all)
         {
             if (p.equals(temp))
@@ -84,5 +85,18 @@ public class RequestService {
                         g.getDistributorId(),
                         g.getCompanyId()
                 )).collect(Collectors.toList()));
+    }
+    public boolean updateRequestStatus(RequestListViewModel a, String s){
+        Request request = getRequest(a);
+        request.setStatus(s);
+        try{
+            repository.update(request);
+            log.info("Request updated successfully!");
+            return true;
+        }catch(Exception e){
+            e.printStackTrace();
+            log.error("Error updating request!");
+            return false;
+        }
     }
 }

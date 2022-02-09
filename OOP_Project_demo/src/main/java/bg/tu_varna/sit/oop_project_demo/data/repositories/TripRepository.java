@@ -38,12 +38,30 @@ public class TripRepository implements DAORepository<Trip>{
 
     @Override
     public void update(Trip obj) {
-
+        Session session = Connection.openSession();
+        Transaction transaction = session.beginTransaction();
+        try {
+            session.update(obj);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            transaction.commit();
+            session.close();
+        }
     }
 
     @Override
     public void delete(Trip obj) {
-
+        Session session = Connection.openSession();
+        Transaction transaction = session.beginTransaction();
+        try {
+            session.delete(obj);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            transaction.commit();
+            session.close();
+        }
     }
 
     @Override

@@ -38,12 +38,30 @@ public class TransportTypeRepository implements DAORepository<TransportType>{
 
     @Override
     public void update(TransportType obj) {
-
+        Session session = Connection.openSession();
+        Transaction transaction = session.beginTransaction();
+        try {
+            session.update(obj);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            transaction.commit();
+            session.close();
+        }
     }
 
     @Override
     public void delete(TransportType obj) {
-
+        Session session = Connection.openSession();
+        Transaction transaction = session.beginTransaction();
+        try {
+            session.delete(obj);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            transaction.commit();
+            session.close();
+        }
     }
 
     @Override

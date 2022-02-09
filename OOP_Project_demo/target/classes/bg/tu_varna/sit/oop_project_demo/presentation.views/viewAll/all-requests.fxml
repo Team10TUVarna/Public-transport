@@ -54,12 +54,12 @@
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <Button fx:id="approveButton" layoutX="200.0" layoutY="347.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="104.0" text="      Approve">
+      <Button fx:id="approveButton" layoutX="200.0" layoutY="347.0" mnemonicParsing="false" onAction="#onApproveButtonClick" prefHeight="28.0" prefWidth="104.0" text="      Approve">
          <font>
             <Font name="Book Antiqua" size="14.0" />
          </font>
       </Button>
-      <Button fx:id="rejectButton" layoutX="321.0" layoutY="347.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="104.0" text="     Reject">
+      <Button fx:id="rejectButton" layoutX="321.0" layoutY="347.0" mnemonicParsing="false" onAction="#onRejectButtonClick" prefHeight="28.0" prefWidth="104.0" text="     Reject">
          <font>
             <Font name="Book Antiqua" size="14.0" />
          </font>

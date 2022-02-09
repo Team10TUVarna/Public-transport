@@ -99,11 +99,10 @@ public class AddRequestController implements Initializable {
 
     public void onAddRequestButtonClick(ActionEvent event) {
         TripListViewModel selectedItem = tripTable.getSelectionModel().getSelectedItem();
-        TripListViewModel selectedItem1 = tripTable.getSelectionModel().getSelectedItem();
+        //TripListViewModel selectedItem1 = tripTable.getSelectionModel().getSelectedItem();
         RequestListViewModel request = new RequestListViewModel(Integer.parseInt(ticketsCount.getText()), "pending", tripService.getTrip(selectedItem),
-                distributorService.getDistributorByName(loggedDistributorUsername), /*companyService.getCompanyByName(tripService.getTrip(selectedItem).getCompanyId().getUsername())*/
-                /*companyService.getCompanyByName(selectedItem.getCompanyId().getUsername())*/
-                tripService.getTrip(selectedItem1).getCompanyId()/*selectedItem.getCompanyId()*/);
+                distributorService.getDistributorByName(loggedDistributorUsername),
+                tripService.getTrip(selectedItem).getCompanyId());
         int res=service.createRequest(request);
         if(res==0){
             Alert alert=new Alert(Alert.AlertType.CONFIRMATION,"Request added", ButtonType.OK);
