@@ -1,5 +1,6 @@
 package bg.tu_varna.sit.oop_project_demo.business.services;
 
+import bg.tu_varna.sit.oop_project_demo.data.entities.Request;
 import bg.tu_varna.sit.oop_project_demo.data.entities.Ticket;
 import bg.tu_varna.sit.oop_project_demo.data.repositories.RequestRepository;
 import bg.tu_varna.sit.oop_project_demo.data.repositories.TicketRepository;
@@ -8,6 +9,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import org.apache.log4j.Logger;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -58,5 +60,34 @@ public class TicketService {
                         g.getTripId()
                 )).collect(Collectors.toList())
         );
+    }
+
+    public Ticket getTicket(TicketListViewModel ticket){
+        List<Ticket> all = repository.getAll();
+        Ticket temp = new Ticket(ticket.getSeatNumber(), ticket.getCustomerName(), ticket.getPurchaseDate(), ticket.getCashierId(), ticket.getTripId());
+        for (Ticket p:all)
+        {
+            if (p.equals(temp) && p.getCustomerName().equals("NOT SOLD"))
+                return p;
+        }
+        log.info("No such ticket.");
+        return null;
+    }
+
+    public boolean updateTicket(TicketListViewModel a, String s){
+        Ticket ticket = getTicket(a);
+        LocalDate date = LocalDate.now();
+        ticket.setCustomerName(s);
+        ticket.setCashierId(cashierService.getCashierByName(loggedCashierUsername));
+        ticket.setPurchaseDate(date);
+        try{
+            repository.update(ticket);
+            log.info("Ticket updated successfully!");
+            return true;
+        }catch(Exception e){
+            e.printStackTrace();
+            log.error("Error updating ticket!");
+            return false;
+        }
     }
 }

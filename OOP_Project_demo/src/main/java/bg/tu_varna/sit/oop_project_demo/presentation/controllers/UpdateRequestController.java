@@ -63,8 +63,8 @@ public class UpdateRequestController implements Initializable {
     @FXML
     private TableView<RequestListViewModel> requestTable;
 
-    @FXML
-    void goBack(ActionEvent event) {
+
+    public void goBack(ActionEvent event) {
 
     }
 

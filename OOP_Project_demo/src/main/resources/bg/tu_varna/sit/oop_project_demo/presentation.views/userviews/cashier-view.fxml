@@ -8,11 +8,11 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E2F2FA;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E2F2FA;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bg.tu_varna.sit.oop_project_demo.presentation.controllers.CashierViewController">
    <children>
       <Pane layoutX="101.0" layoutY="-8.0" prefHeight="46.0" prefWidth="500.0" style="-fx-background-color: #375E72FF;">
          <children>
-            <Button fx:id="logout" layoutX="426.0" layoutY="15.0" mnemonicParsing="false" style="-fx-background-color: transperent;" text="Log Out" textFill="WHITE">
+            <Button fx:id="logout" layoutX="426.0" layoutY="15.0" mnemonicParsing="false" onAction="#onLogoutButtonClick" style="-fx-background-color: transperent;" text="Log Out" textFill="WHITE">
                <font>
                   <Font name="Book Antiqua" size="13.0" />
                </font>
@@ -34,7 +34,7 @@
          </image>
       </ImageView>
       <Separator layoutX="121.0" layoutY="101.0" prefHeight="8.0" prefWidth="479.0" style="-fx-background-color: #375E72FF;" />
-      <Button fx:id="createCompany" layoutX="154.0" layoutY="62.0" mnemonicParsing="false" text="Create Form">
+      <Button layoutX="154.0" layoutY="62.0" mnemonicParsing="false" text="Create Form">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
@@ -51,7 +51,7 @@
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <Button fx:id="createCompany1" layoutX="154.0" layoutY="144.0" mnemonicParsing="false" text="Check Forms">
+      <Button fx:id="sellTicketButton" layoutX="154.0" layoutY="144.0" mnemonicParsing="false" onAction="#onSellTicketButtonClick" text="Sell ticket">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>

@@ -10,11 +10,11 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E2F2FA;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E2F2FA;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bg.tu_varna.sit.oop_project_demo.presentation.controllers.BuyTicketController">
    <children>
       <Pane layoutX="101.0" layoutY="-8.0" prefHeight="112.0" prefWidth="500.0" style="-fx-background-color: #375E72FF;">
          <children>
-            <Button fx:id="logout" layoutX="431.0" layoutY="17.0" mnemonicParsing="false" style="-fx-background-color: transperent;" text="Log Out" textFill="WHITE">
+            <Button fx:id="logout" layoutX="431.0" layoutY="17.0" mnemonicParsing="false" onAction="#onLogoutButtonClick" style="-fx-background-color: transperent;" text="Log Out" textFill="WHITE">
                <font>
                   <Font name="Book Antiqua" size="13.0" />
                </font>
@@ -24,7 +24,7 @@
                   <Image url="@../../images/logout.png" />
                </image>
             </ImageView>
-            <Label layoutX="65.0" layoutY="74.0" text="Tickets:" textFill="WHITE">
+            <Label layoutX="65.0" layoutY="74.0" text="Buy a ticket:" textFill="WHITE">
                <font>
                   <Font name="Book Antiqua" size="22.0" />
                </font>
@@ -45,24 +45,13 @@
             </ImageView>
          </children>
       </Pane>
-      <TextField fx:id="ticketID" layoutX="322.0" layoutY="301.0" prefHeight="25.0" prefWidth="116.0" />
-      <Button fx:id="deleteTicketButton" layoutX="474.0" layoutY="335.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="65.0" text="Delete">
-         <font>
-            <Font name="Book Antiqua" size="14.0" />
-         </font>
-      </Button>
-      <Label layoutX="176.0" layoutY="300.0" prefHeight="28.0" prefWidth="77.0" text="Ticket ID:" textFill="#233d48">
-         <font>
-            <Font name="Book Antiqua" size="14.0" />
-         </font>
-      </Label>
-      <Button fx:id="backButton" layoutX="24.0" layoutY="24.0" mnemonicParsing="false" onAction="#goBack" text="Go Back">
+      <Button fx:id="backButton" layoutX="24.0" layoutY="24.0" mnemonicParsing="false" onAction="#onGoBackButtonClick" text="Go Back">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
       <TextField fx:id="customerName" layoutX="322.0" layoutY="338.0" prefHeight="25.0" prefWidth="116.0" />
-      <Button fx:id="updateTicketButton" layoutX="474.0" layoutY="298.0" mnemonicParsing="false" text="Update">
+      <Button fx:id="buyTicketButton" layoutX="461.0" layoutY="337.0" mnemonicParsing="false" onAction="#onBuyTicketButtonClick" text="Buy ticket">
          <font>
             <Font name="Book Antiqua" size="14.0" />
          </font>
@@ -72,10 +61,16 @@
             <Font name="Book Antiqua" size="14.0" />
          </font>
       </Label>
-      <TableView fx:id="ticketTable" layoutX="125.0" layoutY="104.0" prefHeight="180.0" prefWidth="475.0">
+      <TableView fx:id="tableView" layoutY="104.0" prefHeight="180.0" prefWidth="600.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="C1" />
-          <TableColumn prefWidth="75.0" text="C2" />
+          <TableColumn fx:id="departureLocationColumn" prefWidth="88.0" text="Dep. location" />
+          <TableColumn fx:id="arrivalLocationColumn" prefWidth="95.0" text="Arrival location" />
+            <TableColumn fx:id="departureDateColumn" prefWidth="61.0" text="Dep. date" />
+            <TableColumn fx:id="departureHourColumn" minWidth="8.0" prefWidth="63.0" text="Dep. hour" />
+            <TableColumn fx:id="arrivalDateColumn" minWidth="0.0" prefWidth="75.0" text="Arrival date" />
+            <TableColumn fx:id="arrivalHourColumn" prefWidth="78.0" text="Arrival hour" />
+            <TableColumn fx:id="tripTypeColumn" prefWidth="66.0" text="Trip type" />
+            <TableColumn fx:id="transportTypeColumn" prefWidth="73.0" text="Transport" />
         </columns>
       </TableView>
    </children>

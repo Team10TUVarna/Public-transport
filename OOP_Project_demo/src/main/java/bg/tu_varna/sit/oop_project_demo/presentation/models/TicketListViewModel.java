@@ -23,6 +23,13 @@ public class TicketListViewModel {
         this.tripId = tripId;
     }
 
+    public TicketListViewModel(String customerName, LocalDate purchaseDate, Cashier cashierId, Trip tripId) {
+        this.customerName = customerName;
+        this.purchaseDate = purchaseDate;
+        this.cashierId = cashierId;
+        this.tripId = tripId;
+    }
+
     public int getSeatNumber() {
         return seatNumber;
     }

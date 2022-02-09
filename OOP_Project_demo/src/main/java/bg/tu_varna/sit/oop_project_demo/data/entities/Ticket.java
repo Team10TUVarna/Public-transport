@@ -102,16 +102,23 @@ public class Ticket {
         this.tripId = tripId;
     }
 
+    public Ticket(String customerName, LocalDate purchaseDate, Cashier cashierId, Trip tripId) {
+        this.customerName = customerName;
+        this.purchaseDate = purchaseDate;
+        this.cashierId = cashierId;
+        this.tripId = tripId;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Ticket ticket = (Ticket) o;
-        return Objects.equals(customerName, ticket.customerName) && Objects.equals(purchaseDate, ticket.purchaseDate) && Objects.equals(cashierId, ticket.cashierId) && Objects.equals(tripId, ticket.tripId);
+        return Objects.equals(tripId, ticket.tripId);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(customerName, purchaseDate, cashierId, tripId);
+        return Objects.hash(tripId);
     }
 }
