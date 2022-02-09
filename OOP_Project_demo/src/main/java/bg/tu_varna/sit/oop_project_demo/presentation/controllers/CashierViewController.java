@@ -1,20 +1,27 @@
 package bg.tu_varna.sit.oop_project_demo.presentation.controllers;
 
+import bg.tu_varna.sit.oop_project_demo.business.services.CashierService;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
+import java.net.URL;
+import java.util.ResourceBundle;
+
 import static bg.tu_varna.sit.oop_project_demo.common.Constants.User.loggedCashierUsername;
 import static bg.tu_varna.sit.oop_project_demo.common.Constants.User.trackUser;
 import static bg.tu_varna.sit.oop_project_demo.common.Constants.View.HELLO_VIEW;
 import static bg.tu_varna.sit.oop_project_demo.common.Constants.View.SELL_TICKET;
 
-public class CashierViewController {
+public class CashierViewController implements Initializable {
+
+    CashierService cashierService = CashierService.getInstance();
 
     @FXML
     private Label cashierName;
@@ -24,6 +31,8 @@ public class CashierViewController {
 
     @FXML
     private Button sellTicketButton;
+
+
 
 
     public void onSellTicketButtonClick(){
@@ -51,5 +60,11 @@ public class CashierViewController {
         } catch(Exception e) {
             e.printStackTrace();
         }
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        cashierName.setText("Hello, " + cashierService.getCashierByName(loggedCashierUsername).getCashierName()
+                + "      Honorarium: " + String.valueOf(cashierService.getCashierByName(loggedCashierUsername).getHonorarium()));
     }
 }

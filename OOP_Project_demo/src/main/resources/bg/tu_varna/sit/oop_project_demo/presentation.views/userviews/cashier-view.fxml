@@ -10,7 +10,7 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E2F2FA;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bg.tu_varna.sit.oop_project_demo.presentation.controllers.CashierViewController">
    <children>
-      <Pane layoutX="101.0" layoutY="-8.0" prefHeight="46.0" prefWidth="500.0" style="-fx-background-color: #375E72FF;">
+      <Pane fx:id="helloLabel" layoutX="101.0" layoutY="-8.0" prefHeight="46.0" prefWidth="500.0" style="-fx-background-color: #375E72FF;">
          <children>
             <Button fx:id="logout" layoutX="426.0" layoutY="15.0" mnemonicParsing="false" onAction="#onLogoutButtonClick" style="-fx-background-color: transperent;" text="Log Out" textFill="WHITE">
                <font>
@@ -22,11 +22,6 @@
                   <Image url="@../../images/logout.png" />
                </image>
             </ImageView>
-            <Label fx:id="cashierName" layoutX="25.0" layoutY="15.0" text="Hello, " textFill="WHITE">
-               <font>
-                  <Font name="Book Antiqua" size="18.0" />
-               </font>
-            </Label>
          </children></Pane>
       <ImageView fitHeight="74.0" fitWidth="89.0" layoutX="512.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -113,6 +108,11 @@
                   <Image url="@../../images/notification.png" />
                </image>
             </ImageView>
+            <Label fx:id="cashierName" layoutX="15.0" layoutY="2.0" text="Hello, " textFill="WHITE">
+               <font>
+                  <Font name="Book Antiqua" size="18.0" />
+               </font>
+            </Label>
          </children>
       </Pane>
    </children>

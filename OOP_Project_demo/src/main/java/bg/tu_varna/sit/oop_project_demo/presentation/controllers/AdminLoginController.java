@@ -11,6 +11,7 @@ import javafx.scene.control.*;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import static bg.tu_varna.sit.oop_project_demo.common.Constants.User.trackUser;
+import static bg.tu_varna.sit.oop_project_demo.common.Constants.User.loggedAdminUsername;
 import static bg.tu_varna.sit.oop_project_demo.common.Constants.View.ADMIN_VIEW;
 import static bg.tu_varna.sit.oop_project_demo.common.Constants.View.HELLO_VIEW;
 
@@ -43,6 +44,7 @@ public class AdminLoginController {
         {
             try {
                 trackUser = 1;
+                loggedAdminUsername = adminToLogIn.getUsername();
                 Stage s = (Stage) loginButton.getScene().getWindow();
                 s.close();
                 FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(ADMIN_VIEW));

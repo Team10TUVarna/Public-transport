@@ -1,19 +1,27 @@
 package bg.tu_varna.sit.oop_project_demo.presentation.controllers;
 
+import bg.tu_varna.sit.oop_project_demo.business.services.DistributorService;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
-import static bg.tu_varna.sit.oop_project_demo.common.Constants.User.trackUser;
+import java.net.URL;
+import java.util.ResourceBundle;
+
+import static bg.tu_varna.sit.oop_project_demo.common.Constants.User.*;
+import static bg.tu_varna.sit.oop_project_demo.common.Constants.User.loggedCashierUsername;
 import static bg.tu_varna.sit.oop_project_demo.common.Constants.View.ADD_REQUEST;
 import static bg.tu_varna.sit.oop_project_demo.common.Constants.View.HELLO_VIEW;
 
-public class DistributorViewController {
+public class DistributorViewController implements Initializable {
+
+    DistributorService distributorService = DistributorService.getInstance();
 
     @FXML
     private Button addCashierButton;
@@ -37,6 +45,7 @@ public class DistributorViewController {
     public void onLogoutButtonClick()
     {
         trackUser = 0;
+        loggedDistributorUsername = "";
         loadNewPage(HELLO_VIEW);
     }
 
@@ -57,5 +66,9 @@ public class DistributorViewController {
             e.printStackTrace();
         }
     }
-
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        distributorName.setText("Hello, " + distributorService.getDistributorByName(loggedDistributorUsername).getDistributorName()
+                + "      Honorarium: " + String.valueOf(distributorService.getDistributorByName(loggedDistributorUsername).getHonorarium()));
+    }
 }

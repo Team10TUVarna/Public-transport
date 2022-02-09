@@ -22,11 +22,6 @@
                   <Image url="@../../images/logout.png" />
                </image>
             </ImageView>
-            <Label fx:id="distributorName" layoutX="25.0" layoutY="15.0" text="Hello, " textFill="WHITE">
-               <font>
-                  <Font name="Book Antiqua" size="18.0" />
-               </font>
-            </Label>
          </children></Pane>
       <ImageView fitHeight="74.0" fitWidth="89.0" layoutX="512.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -162,6 +157,11 @@
             <Label layoutX="64.0" layoutY="181.0" text="Or" textFill="WHITE">
                <font>
                   <Font name="Book Antiqua" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="distributorName" layoutX="9.0" layoutY="3.0" text="Hello, " textFill="WHITE">
+               <font>
+                  <Font name="Book Antiqua" size="18.0" />
                </font>
             </Label>
          </children>
