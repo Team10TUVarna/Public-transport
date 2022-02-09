@@ -2561,3 +2561,11 @@
 [JavaFX Application Thread] ERROR org.hibernate.AssertionFailure  - HHH000099: an assertion failure occurred (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session): org.hibernate.AssertionFailure: null id in bg.tu_varna.sit.oop_project_demo.data.entities.Ticket entry (don't flush the Session after an exception occurs)
 [JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.business.services.TicketService  - Create ticket error!
 [JavaFX Application Thread] ERROR bg.tu_varna.sit.oop_project_demo.business.services.DistributorService  - Distributor not found!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Cashier login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Cashier login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
