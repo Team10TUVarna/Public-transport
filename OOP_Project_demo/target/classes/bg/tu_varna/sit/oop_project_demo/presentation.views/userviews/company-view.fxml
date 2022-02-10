@@ -45,11 +45,6 @@
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <Button fx:id="requestButton" layoutX="157.0" layoutY="127.0" mnemonicParsing="false" onAction="#onRequestButtonClick" text="Check Requests">
-         <font>
-            <Font name="Book Antiqua" size="13.0" />
-         </font>
-      </Button>
       <Button layoutX="459.0" layoutY="127.0" mnemonicParsing="false" text="Button">
          <font>
             <Font name="Book Antiqua" size="13.0" />
@@ -152,6 +147,11 @@
          </font>
       </Button>
       <Button fx:id="soldTicketsReportButton" layoutX="271.0" layoutY="267.0" mnemonicParsing="false" onAction="#onSoldTicketsReportButtonClick" text="Sold Tickets Report">
+         <font>
+            <Font name="Book Antiqua" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="requestButton" layoutX="157.0" layoutY="127.0" mnemonicParsing="false" onAction="#onRequestButtonClick" text="Check Requests">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>

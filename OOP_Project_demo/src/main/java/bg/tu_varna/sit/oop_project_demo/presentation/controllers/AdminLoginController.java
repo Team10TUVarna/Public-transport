@@ -35,8 +35,6 @@ public class AdminLoginController {
     public AdminLoginController() {
     }
 
-    public AdminLoginController(Stage stage) {
-    }
 
     public void onAdminLoginButtonClick(ActionEvent actionEvent) {
         AdminListViewModel adminToLogIn=new AdminListViewModel(username.getText(),password.getText());
@@ -64,13 +62,10 @@ public class AdminLoginController {
             }
         }
         else{
-            Alert alert=new Alert(Alert.AlertType.INFORMATION,"No such user!", ButtonType.OK);
-            /*DialogPane dialogPane = alert.getDialogPane();
-            dialogPane.getStylesheets().add("Alerts.css");
-            dialogPane.getStyleClass().add("Alert");
-            alert.show();*/
+            Alert alert=new Alert(Alert.AlertType.ERROR,"No such user!", ButtonType.OK);
+            alert.show();
             username.setText("");
-            password.setText("");
+            password.setText(null);
         }
     }
 

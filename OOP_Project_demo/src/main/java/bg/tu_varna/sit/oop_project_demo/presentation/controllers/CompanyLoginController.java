@@ -55,10 +55,10 @@ public class CompanyLoginController {
             }
         }
         else{
-            Alert alert=new Alert(Alert.AlertType.INFORMATION,"No such user!", ButtonType.OK);
+            Alert alert=new Alert(Alert.AlertType.ERROR,"No such user!", ButtonType.OK);
             alert.show();
             username.setText("");
-            password.setText("");
+            password.setText(null);
         }
     }
     public void goBack(ActionEvent actionEvent){
