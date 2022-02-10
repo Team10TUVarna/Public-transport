@@ -2698,3 +2698,387 @@
 [JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.TransportTypeRepository  - Got all transportTypes
 [JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.TripTypeRepository  - Got all tripTypes
 [JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.TripTypeRepository  - Got all tripTypes
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Cashier updated successfully!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Cashier updated successfully!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Cashier updated successfully!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Cashier updated successfully!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Cashier updated successfully!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Cashier updated successfully!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CompanyRepository  - Got all companies
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CompanyRepository  - Got all companies
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CompanyRepository  - Got all companies
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CompanyRepository  - Got all companies
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.DistributorRepository  - Got all distributors
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.DistributorRepository  - Got all distributors
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.DistributorRepository  - Got all distributors
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.DistributorRepository  - Got all distributors
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Cashier updated successfully!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Cashier updated successfully!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Cashier updated successfully!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Cashier updated successfully!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Cashier updated successfully!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Cashier updated successfully!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - The DELETE statement conflicted with the REFERENCE constraint "FK_Ticket_Cashier". The conflict occurred in database "Coursework", table "dbo.Ticket", column 'CashierID'.
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Cashier updated successfully!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Cashier updated successfully!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Cashier updated successfully!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Cashier updated successfully!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Cashier updated successfully!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Cashier updated successfully!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Successfully deleted cashier Cashier{cashierId=2, cashierName='AppTestCashier', username='cashier1', password='12345', honorarium=2300.0, ticketSet2=[]}
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Successfully deleted cashier Cashier{cashierId=2, cashierName='AppTestCashier', username='cashier1', password='12345', honorarium=2300.0, ticketSet2=[]}
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Successfully deleted cashier Cashier{cashierId=2, cashierName='AppTestCashier', username='cashier1', password='12345', honorarium=2300.0, ticketSet2=[]}
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Successfully deleted cashier Cashier{cashierId=2, cashierName='AppTestCashier', username='cashier1', password='12345', honorarium=2300.0, ticketSet2=[]}
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Cashier updated successfully!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Cashier updated successfully!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Cashier saved successfully
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Cashier saved successfully
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Cashier testt created!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Cashier testt created!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CompanyRepository  - Got all companies
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CompanyRepository  - Got all companies
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CompanyRepository  - Got all companies
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CompanyRepository  - Got all companies
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.DistributorRepository  - Got all distributors
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.DistributorRepository  - Got all distributors
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.DistributorRepository  - Got all distributors
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.DistributorRepository  - Got all distributors
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Successfully deleted cashier Cashier{cashierId=6, cashierName='IvayloShteEIztrit', username='testt', password='12345', honorarium=2500.0, ticketSet2=[]}
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Successfully deleted cashier Cashier{cashierId=6, cashierName='IvayloShteEIztrit', username='testt', password='12345', honorarium=2500.0, ticketSet2=[]}
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Successfully deleted cashier Cashier{cashierId=6, cashierName='IvayloShteEIztrit', username='testt', password='12345', honorarium=2500.0, ticketSet2=[]}
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Successfully deleted cashier Cashier{cashierId=6, cashierName='IvayloShteEIztrit', username='testt', password='12345', honorarium=2500.0, ticketSet2=[]}
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Successfully deleted cashier Cashier{cashierId=6, cashierName='IvayloShteEIztrit', username='testt', password='12345', honorarium=2500.0, ticketSet2=[]}
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Successfully deleted cashier Cashier{cashierId=6, cashierName='IvayloShteEIztrit', username='testt', password='12345', honorarium=2500.0, ticketSet2=[]}
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Successfully deleted cashier Cashier{cashierId=6, cashierName='IvayloShteEIztrit', username='testt', password='12345', honorarium=2500.0, ticketSet2=[]}
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Successfully deleted cashier Cashier{cashierId=6, cashierName='IvayloShteEIztrit', username='testt', password='12345', honorarium=2500.0, ticketSet2=[]}
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Successfully deleted cashier Cashier{cashierId=6, cashierName='IvayloShteEIztrit', username='testt', password='12345', honorarium=2500.0, ticketSet2=[]}
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Successfully deleted cashier Cashier{cashierId=6, cashierName='IvayloShteEIztrit', username='testt', password='12345', honorarium=2500.0, ticketSet2=[]}
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Cashier updated successfully!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Cashier updated successfully!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Successfully deleted cashier Cashier{cashierId=6, cashierName='IvayloShteEIztrit', username='testt', password='12345', honorarium=2600.0, ticketSet2=[]}
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Successfully deleted cashier Cashier{cashierId=6, cashierName='IvayloShteEIztrit', username='testt', password='12345', honorarium=2600.0, ticketSet2=[]}
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Cashier updated successfully!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Cashier updated successfully!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Successfully deleted cashier Cashier{cashierId=6, cashierName='IvayloShteEIztrit', username='testt', password='12345', honorarium=2500.0, ticketSet2=[]}
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Successfully deleted cashier Cashier{cashierId=6, cashierName='IvayloShteEIztrit', username='testt', password='12345', honorarium=2500.0, ticketSet2=[]}
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Successfully deleted cashier Cashier{cashierId=6, cashierName='IvayloShteEIztrit', username='testt', password='12345', honorarium=2500.0, ticketSet2=[]}
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Successfully deleted cashier Cashier{cashierId=6, cashierName='IvayloShteEIztrit', username='testt', password='12345', honorarium=2500.0, ticketSet2=[]}
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Successfully deleted cashier Cashier{cashierId=6, cashierName='IvayloShteEIztrit', username='testt', password='12345', honorarium=2500.0, ticketSet2=[]}
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Successfully deleted cashier Cashier{cashierId=6, cashierName='IvayloShteEIztrit', username='testt', password='12345', honorarium=2500.0, ticketSet2=[]}
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Successfully deleted cashier Cashier{cashierId=6, cashierName='IvayloShteEIztrit', username='testt', password='12345', honorarium=2500.0, ticketSet2=[]}
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Successfully deleted cashier Cashier{cashierId=6, cashierName='IvayloShteEIztrit', username='testt', password='12345', honorarium=2500.0, ticketSet2=[]}
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Successfully deleted cashier Cashier{cashierId=6, cashierName='IvayloShteEIztrit', username='testt', password='12345', honorarium=2500.0, ticketSet2=[]}
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Successfully deleted cashier Cashier{cashierId=6, cashierName='IvayloShteEIztrit', username='testt', password='12345', honorarium=2500.0, ticketSet2=[]}
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Successfully deleted cashier Cashier{cashierId=6, cashierName='IvayloShteEIztrit', username='testt', password='12345', honorarium=2500.0, ticketSet2=[]}
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Successfully deleted cashier Cashier{cashierId=6, cashierName='IvayloShteEIztrit', username='testt', password='12345', honorarium=2500.0, ticketSet2=[]}
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Successfully deleted cashier Cashier{cashierId=6, cashierName='IvayloShteEIztrit', username='testt', password='12345', honorarium=2500.0, ticketSet2=[]}
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Successfully deleted cashier Cashier{cashierId=6, cashierName='IvayloShteEIztrit', username='testt', password='12345', honorarium=2500.0, ticketSet2=[]}
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Cashier updated successfully!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Cashier updated successfully!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Successfully deleted cashier Cashier{cashierId=6, cashierName='IvayloShteEIztrit', username='testt', password='12345', honorarium=2600.0, ticketSet2=[]}
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Successfully deleted cashier Cashier{cashierId=6, cashierName='IvayloShteEIztrit', username='testt', password='12345', honorarium=2600.0, ticketSet2=[]}
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Successfully deleted cashier Cashier{cashierId=6, cashierName='IvayloShteEIztrit', username='testt', password='12345', honorarium=2600.0, ticketSet2=[]}
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Successfully deleted cashier Cashier{cashierId=6, cashierName='IvayloShteEIztrit', username='testt', password='12345', honorarium=2600.0, ticketSet2=[]}
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Invalid column name 'testt'.
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Successfully deleted cashier Cashier{cashierId=6, cashierName='IvayloShteEIztrit', username='testt', password='12345', honorarium=2600.0, ticketSet2=[]}
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Successfully deleted cashier Cashier{cashierId=6, cashierName='IvayloShteEIztrit', username='testt', password='12345', honorarium=2600.0, ticketSet2=[]}
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.AdminRepository  - Got all admins
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.AdminService  - Admin login successful!
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Successfully deleted cashier Cashier{cashierId=6, cashierName='IvayloShteEIztrit', username='testt', password='12345', honorarium=2600.0, ticketSet2=[]}
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.business.services.CashierService  - Successfully deleted cashier Cashier{cashierId=6, cashierName='IvayloShteEIztrit', username='testt', password='12345', honorarium=2600.0, ticketSet2=[]}
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers
+[JavaFX Application Thread] INFO  bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository  - Got all cashiers

@@ -8,7 +8,7 @@ import java.util.Set;
 
 @Table(name = "Distributor")
 @Entity
-public class Distributor {
+public class Distributor implements Serializable {
     private static final long serialVersionUID=1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

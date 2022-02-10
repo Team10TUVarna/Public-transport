@@ -5,13 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0aa2aad8-9505-497c-8ff4-f43497d366b7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/presentation/controllers/UpdateDeleteCashierController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/presentation/controllers/AdminLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/presentation/controllers/AdminLoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/presentation/controllers/AdminViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/presentation/controllers/AdminViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/presentation/controllers/CompanyViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/presentation/controllers/CompanyViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/presentation/controllers/DistributorViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/presentation/controllers/DistributorViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/resources/bg/tu_varna/sit/oop_project_demo/presentation.views/userviews/admin-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/resources/bg/tu_varna/sit/oop_project_demo/presentation.views/userviews/admin-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/resources/bg/tu_varna/sit/oop_project_demo/presentation.views/userviews/distributor-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/resources/bg/tu_varna/sit/oop_project_demo/presentation.views/userviews/distributor-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/business/services/CashierService.java" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/business/services/CashierService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/common/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/common/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/data/entities/Cashier.java" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/data/entities/Cashier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/data/entities/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/data/entities/Company.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/data/entities/Distributor.java" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/data/entities/Distributor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/data/entities/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/data/entities/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/data/entities/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/data/entities/Request.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/data/entities/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/data/entities/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/data/entities/TransportType.java" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/data/entities/TransportType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/data/entities/Trip.java" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/data/entities/Trip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/data/entities/TripType.java" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/data/entities/TripType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/data/repositories/CashierRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/data/repositories/CashierRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/presentation/controllers/AddCashierController.java" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/presentation/controllers/AddCashierController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/presentation/controllers/ClientsOperationsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/presentation/controllers/ClientsOperationsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/resources/bg/tu_varna/sit/oop_project_demo/presentation.views/admin-clients.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/resources/bg/tu_varna/sit/oop_project_demo/presentation.views/admin-clients.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/resources/bg/tu_varna/sit/oop_project_demo/presentation.views/viewAll/all-cashiers.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/resources/bg/tu_varna/sit/oop_project_demo/presentation.views/viewAll/all-cashiers.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/application.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -146,7 +157,7 @@
       <workItem from="1644319379268" duration="5383000" />
       <workItem from="1644406320486" duration="7518000" />
       <workItem from="1644425969295" duration="9486000" />
-      <workItem from="1644490636256" duration="2141000" />
+      <workItem from="1644490636256" duration="9779000" />
     </task>
     <servers />
   </component>

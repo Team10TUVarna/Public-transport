@@ -33,6 +33,9 @@ public class ClientsOperationsController {
         loadNewPage(ADD_COMPANY);
     }
 
+    public void onUpdateCashierButtonClick(){
+        loadNewPage(ALL_CASHIER);
+    }
 
 
     public void loadNewPage(String path){

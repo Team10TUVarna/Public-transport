@@ -7,7 +7,7 @@ import java.util.Set;
 
 @Table(name = "TripType")
 @Entity
-public class TripType {
+public class TripType implements Serializable {
     private static final long serialVersionUID=1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

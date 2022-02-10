@@ -130,7 +130,7 @@
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <Button fx:id="createCompany14" layoutX="474.0" layoutY="204.0" mnemonicParsing="false" text="Update Cashier">
+      <Button fx:id="updateCashier" layoutX="474.0" layoutY="204.0" mnemonicParsing="false" onAction="#onUpdateCashierButtonClick" text="Update Cashier">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>

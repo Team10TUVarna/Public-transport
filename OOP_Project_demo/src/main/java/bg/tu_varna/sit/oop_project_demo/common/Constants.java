@@ -22,6 +22,7 @@ public class Constants {
         public static final String ADD_REQUEST = "/bg/tu_varna/sit/oop_project_demo/presentation.views/add/add-request.fxml";
         public static final String ALL_REQUESTS = "/bg/tu_varna/sit/oop_project_demo/presentation.views/viewAll/all-requests.fxml";
         public static final String SELL_TICKET = "/bg/tu_varna/sit/oop_project_demo/presentation.views/viewAll/buy-tickets.fxml";
+        public static final String ALL_CASHIER = "/bg/tu_varna/sit/oop_project_demo/presentation.views/viewAll/all-cashiers.fxml";
     }
 
     public static class Configurations {

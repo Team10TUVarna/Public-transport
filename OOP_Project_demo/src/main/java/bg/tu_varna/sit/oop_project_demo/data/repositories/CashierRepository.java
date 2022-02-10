@@ -41,7 +41,7 @@ public class CashierRepository implements DAORepository<Cashier>{
         Session session = Connection.openSession();
         Transaction transaction = session.beginTransaction();
         try {
-            session.update(obj);
+            session.merge(obj);
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
@@ -55,7 +55,8 @@ public class CashierRepository implements DAORepository<Cashier>{
         Session session = Connection.openSession();
         Transaction transaction = session.beginTransaction();
         try {
-            session.delete(obj);
+            //session.delete(obj);
+            session.createQuery("Delete from Cashier where cashierId = " + obj.getCashierId()).executeUpdate();
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
@@ -76,7 +77,7 @@ public class CashierRepository implements DAORepository<Cashier>{
             e.printStackTrace();
         } finally {
             transaction.commit();
-            session.close();
+            //session.close();
         }
         return cashier;
     }
@@ -94,6 +95,7 @@ public class CashierRepository implements DAORepository<Cashier>{
             log.error("Get all cashiers error. " + ex);
         } finally {
             transaction.commit();
+            //session.close();
         }
         return cashiers;
     }

@@ -43,34 +43,11 @@ public class AddCashierController {
         CashierListViewModel cashier=new CashierListViewModel(username.getText(),password.getText(), cashierName.getText(), Double.parseDouble(honorarium.getText()));
         int res=service.createCashier(cashier);
         if(res==0){
-            /*try {
-                s.close();
-                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(CREATE_OPERATOR));
-                Stage stage = new Stage();
-                //fxmlLoader.setController(new CreateOperatorController(stage));
-                Parent root1 = (Parent) fxmlLoader.load();
-                stage.setScene(new Scene(root1));
-                stage.setResizable(false);
-                stage.show();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }*/
             Alert alert=new Alert(Alert.AlertType.ERROR,"Cashier already exists!", ButtonType.CLOSE);
-            /*DialogPane dialogPane = alert.getDialogPane();
-            dialogPane.getStylesheets().add("Alerts.css");
-            dialogPane.getStyleClass().add("Alert");*/
             alert.show();
         }
         else{
-            /*switch (userTracking) {
-                case 1 -> loadNewPage(ADMIN_VIEW);
-                case 2 -> loadNewPage(OPERATOR_VIEW);
-                case 3 -> loadNewPage(WAREHOUSEHOST_VIEW);
-            }*/
             Alert alert=new Alert(Alert.AlertType.CONFIRMATION,"Cashier added", ButtonType.OK);
-            /*DialogPane dialogPane = alert.getDialogPane();
-            dialogPane.getStylesheets().add("Alerts.css");
-            dialogPane.getStyleClass().add("Alert");*/
             alert.show();
         }
     }

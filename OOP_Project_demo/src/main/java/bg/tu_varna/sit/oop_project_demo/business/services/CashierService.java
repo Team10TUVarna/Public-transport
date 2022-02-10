@@ -7,6 +7,8 @@ import java.util.List;
 import bg.tu_varna.sit.oop_project_demo.data.entities.Cashier;
 import bg.tu_varna.sit.oop_project_demo.data.repositories.CashierRepository;
 import bg.tu_varna.sit.oop_project_demo.presentation.models.CashierListViewModel;
+import bg.tu_varna.sit.oop_project_demo.presentation.models.LocationListViewModel;
+import bg.tu_varna.sit.oop_project_demo.presentation.models.TicketListViewModel;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import org.apache.log4j.Logger;
@@ -88,5 +90,30 @@ public class CashierService {
         }
         log.error("Cashier not found!");
         return null;
+    }
+
+    public ObservableList<CashierListViewModel> getAllCashier(){
+        List<Cashier> all = repository.getAll();
+        return FXCollections.observableList(
+                all.stream().map(w -> new CashierListViewModel(
+                        w.getUsername(),
+                        w.getPassword(),
+                        w.getCashierName(),
+                        w.getHonorarium()
+                )).collect(Collectors.toList()));
+    }
+
+    public boolean updateCashierHonorarium(CashierListViewModel a, double d){
+        Cashier cashier = getCashierByName(a.getUsername());
+        cashier.setHonorarium(d);
+        try{
+            repository.update(cashier);
+            log.info("Cashier updated successfully!");
+            return true;
+        }catch(Exception e){
+            e.printStackTrace();
+            log.error("Error updating cashier!");
+            return false;
+        }
     }
 }

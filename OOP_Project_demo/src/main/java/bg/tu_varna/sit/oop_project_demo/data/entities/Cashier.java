@@ -7,7 +7,7 @@ import java.util.Set;
 
 @Table(name = "Cashier")
 @Entity
-public class Cashier {
+public class Cashier implements Serializable {
 
     private static final long serialVersionUID=1L;
     @Id
@@ -28,7 +28,15 @@ public class Cashier {
     private double honorarium;
 
     @OneToMany(mappedBy = "cashierId")
-    Set<Ticket> ticketSet2;
+    Set<Ticket> ticketSet;
+
+    public Set<Ticket> getTicketSet() {
+        return ticketSet;
+    }
+
+    public void setTicketSet(Set<Ticket> ticketSet) {
+        this.ticketSet = ticketSet;
+    }
 
     public Cashier(String username, String password) {
     }
@@ -52,7 +60,7 @@ public class Cashier {
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 ", honorarium=" + honorarium +
-                ", ticketSet2=" + ticketSet2 +
+                ", ticketSet2=" + ticketSet +
                 '}';
     }
 
@@ -94,14 +102,6 @@ public class Cashier {
 
     public void setHonorarium(double honorarium) {
         this.honorarium = honorarium;
-    }
-
-    public Set<Ticket> getTicketSet2() {
-        return ticketSet2;
-    }
-
-    public void setTicketSet2(Set<Ticket> ticketSet2) {
-        this.ticketSet2 = ticketSet2;
     }
 
     @Override
