@@ -95,12 +95,7 @@
             </Label>
          </children>
       </Pane>
-      <Button layoutX="154.0" layoutY="62.0" mnemonicParsing="false" text="Create Form">
-         <font>
-            <Font name="Book Antiqua" size="13.0" />
-         </font>
-      </Button>
-      <Button layoutX="154.0" layoutY="331.0" mnemonicParsing="false" text="Cancelled Trips">
+      <Button layoutX="154.0" layoutY="331.0" mnemonicParsing="false" text="Notifications">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>

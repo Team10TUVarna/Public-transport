@@ -83,13 +83,6 @@ public class AddRequestController implements Initializable {
         });
 
         departureDateColumn.setCellValueFactory(new PropertyValueFactory<>("departure"));
-        //departureDateColumn.setCellValueFactory(w -> w.getValue().getDeparture());???????
-        /*departureDateColumn.setCellValueFactory(new Callback<TableColumn.CellDataFeatures<TripListViewModel, LocalDate>, ObservableValue<LocalDate>>() {
-            @Override
-            public ObservableValue<LocalDate> call(TableColumn.CellDataFeatures<TripListViewModel, String> p) {
-                return new ReadOnlyObjectWrapper(p.getValue().getDeparture());
-            }
-        });*/
 
 
         tripTable.setItems(tripListViewModel);

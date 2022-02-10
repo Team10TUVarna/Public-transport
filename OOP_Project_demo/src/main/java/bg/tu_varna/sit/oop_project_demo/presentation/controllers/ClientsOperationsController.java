@@ -8,6 +8,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
+import static bg.tu_varna.sit.oop_project_demo.common.Constants.User.trackUser;
 import static bg.tu_varna.sit.oop_project_demo.common.Constants.View.*;
 
 public class ClientsOperationsController {
@@ -46,6 +47,23 @@ public class ClientsOperationsController {
     }
 
 
+
+    public void onGoBackButtonClick(){
+        if (trackUser == 1)
+            loadNewPage(ADMIN_VIEW);
+        if (trackUser == 2)
+            loadNewPage(COMPANY_VIEW);
+        if (trackUser == 3)
+            loadNewPage(DISTRIBUTOR_VIEW);
+        if (trackUser == 4)
+            loadNewPage(CASHIER_VIEW);
+    }
+
+
+    public void onLogoutButtonClick(ActionEvent event) {
+        trackUser = 0;
+        loadNewPage(HELLO_VIEW);
+    }
 
     public void loadNewPage(String path){
         try {

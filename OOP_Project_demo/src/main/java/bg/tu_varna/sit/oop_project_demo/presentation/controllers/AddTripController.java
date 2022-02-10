@@ -71,10 +71,6 @@ public class AddTripController implements Initializable {
     private ComboBox<TripTypeListViewModel> tripType;
 
     public void onAddTripButtonClick(){
-        /*TripListViewModel tripListViewModel=new TripListViewModel(departure.getValue(), arrival.getValue(), Integer.parseInt(capacity.getText()),
-                tripTypeService.getTripTypeByName(tripType.getValue()), transportTypeService.getTransportTypeByName(transportType.getValue()),
-                1, locationService.getLocationByName(locationFrom.getValue()), locationService.getLocationByName(locationTo.getValue()), timeOfDeparture.getText(),
-                timeOfArrival.getText());*/
         TripListViewModel tripListViewModel = new TripListViewModel(departure.getValue(), arrival.getValue(), Integer.parseInt(capacity.getText()),
                 tripTypeService.getTripTypeByName(tripType.getValue().getTripTypeName()),transportTypeService.getTransportTypeByName(transportType.getValue().getTransportTypeName()),
                 companyService.getCompanyByName(loggedCompanyUsername), locationService.getLocationByName(locationFrom.getValue().getLocationName()),

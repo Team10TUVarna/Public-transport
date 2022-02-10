@@ -52,13 +52,20 @@ public class AddCashierController {
         }
     }
 
-    public void goBack(){
-        switch (trackUser){
-            case 1: loadNewPage(ADMIN_VIEW);
-            case 2: loadNewPage(COMPANY_VIEW);
-            case 3: loadNewPage(DISTRIBUTOR_VIEW);
-            case 4: loadNewPage(CASHIER_VIEW);
-        }
+    public void onGoBackButtonClick(){
+        if (trackUser == 1)
+            loadNewPage(ADMIN_VIEW);
+        if (trackUser == 2)
+            loadNewPage(COMPANY_VIEW);
+        if (trackUser == 3)
+            loadNewPage(DISTRIBUTOR_VIEW);
+        if (trackUser == 4)
+            loadNewPage(CASHIER_VIEW);
+    }
+
+
+    public void onLogoutButtonClick(ActionEvent event) {
+        loadNewPage(HELLO_VIEW);
     }
 
     public void loadNewPage(String path){
@@ -67,7 +74,6 @@ public class AddCashierController {
             s.close();
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(path));
             Stage stage = new Stage();
-            //fxmlLoader.setController(new AdminViewController(stage));
             Parent root1 = (Parent) fxmlLoader.load();
             stage.setScene(new Scene(root1));
             stage.setResizable(false);

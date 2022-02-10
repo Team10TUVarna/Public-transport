@@ -48,45 +48,29 @@ public class AddDistributorController {
         DistributorListViewModel distributor=new DistributorListViewModel(username.getText(),password.getText(), distributorName.getText(), Double.parseDouble(honorarium.getText()));
         int res=service.createDistributor(distributor);
         if(res==0){
-            /*try {
-                s.close();
-                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(CREATE_OPERATOR));
-                Stage stage = new Stage();
-                //fxmlLoader.setController(new CreateOperatorController(stage));
-                Parent root1 = (Parent) fxmlLoader.load();
-                stage.setScene(new Scene(root1));
-                stage.setResizable(false);
-                stage.show();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }*/
             Alert alert=new Alert(Alert.AlertType.ERROR,"Distributor already exists!", ButtonType.CLOSE);
-            /*DialogPane dialogPane = alert.getDialogPane();
-            dialogPane.getStylesheets().add("Alerts.css");
-            dialogPane.getStyleClass().add("Alert");*/
             alert.show();
         }
         else{
-            /*switch (userTracking) {
-                case 1 -> loadNewPage(ADMIN_VIEW);
-                case 2 -> loadNewPage(OPERATOR_VIEW);
-                case 3 -> loadNewPage(WAREHOUSEHOST_VIEW);
-            }*/
             Alert alert=new Alert(Alert.AlertType.CONFIRMATION,"Distributor added", ButtonType.OK);
-            /*DialogPane dialogPane = alert.getDialogPane();
-            dialogPane.getStylesheets().add("Alerts.css");
-            dialogPane.getStyleClass().add("Alert");*/
             alert.show();
         }
     }
 
-    public void goBack(){
-        switch (trackUser){
-            case 1: loadNewPage(ADMIN_VIEW);
-            case 2: loadNewPage(COMPANY_VIEW);
-            case 3: loadNewPage(DISTRIBUTOR_VIEW);
-            case 4: loadNewPage(CASHIER_VIEW);
-        }
+    public void onGoBackButtonClick(){
+        if (trackUser == 1)
+            loadNewPage(ADMIN_VIEW);
+        if (trackUser == 2)
+            loadNewPage(COMPANY_VIEW);
+        if (trackUser == 3)
+            loadNewPage(DISTRIBUTOR_VIEW);
+        if (trackUser == 4)
+            loadNewPage(CASHIER_VIEW);
+    }
+
+
+    public void onLogoutButtonClick(ActionEvent event) {
+        loadNewPage(HELLO_VIEW);
     }
 
     public void loadNewPage(String path){
@@ -95,7 +79,6 @@ public class AddDistributorController {
             s.close();
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(path));
             Stage stage = new Stage();
-            //fxmlLoader.setController(new AdminViewController(stage));
             Parent root1 = (Parent) fxmlLoader.load();
             stage.setScene(new Scene(root1));
             stage.setResizable(false);
