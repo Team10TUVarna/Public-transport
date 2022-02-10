@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0aa2aad8-9505-497c-8ff4-f43497d366b7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/resources/bg/tu_varna/sit/oop_project_demo/presentation.views/userviews/distributor-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/resources/bg/tu_varna/sit/oop_project_demo/presentation.views/userviews/distributor-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/application.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +99,20 @@
       <recent name="bg.tu_varna.sit.oop_project_demo.business.services" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LocationRepositoryTest">
+  <component name="RunManager" selected="Application.HelloApplication">
+    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bg.tu_varna.sit.oop_project_demo.application.HelloApplication" />
+      <module name="OOP_Project_demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bg.tu_varna.sit.oop_project_demo.application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LocationRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OOP_Project_demo" />
       <extension name="coverage">
@@ -146,22 +160,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LocationRepositoryTest.save" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="OOP_Project_demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="bg.tu_varna.sit.oop_project_demo.data.repositories.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="bg.tu_varna.sit.oop_project_demo.data.repositories" />
-      <option name="MAIN_CLASS_NAME" value="bg.tu_varna.sit.oop_project_demo.data.repositories.LocationRepositoryTest" />
-      <option name="METHOD_NAME" value="save" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LocationRepositoryTest.update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OOP_Project_demo" />
       <extension name="coverage">
@@ -180,11 +178,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HelloApplication" />
         <item itemvalue="JUnit.LocationRepositoryTest" />
         <item itemvalue="JUnit.LocationRepositoryTest.getAll" />
         <item itemvalue="JUnit.LocationRepositoryTest.delete" />
         <item itemvalue="JUnit.LocationRepositoryTest.update" />
-        <item itemvalue="JUnit.LocationRepositoryTest.save" />
       </list>
     </recent_temporary>
   </component>
@@ -235,6 +233,7 @@
       <workItem from="1644521306475" duration="10950000" />
       <workItem from="1644532434689" duration="2628000" />
       <workItem from="1644535162901" duration="49000" />
+      <workItem from="1644535379183" duration="80000" />
     </task>
     <servers />
   </component>

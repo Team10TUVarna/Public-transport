@@ -151,26 +151,6 @@
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="153.0" layoutY="191.0" mnemonicParsing="false" text="Check Trip Types">
-         <font>
-            <Font name="Book Antiqua" size="13.0" />
-         </font>
-      </Button>
-      <Button layoutX="290.0" layoutY="191.0" mnemonicParsing="false" text="Check Transport Types">
-         <font>
-            <Font name="Book Antiqua" size="13.0" />
-         </font>
-      </Button>
-      <Button layoutX="451.0" layoutY="191.0" mnemonicParsing="false" text="Check Locations">
-         <font>
-            <Font name="Book Antiqua" size="13.0" />
-         </font>
-      </Button>
-      <Button layoutX="314.0" layoutY="231.0" mnemonicParsing="false" text="Check Trips">
-         <font>
-            <Font name="Book Antiqua" size="13.0" />
-         </font>
-      </Button>
       <ImageView fitHeight="25.0" fitWidth="30.0" layoutX="377.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../images/delete-blue.png" />
