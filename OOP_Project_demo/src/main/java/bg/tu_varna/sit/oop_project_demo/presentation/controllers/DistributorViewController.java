@@ -48,6 +48,10 @@ public class DistributorViewController implements Initializable {
     {
         loadNewPage(ADD_CASHIER);
     }
+    public void onSoldTicketsReportButtonClick(){
+        loadNewPage(TICKETS_REPORT);
+    }
+
 
     public void onLogoutButtonClick()
     {

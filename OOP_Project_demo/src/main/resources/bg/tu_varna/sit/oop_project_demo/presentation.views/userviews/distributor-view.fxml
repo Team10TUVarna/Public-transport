@@ -176,5 +176,10 @@
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
+      <Button fx:id="soldTicketsReportButton" layoutX="286.0" layoutY="264.0" mnemonicParsing="false" onAction="#onSoldTicketsReportButtonClick" text="Sold Tickets Report">
+         <font>
+            <Font name="Book Antiqua" size="13.0" />
+         </font>
+      </Button>
    </children>
 </Pane>

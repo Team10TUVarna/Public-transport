@@ -6,20 +6,28 @@ import bg.tu_varna.sit.oop_project_demo.presentation.models.TicketListViewModel;
 import bg.tu_varna.sit.oop_project_demo.presentation.models.TripListViewModel;
 import javafx.beans.property.ReadOnlyObjectWrapper;
 import javafx.beans.value.ObservableValue;
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
 import javafx.util.Callback;
 
 import java.net.URL;
 import java.time.LocalDate;
 import java.util.ResourceBundle;
+
+import static bg.tu_varna.sit.oop_project_demo.common.Constants.User.trackUser;
+import static bg.tu_varna.sit.oop_project_demo.common.Constants.View.*;
 
 public class TicketReportController implements Initializable {
     CashierService cashierService = CashierService.getInstance();
@@ -29,7 +37,7 @@ public class TicketReportController implements Initializable {
     TripService tripService = TripService.getInstance();
     TicketService ticketService = TicketService.getInstance();
 
-
+    ObservableList<TicketListViewModel> ticketListViewModels = ticketService.getAllSoldTickets();
 
     @FXML
     private TableColumn<TicketListViewModel, String> arrivalLocationColumn;
@@ -75,22 +83,51 @@ public class TicketReportController implements Initializable {
 
 
     public void onCheckButtonClick(ActionEvent event) {
-
+        ObservableList<TicketListViewModel> ticketListViewModels1 = FXCollections.observableArrayList();
+        for(TicketListViewModel a:ticketListViewModels){
+            if (a.getPurchaseDate().isAfter(dateFrom.getValue()) && a.getPurchaseDate().isBefore(dateTo.getValue())){
+                ticketListViewModels1.add(a);
+            }
+        }
+        initTable(ticketListViewModels1);
     }
 
 
     public void onGoBackButtonClick(ActionEvent event) {
+        if (trackUser == 1)
+            loadNewPage(ADMIN_VIEW);
+        if (trackUser == 2)
+            loadNewPage(COMPANY_VIEW);
+        if (trackUser == 3)
+            loadNewPage(DISTRIBUTOR_VIEW);
+        if (trackUser == 4)
+            loadNewPage(CASHIER_VIEW);
+    }
 
+    public void onLogoutButtonClick(ActionEvent event){
+        trackUser = 0;
+        loadNewPage(HELLO_VIEW);
+    }
+
+    public void loadNewPage(String path){
+        try {
+            Stage s = (Stage) backButton.getScene().getWindow();
+            s.close();
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(path));
+            Stage stage = new Stage();
+            Parent root1 = (Parent) fxmlLoader.load();
+            stage.setScene(new Scene(root1));
+            stage.setResizable(false);
+            stage.setWidth(615);
+            stage.setHeight(440);
+            stage.show();
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
     }
 
 
-    public void onLogoutButtonClick(ActionEvent event) {
-
-    }
-
-    ObservableList<TicketListViewModel> ticketListViewModels = ticketService.getAllSoldTickets();
-    public void initTable(){
-
+    public void initTable(ObservableList<TicketListViewModel> a){
         seatNumberColumn.setCellValueFactory(new PropertyValueFactory<>("seatNumber"));
         customerNameColumn.setCellValueFactory(new PropertyValueFactory<>("customerName"));
         purchaseDateColumn.setCellValueFactory(new PropertyValueFactory<>("purchaseDate"));
@@ -124,11 +161,11 @@ public class TicketReportController implements Initializable {
                 return new ReadOnlyObjectWrapper(p.getValue().getTripId().getTimeOfDeparture());
             }
         });
-        ticketTable.setItems(ticketListViewModels);
+        ticketTable.setItems(a);
     }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        initTable();
+        initTable(ticketListViewModels);
     }
 }
