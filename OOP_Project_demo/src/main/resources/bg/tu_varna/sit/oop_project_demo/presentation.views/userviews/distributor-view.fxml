@@ -81,11 +81,6 @@
          </font>
       </Button>
       <Separator layoutX="121.0" layoutY="242.0" prefHeight="8.0" prefWidth="479.0" style="-fx-background-color: #375E72FF;" />
-      <Button layoutX="157.0" layoutY="264.0" mnemonicParsing="false" text="Trips Report">
-         <font>
-            <Font name="Book Antiqua" size="13.0" />
-         </font>
-      </Button>
       <Separator layoutX="121.0" layoutY="301.0" prefHeight="8.0" prefWidth="479.0" style="-fx-background-color: #375E72FF;" />
       <Button layoutX="157.0" layoutY="364.0" mnemonicParsing="false" text="Cancelled Trips">
          <font>
@@ -172,6 +167,11 @@
          </font>
       </Button>
       <Button fx:id="checkCashiersButton" layoutX="360.0" layoutY="51.0" mnemonicParsing="false" text="Check, Update, Delete Cashiers">
+         <font>
+            <Font name="Book Antiqua" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="tripsReportButton" layoutX="157.0" layoutY="264.0" mnemonicParsing="false" onAction="#onTripsReportButtonClick" text="Trips Report">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>

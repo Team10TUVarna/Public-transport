@@ -76,11 +76,6 @@
          </font>
       </Button>
       <Separator layoutX="121.0" layoutY="241.0" prefHeight="8.0" prefWidth="479.0" style="-fx-background-color: #375E72FF;" />
-      <Button layoutX="157.0" layoutY="267.0" mnemonicParsing="false" text="Trips Report">
-         <font>
-            <Font name="Book Antiqua" size="13.0" />
-         </font>
-      </Button>
       <Separator layoutX="121.0" layoutY="311.0" prefHeight="8.0" prefWidth="479.0" style="-fx-background-color: #375E72FF;" />
       <Button layoutX="263.0" layoutY="337.0" mnemonicParsing="false" text="Sold Tickets">
          <font>
@@ -152,6 +147,11 @@
          </font>
       </Button>
       <Button fx:id="r" layoutX="157.0" layoutY="337.0" mnemonicParsing="false" text="Request">
+         <font>
+            <Font name="Book Antiqua" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="tripsReportButton" layoutX="157.0" layoutY="267.0" mnemonicParsing="false" onAction="#onTripsReportButtonClick" text="Trips Report">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>

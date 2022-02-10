@@ -44,6 +44,9 @@ public class CompanyViewController implements Initializable {
     public void onRequestButtonClick(){
         loadNewPage(ALL_REQUESTS);
     }
+    public void onTripsReportButtonClick(){
+        loadNewPage(TRIPS_REPORT);
+    }
 
 
     public void onLogoutButtonClick(ActionEvent event) {

@@ -136,7 +136,7 @@
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="411.0" layoutY="315.0" mnemonicParsing="false" text="Trips Report">
+      <Button fx:id="tripsReportButton" layoutX="411.0" layoutY="315.0" mnemonicParsing="false" onAction="#onTripsReportButtonClick" text="Trips Report">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>

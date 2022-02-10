@@ -29,28 +29,8 @@
          </image>
       </ImageView>
       <Separator layoutX="121.0" layoutY="101.0" prefHeight="8.0" prefWidth="479.0" style="-fx-background-color: #375E72FF;" />
-      <Button layoutX="154.0" layoutY="62.0" mnemonicParsing="false" text="Create Form">
-         <font>
-            <Font name="Book Antiqua" size="13.0" />
-         </font>
-      </Button>
       <Separator layoutX="121.0" layoutY="197.0" prefHeight="8.0" prefWidth="479.0" style="-fx-background-color: #375E72FF;" />
       <Separator layoutX="121.0" layoutY="303.0" prefHeight="8.0" prefWidth="479.0" style="-fx-background-color: #375E72FF;" />
-      <Button layoutX="154.0" layoutY="331.0" mnemonicParsing="false" text="Cancelled Trips">
-         <font>
-            <Font name="Book Antiqua" size="13.0" />
-         </font>
-      </Button>
-      <Button layoutX="154.0" layoutY="237.0" mnemonicParsing="false" text="Trips Report ">
-         <font>
-            <Font name="Book Antiqua" size="13.0" />
-         </font>
-      </Button>
-      <Button fx:id="sellTicketButton" layoutX="154.0" layoutY="144.0" mnemonicParsing="false" onAction="#onSellTicketButtonClick" text="Sell ticket">
-         <font>
-            <Font name="Book Antiqua" size="13.0" />
-         </font>
-      </Button>
       <Pane prefHeight="400.0" prefWidth="125.0" style="-fx-background-color: #375E72FF;">
          <children>
             <Label layoutX="38.0" layoutY="41.0" prefHeight="59.0" prefWidth="76.0" text="Add Purchase Form" textAlignment="CENTER" textFill="WHITE" wrapText="true">
@@ -115,5 +95,25 @@
             </Label>
          </children>
       </Pane>
+      <Button layoutX="154.0" layoutY="62.0" mnemonicParsing="false" text="Create Form">
+         <font>
+            <Font name="Book Antiqua" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="154.0" layoutY="331.0" mnemonicParsing="false" text="Cancelled Trips">
+         <font>
+            <Font name="Book Antiqua" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="sellTicketButton" layoutX="154.0" layoutY="144.0" mnemonicParsing="false" onAction="#onSellTicketButtonClick" text="Sell ticket">
+         <font>
+            <Font name="Book Antiqua" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="tripsReportButton" layoutX="154.0" layoutY="237.0" mnemonicParsing="false" onAction="#onTripsReportButtonClick" text="Trips Report ">
+         <font>
+            <Font name="Book Antiqua" size="13.0" />
+         </font>
+      </Button>
    </children>
 </Pane>

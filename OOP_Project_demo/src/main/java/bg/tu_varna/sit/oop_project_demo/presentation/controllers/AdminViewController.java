@@ -57,7 +57,9 @@ public class AdminViewController implements Initializable {
     public void onAddTripTypeButtonClick(){
         loadNewPage(ADD_TRIPTYPE);
     }
-
+    public void onTripsReportButtonClick(){
+        loadNewPage(TRIPS_REPORT);
+    }
     public void onAddTripButtonClick(){
         loadNewPage(ADD_TRIP);
     }

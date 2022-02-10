@@ -47,8 +47,8 @@ public class CompanyLoginController {
                 Parent root1 = (Parent) fxmlLoader.load();
                 stage.setScene(new Scene(root1));
                 stage.setResizable(false);
-                stage.setWidth(600);
-                stage.setHeight(400);
+                stage.setWidth(615);
+                stage.setHeight(440);
                 stage.show();
             } catch(Exception e) {
                 e.printStackTrace();

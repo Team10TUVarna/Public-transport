@@ -16,8 +16,7 @@ import java.util.ResourceBundle;
 
 import static bg.tu_varna.sit.oop_project_demo.common.Constants.User.loggedCashierUsername;
 import static bg.tu_varna.sit.oop_project_demo.common.Constants.User.trackUser;
-import static bg.tu_varna.sit.oop_project_demo.common.Constants.View.HELLO_VIEW;
-import static bg.tu_varna.sit.oop_project_demo.common.Constants.View.SELL_TICKET;
+import static bg.tu_varna.sit.oop_project_demo.common.Constants.View.*;
 
 public class CashierViewController implements Initializable {
 
@@ -34,6 +33,10 @@ public class CashierViewController implements Initializable {
 
 
 
+
+    public void onTripsReportButtonClick(){
+        loadNewPage(TRIPS_REPORT);
+    }
 
     public void onSellTicketButtonClick(){
         loadNewPage(SELL_TICKET);

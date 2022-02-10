@@ -25,7 +25,7 @@ public class Constants {
         public static final String ALL_CASHIER = "/bg/tu_varna/sit/oop_project_demo/presentation.views/viewAll/all-cashiers.fxml";
         public static final String ALL_DISTRIBUTOR = "/bg/tu_varna/sit/oop_project_demo/presentation.views/viewAll/all-distributors.fxml";
         public static final String ALL_COMPANY = "/bg/tu_varna/sit/oop_project_demo/presentation.views/viewAll/all-companies.fxml";
-
+        public static final String TRIPS_REPORT = "/bg/tu_varna/sit/oop_project_demo/presentation.views/reports/trips-report.fxml";
     }
 
     public static class Configurations {

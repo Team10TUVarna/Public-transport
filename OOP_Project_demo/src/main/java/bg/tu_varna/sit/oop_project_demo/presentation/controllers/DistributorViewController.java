@@ -40,6 +40,9 @@ public class DistributorViewController implements Initializable {
     public void onAddRequestButtonClick(){
         loadNewPage(ADD_REQUEST);
     }
+    public void onTripsReportButtonClick(){
+        loadNewPage(TRIPS_REPORT);
+    }
 
     public void onAddCashierButtonClick()
     {
