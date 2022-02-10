@@ -26,7 +26,7 @@ public class AdminService {
     }
 
 
-    public void deleteAdmin(AdminListViewModel admin) {
+    /*public void deleteAdmin(AdminListViewModel admin) {
         Admin a=getAdminByName(admin.getUsername());
         try{
             repository.delete(a);
@@ -35,7 +35,7 @@ public class AdminService {
             e.printStackTrace();
             log.error("Error deleting admin"+a);
         }
-    }
+    }*/
 
     public boolean adminLogin(AdminListViewModel a)
     {
@@ -47,7 +47,7 @@ public class AdminService {
         return true;
     }
 
-    public int createAdmin(AdminListViewModel a){
+    /*public int createAdmin(AdminListViewModel a){
         Admin admin=new Admin(a.getUsername(),a.getPassword());
         if(checkIfAdminExists(admin)){
             log.info("Admin "+a+" already exists!");
@@ -64,9 +64,9 @@ public class AdminService {
             }
             return 1;
         }
-    }
+    }*/
 
-    public boolean checkIfAdminExists(Admin a){
+    /*public boolean checkIfAdminExists(Admin a){
         List<Admin> allAdmins=repository.getAll();
         for(Admin admin:allAdmins){
             if(admin.equals(a))
@@ -76,7 +76,7 @@ public class AdminService {
             }
         }
         return false;
-    }
+    }*/
 
     public Admin getAdminByName(String name){
         List<Admin> allAdmins=repository.getAll();

@@ -23,7 +23,7 @@ public class LocationService {
     }
 
 
-    public void deleteLocation(LocationListViewModel location) {
+    /*public void deleteLocation(LocationListViewModel location) {
         Location a=getLocationByName(location.getLocationName());
         try{
             repository.delete(a);
@@ -32,16 +32,6 @@ public class LocationService {
             e.printStackTrace();
             log.error("Error deleting location"+a);
         }
-    }
-
-    /*public boolean locationLogin(LocationListViewModel a)
-    {
-        if(getLocationByName(a.getLocationName())==null){
-            log.error("Location login error!");
-            return false;
-        }
-        log.info("Location login successful!");
-        return true;
     }*/
 
     public int createLocation(LocationListViewModel a){

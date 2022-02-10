@@ -1,6 +1,7 @@
 package bg.tu_varna.sit.oop_project_demo.data.repositories;
 
 import bg.tu_varna.sit.oop_project_demo.data.access.Connection;
+import bg.tu_varna.sit.oop_project_demo.data.entities.Cashier;
 import bg.tu_varna.sit.oop_project_demo.data.entities.Distributor;
 import bg.tu_varna.sit.oop_project_demo.data.entities.Location;
 import org.apache.log4j.Logger;
@@ -42,6 +43,7 @@ public class LocationRepository implements DAORepository<Location> {
         Transaction transaction = session.beginTransaction();
         try {
             session.update(obj);
+
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
@@ -66,8 +68,19 @@ public class LocationRepository implements DAORepository<Location> {
 
     @Override
     public Location getById(int id) {
-        Location obj = new Location();
-        return obj;
+        Session session = Connection.openSession();
+        Transaction transaction = session.beginTransaction();
+        Location location = new Location();
+        try {
+            String jpql = "SELECT a FROM Location a WHERE locationId =" + String.valueOf(id);
+            location=session.createQuery(jpql, Location.class).getSingleResult();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            transaction.commit();
+            //session.close();
+        }
+        return location;
     }
 
     @Override

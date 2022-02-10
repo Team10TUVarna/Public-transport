@@ -37,7 +37,12 @@ public class CompanyViewController implements Initializable {
     @FXML
     private Button requestButton;
 
-
+    public void onAddLocationButtonClick(){
+        loadNewPage(ADD_LOCATION);
+    }
+    public void onAddTripTypeButtonClick(){
+        loadNewPage(ADD_TRIPTYPE);
+    }
     public void onAddTripButtonClick() {
         loadNewPage(ADD_TRIP);
     }
@@ -64,7 +69,6 @@ public class CompanyViewController implements Initializable {
             s.close();
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(path));
             Stage stage = new Stage();
-            //fxmlLoader.setController(new AdminViewController(stage));
             Parent root1 = (Parent) fxmlLoader.load();
             stage.setScene(new Scene(root1));
             stage.setResizable(false);

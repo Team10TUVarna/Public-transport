@@ -51,6 +51,13 @@ public class DistributorViewController implements Initializable {
     public void onSoldTicketsReportButtonClick(){
         loadNewPage(TICKETS_REPORT);
     }
+    public void onUpdateCashierButtonClick(){
+        loadNewPage(ALL_CASHIER);
+    }
+    public void onAddTransportTypeButtonClick(){
+        loadNewPage(ADD_TRANSPORTTYPE);
+    }
+
 
 
     public void onLogoutButtonClick()

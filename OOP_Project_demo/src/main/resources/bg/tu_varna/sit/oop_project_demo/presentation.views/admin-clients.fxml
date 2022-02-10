@@ -12,7 +12,7 @@
    <children>
       <Pane layoutX="101.0" layoutY="-8.0" prefHeight="112.0" prefWidth="500.0" style="-fx-background-color: #375E72FF;">
          <children>
-            <Button fx:id="logout" layoutX="431.0" layoutY="17.0" mnemonicParsing="false" style="-fx-background-color: transperent;" text="Log Out" textFill="WHITE">
+            <Button fx:id="logout" layoutX="431.0" layoutY="17.0" mnemonicParsing="false" onAction="#onLogoutButtonClick" style="-fx-background-color: transperent;" text="Log Out" textFill="WHITE">
                <font>
                   <Font name="Book Antiqua" size="13.0" />
                </font>
@@ -100,16 +100,6 @@
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <Button fx:id="createCompany12" layoutX="153.0" layoutY="282.0" mnemonicParsing="false" text="Delete Company">
-         <font>
-            <Font name="Book Antiqua" size="13.0" />
-         </font>
-      </Button>
-      <Button fx:id="createCompany121" layoutX="150.0" layoutY="357.0" mnemonicParsing="false" text="View Companies">
-         <font>
-            <Font name="Book Antiqua" size="13.0" />
-         </font>
-      </Button>
       <Button fx:id="updateDistributor" layoutX="311.0" layoutY="204.0" mnemonicParsing="false" onAction="#onUpdateDistributorButtonClick" text="Update Distributor">
          <font>
             <Font name="Book Antiqua" size="13.0" />
@@ -120,32 +110,12 @@
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <Button fx:id="createCompany122" layoutX="311.0" layoutY="282.0" mnemonicParsing="false" text="Delete Distributor">
-         <font>
-            <Font name="Book Antiqua" size="13.0" />
-         </font>
-      </Button>
-      <Button fx:id="createCompany1211" layoutX="312.0" layoutY="357.0" mnemonicParsing="false" text="View Distributors">
-         <font>
-            <Font name="Book Antiqua" size="13.0" />
-         </font>
-      </Button>
       <Button fx:id="updateCashier" layoutX="474.0" layoutY="204.0" mnemonicParsing="false" onAction="#onUpdateCashierButtonClick" text="Update Cashier">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
       <Button fx:id="addCashierButton" layoutX="482.0" layoutY="130.0" mnemonicParsing="false" onAction="#onAddCashierButtonClick" text="Add Cashier">
-         <font>
-            <Font name="Book Antiqua" size="13.0" />
-         </font>
-      </Button>
-      <Button fx:id="createCompany123" layoutX="477.0" layoutY="282.0" mnemonicParsing="false" text="Delete Cashier">
-         <font>
-            <Font name="Book Antiqua" size="13.0" />
-         </font>
-      </Button>
-      <Button fx:id="createCompany1212" layoutX="478.0" layoutY="357.0" mnemonicParsing="false" text="View Cashiers">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
