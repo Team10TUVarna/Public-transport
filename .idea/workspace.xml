@@ -4,27 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0aa2aad8-9505-497c-8ff4-f43497d366b7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/presentation/controllers/TripsReportController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/common/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/common/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/presentation/controllers/AdminLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/presentation/controllers/AdminLoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/presentation/controllers/AdminViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/presentation/controllers/AdminViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/presentation/controllers/CashierLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/presentation/controllers/CashierLoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/presentation/controllers/CashierViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/presentation/controllers/CashierViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/presentation/controllers/CompanyLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/presentation/controllers/CompanyLoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/presentation/controllers/CompanyViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/presentation/controllers/CompanyViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/presentation/controllers/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/presentation/controllers/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/resources/bg/tu_varna/sit/oop_project_demo/presentation.views/reports/trips-report.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/resources/bg/tu_varna/sit/oop_project_demo/presentation.views/reports/trips-report.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/resources/bg/tu_varna/sit/oop_project_demo/presentation.views/userviews/admin-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/resources/bg/tu_varna/sit/oop_project_demo/presentation.views/userviews/admin-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/resources/bg/tu_varna/sit/oop_project_demo/presentation.views/userviews/cashier-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/resources/bg/tu_varna/sit/oop_project_demo/presentation.views/userviews/cashier-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/target/classes/bg/tu_varna/sit/oop_project_demo/common/Constants$View.class" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/target/classes/bg/tu_varna/sit/oop_project_demo/common/Constants$View.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/target/classes/bg/tu_varna/sit/oop_project_demo/presentation.views/reports/trips-report.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/target/classes/bg/tu_varna/sit/oop_project_demo/presentation.views/reports/trips-report.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/target/classes/bg/tu_varna/sit/oop_project_demo/presentation.views/userviews/cashier-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/target/classes/bg/tu_varna/sit/oop_project_demo/presentation.views/userviews/cashier-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/target/classes/bg/tu_varna/sit/oop_project_demo/presentation/controllers/CashierViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/target/classes/bg/tu_varna/sit/oop_project_demo/presentation/controllers/CashierViewController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/target/classes/bg/tu_varna/sit/oop_project_demo/presentation/controllers/CompanyViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/target/classes/bg/tu_varna/sit/oop_project_demo/presentation/controllers/CompanyViewController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/application.log" afterDir="false" />
-    </list>
+    <list default="true" id="0aa2aad8-9505-497c-8ff4-f43497d366b7" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -157,7 +137,7 @@
       <workItem from="1644319379268" duration="5383000" />
       <workItem from="1644406320486" duration="7518000" />
       <workItem from="1644425969295" duration="9486000" />
-      <workItem from="1644490636256" duration="18481000" />
+      <workItem from="1644490636256" duration="18869000" />
     </task>
     <servers />
   </component>
