@@ -33,7 +33,7 @@ public class CashierService {
             log.info("Successfully deleted cashier "+a);
         }catch(Exception e){
             e.printStackTrace();
-            log.error("Error deleting cashier"+a);
+            log.error("Error deleting cashier "+a);
         }
     }
 
