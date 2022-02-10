@@ -9,11 +9,11 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E2F2FA;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E2F2FA;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bg.tu_varna.sit.oop_project_demo.presentation.controllers.DistributorsReportController">
    <children>
       <Pane layoutX="101.0" layoutY="-8.0" prefHeight="112.0" prefWidth="500.0" style="-fx-background-color: #375E72FF;">
          <children>
-            <Button fx:id="logout" layoutX="431.0" layoutY="17.0" mnemonicParsing="false" style="-fx-background-color: transperent;" text="Log Out" textFill="WHITE">
+            <Button fx:id="logout" layoutX="431.0" layoutY="17.0" mnemonicParsing="false" onAction="#onLogoutButtonClick" style="-fx-background-color: transperent;" text="Log Out" textFill="WHITE">
                <font>
                   <Font name="Book Antiqua" size="13.0" />
                </font>
@@ -44,15 +44,16 @@
             </ImageView>
          </children>
       </Pane>
-      <Button fx:id="backButton" layoutX="24.0" layoutY="24.0" mnemonicParsing="false" onAction="#goBack" text="Go Back">
+      <Button fx:id="backButton" layoutX="24.0" layoutY="24.0" mnemonicParsing="false" onAction="#onGoBackButtonClick" text="Go Back">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <TableView fx:id="distributorTable" layoutX="125.0" layoutY="104.0" prefHeight="296.0" prefWidth="477.0">
+      <TableView fx:id="distributorTable" layoutX="125.0" layoutY="104.0" prefHeight="297.0" prefWidth="475.0">
          <columns>
-            <TableColumn prefWidth="75.0" text="C1" />
-            <TableColumn prefWidth="75.0" text="C2" />
+            <TableColumn fx:id="nameColumn" prefWidth="149.0" text="Distributor name" />
+            <TableColumn fx:id="usernameColumn" prefWidth="168.0" text="Username" />
+            <TableColumn fx:id="honorariumColumn" prefWidth="157.0" text="Honorarium" />
          </columns>
       </TableView>
    </children>

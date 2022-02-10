@@ -66,6 +66,16 @@ public class AdminViewController implements Initializable {
     public void onAddTransportTypeButtonClick(){
         loadNewPage(ADD_TRANSPORTTYPE);
     }
+    public void onSoldTicketsReportButtonClick(){
+        loadNewPage(TICKETS_REPORT);
+    }
+    public void onCashiersReportButtonClick(){
+        loadNewPage(CASHIERS_REPORT);
+    }
+    public void onDistributorsReportButtonClick(){
+        loadNewPage(DISTRIBUTORS_REPORT);
+    }
+
 
     public void onLogoutButtonClick(ActionEvent event){
         trackUser = 0;
