@@ -131,7 +131,7 @@ public class TripService {
         }
     }
 
-    public boolean deleteTrip(TripListViewModel trip) {
+    /*public boolean deleteTrip(TripListViewModel trip) {
         Trip a=getTrip(trip);
         if(a==null){
             return false;
@@ -145,7 +145,7 @@ public class TripService {
             log.error("Error deleting trip "+a.getTripId());
             return false;
         }
-    }
+    }*/
 
     public boolean checkIfTripExists(Trip a){
         List<Trip> allTrip=repository.getAll();

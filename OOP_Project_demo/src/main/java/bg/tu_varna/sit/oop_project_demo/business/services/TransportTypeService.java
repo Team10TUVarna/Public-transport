@@ -25,7 +25,7 @@ public class TransportTypeService {
     }
 
 
-    public void deleteTransportType(TransportTypeListViewModel transportType) {
+    /*public void deleteTransportType(TransportTypeListViewModel transportType) {
         TransportType a=getTransportTypeByName(transportType.getTransportTypeName());
         try{
             repository.delete(a);
@@ -34,7 +34,7 @@ public class TransportTypeService {
             e.printStackTrace();
             log.error("Error deleting transport type"+a);
         }
-    }
+    }*/
 
 
     public int createTransportType(TransportTypeListViewModel a){

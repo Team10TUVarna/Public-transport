@@ -25,7 +25,7 @@ public class TripTypeService {
     }
 
 
-    public void deleteTripType(TripTypeListViewModel location) {
+    /*public void deleteTripType(TripTypeListViewModel location) {
         TripType a=getTripTypeByName(location.getTripTypeName());
         try{
             repository.delete(a);
@@ -34,7 +34,7 @@ public class TripTypeService {
             e.printStackTrace();
             log.error("Error deleting trip type"+a);
         }
-    }
+    }*/
 
     /*public boolean tripTypeLogin(TripTypeListViewModel a)
     {

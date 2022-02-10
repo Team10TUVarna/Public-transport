@@ -181,6 +181,9 @@ public class Trip implements Serializable {
 
     public Trip() {
     }
+    public Trip(int Capacity){
+
+    }
 
     public Trip(LocalDate departure, LocalDate arrival, int capacity, TripType tripTypeId, TransportType transportTypeId, Company companyId, Location locationFrom, Location locationTo, String timeOfDeparture, String timeOfArrival) {
         this.departure = departure;
