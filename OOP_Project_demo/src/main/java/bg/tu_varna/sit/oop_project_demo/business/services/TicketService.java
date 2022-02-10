@@ -74,6 +74,18 @@ public class TicketService {
         return null;
     }
 
+    public ObservableList<TicketListViewModel> getAllSoldTickets(){
+        List<Ticket> all = repository.getAll();
+        ObservableList<TicketListViewModel> soldTickets = FXCollections.observableArrayList();
+        soldTickets.clear();
+        for(Ticket a : all){
+            if (!(a.getCustomerName().equals("NOT SOLD"))){
+                soldTickets.add(new TicketListViewModel(a.getSeatNumber(), a.getCustomerName(), a.getPurchaseDate(), a.getCashierId(), a.getTripId()));
+            }
+        }
+        return soldTickets;
+    }
+
     public boolean updateTicket(TicketListViewModel a, String s){
         Ticket ticket = getTicket(a);
         LocalDate date = LocalDate.now();

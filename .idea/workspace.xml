@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0aa2aad8-9505-497c-8ff4-f43497d366b7" name="Changes" comment="" />
+    <list default="true" id="0aa2aad8-9505-497c-8ff4-f43497d366b7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/presentation/controllers/TicketReportController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/business/services/TicketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/business/services/TicketService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/common/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/common/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/presentation/controllers/CompanyViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/presentation/controllers/CompanyViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/presentation/controllers/TripsReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/presentation/controllers/TripsReportController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/resources/bg/tu_varna/sit/oop_project_demo/presentation.views/add/add-request.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/resources/bg/tu_varna/sit/oop_project_demo/presentation.views/add/add-request.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/resources/bg/tu_varna/sit/oop_project_demo/presentation.views/reports/tickets-report.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/resources/bg/tu_varna/sit/oop_project_demo/presentation.views/reports/tickets-report.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/resources/bg/tu_varna/sit/oop_project_demo/presentation.views/userviews/company-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/resources/bg/tu_varna/sit/oop_project_demo/presentation.views/userviews/company-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/target/classes/bg/tu_varna/sit/oop_project_demo/presentation/controllers/DistributorViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/target/classes/bg/tu_varna/sit/oop_project_demo/presentation/controllers/DistributorViewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/application.log" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -137,13 +149,10 @@
       <workItem from="1644319379268" duration="5383000" />
       <workItem from="1644406320486" duration="7518000" />
       <workItem from="1644425969295" duration="9486000" />
-<<<<<<< Updated upstream
       <workItem from="1644490636256" duration="18869000" />
-=======
       <workItem from="1644490636256" duration="18481000" />
       <workItem from="1644512839704" duration="1182000" />
       <workItem from="1644514078821" duration="824000" />
->>>>>>> Stashed changes
     </task>
     <servers />
   </component>

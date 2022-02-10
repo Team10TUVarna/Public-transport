@@ -40,6 +40,8 @@ public class TripsReportController implements Initializable {
     TripService tripService = TripService.getInstance();
     TicketService ticketService = TicketService.getInstance();
 
+    ObservableList<TripListViewModel> tripListViewModels = tripService.getAllTrips();
+
     @FXML
     private TableColumn<TripListViewModel, LocalDate> arrivalDateColumn;
 
@@ -118,7 +120,6 @@ public class TripsReportController implements Initializable {
         }
     }
 
-    ObservableList<TripListViewModel> tripListViewModels = tripService.getAllTrips();
     public void onCheckButtonClick(){
         ObservableList<TripListViewModel> tripListViewModels1 = FXCollections.observableArrayList();
         for(TripListViewModel a:tripListViewModels){

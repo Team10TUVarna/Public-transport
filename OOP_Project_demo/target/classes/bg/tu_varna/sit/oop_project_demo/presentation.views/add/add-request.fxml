@@ -61,11 +61,6 @@
             <Font name="Book Antiqua" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="152.0" layoutY="297.0" prefHeight="28.0" prefWidth="187.0" text="Trip ID:" textFill="#233d48">
-         <font>
-            <Font name="Book Antiqua" size="14.0" />
-         </font>
-      </Label>
       <ImageView fitHeight="90.0" fitWidth="65.0" layoutX="512.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../images/request.png" />
@@ -76,13 +71,12 @@
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <TableView fx:id="tripTable" layoutX="125.0" layoutY="104.0" prefHeight="184.0" prefWidth="475.0">
+      <TableView fx:id="tripTable" layoutX="125.0" layoutY="104.0" prefHeight="214.0" prefWidth="475.0">
         <columns>
           <TableColumn fx:id="departureLocationColumn" prefWidth="133.0" text="Departure location" />
-            <TableColumn fx:id="arrivalLocationColumn" minWidth="0.0" prefWidth="126.0" text="Arrival location" />
-            <TableColumn fx:id="departureDateColumn" prefWidth="170.0" text="Departure date" />
+            <TableColumn fx:id="arrivalLocationColumn" minWidth="0.0" prefWidth="175.0" text="Arrival location" />
+            <TableColumn fx:id="departureDateColumn" prefWidth="165.0" text="Departure date" />
         </columns>
       </TableView>
-      <TextField fx:id="tripId" layoutX="300.0" layoutY="299.0" prefHeight="25.0" prefWidth="57.0" />
    </children>
 </Pane>
