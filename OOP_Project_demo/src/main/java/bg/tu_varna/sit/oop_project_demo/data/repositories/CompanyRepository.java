@@ -40,7 +40,7 @@ public class CompanyRepository implements DAORepository<Company>{
         Session session = Connection.openSession();
         Transaction transaction = session.beginTransaction();
         try {
-            session.update(obj);
+            session.merge(obj);
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
@@ -54,7 +54,8 @@ public class CompanyRepository implements DAORepository<Company>{
         Session session = Connection.openSession();
         Transaction transaction = session.beginTransaction();
         try {
-            session.delete(obj);
+            //session.delete(obj);
+            session.createQuery("Delete from Company where companyId = " + obj.getCompanyId()).executeUpdate();
         } catch (Exception e) {
             e.printStackTrace();
         } finally {

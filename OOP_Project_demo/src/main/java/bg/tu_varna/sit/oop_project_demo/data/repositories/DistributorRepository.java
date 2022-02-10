@@ -42,7 +42,7 @@ public class DistributorRepository implements DAORepository<Distributor>{
         Session session = Connection.openSession();
         Transaction transaction = session.beginTransaction();
         try {
-            session.update(obj);
+            session.merge(obj);
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
@@ -56,7 +56,9 @@ public class DistributorRepository implements DAORepository<Distributor>{
         Session session = Connection.openSession();
         Transaction transaction = session.beginTransaction();
         try {
-            session.delete(obj);
+            //session.delete(obj);
+            session.createQuery("Delete from Distributor where distributorId = " + obj.getDistributorId()).executeUpdate();
+
         } catch (Exception e) {
             e.printStackTrace();
         } finally {

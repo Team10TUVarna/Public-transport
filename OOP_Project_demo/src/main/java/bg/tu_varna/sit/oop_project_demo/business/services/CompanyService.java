@@ -1,8 +1,10 @@
 package bg.tu_varna.sit.oop_project_demo.business.services;
 
+import bg.tu_varna.sit.oop_project_demo.data.entities.Cashier;
 import bg.tu_varna.sit.oop_project_demo.data.entities.Company;
 import bg.tu_varna.sit.oop_project_demo.data.entities.Request;
 import bg.tu_varna.sit.oop_project_demo.data.repositories.CompanyRepository;
+import bg.tu_varna.sit.oop_project_demo.presentation.models.CashierListViewModel;
 import bg.tu_varna.sit.oop_project_demo.presentation.models.CompanyListViewModel;
 import bg.tu_varna.sit.oop_project_demo.presentation.models.RequestListViewModel;
 import javafx.collections.FXCollections;
@@ -112,5 +114,30 @@ public class CompanyService {
                         g.getDistributorId(),
                         g.getCompanyId()
                 )).collect(Collectors.toList()));
+    }
+
+    public ObservableList<CompanyListViewModel> getAllCompany(){
+        List<Company> all = repository.getAll();
+        return FXCollections.observableList(
+                all.stream().map(w -> new CompanyListViewModel(
+                        w.getUsername(),
+                        w.getPassword(),
+                        w.getCompanyName(),
+                        w.getHonorarium()
+                )).collect(Collectors.toList()));
+    }
+
+    public boolean updateCompanyHonorarium(CompanyListViewModel a, double d){
+        Company company = getCompanyByName(a.getUsername());
+        company.setHonorarium(d);
+        try{
+            repository.update(company);
+            log.info("Company updated successfully!");
+            return true;
+        }catch(Exception e){
+            e.printStackTrace();
+            log.error("Error updating company!");
+            return false;
+        }
     }
 }

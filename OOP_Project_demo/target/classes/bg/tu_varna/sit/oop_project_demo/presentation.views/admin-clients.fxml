@@ -40,7 +40,7 @@
             </Label>
          </children>
       </Pane>
-      <Button fx:id="createCompany1" layoutX="151.0" layoutY="204.0" mnemonicParsing="false" text="Update Company">
+      <Button fx:id="updateCompanyButton" layoutX="151.0" layoutY="204.0" mnemonicParsing="false" onAction="#onUpdateCompanyButtonClick" text="Update Company">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
@@ -110,7 +110,7 @@
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <Button fx:id="createCompany13" layoutX="311.0" layoutY="204.0" mnemonicParsing="false" text="Update Distributor">
+      <Button fx:id="updateDistributor" layoutX="311.0" layoutY="204.0" mnemonicParsing="false" onAction="#onUpdateDistributorButtonClick" text="Update Distributor">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>

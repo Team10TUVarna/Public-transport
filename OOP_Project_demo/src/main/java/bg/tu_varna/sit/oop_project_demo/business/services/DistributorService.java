@@ -1,14 +1,19 @@
 package bg.tu_varna.sit.oop_project_demo.business.services;
 
+import bg.tu_varna.sit.oop_project_demo.data.entities.Cashier;
 import bg.tu_varna.sit.oop_project_demo.data.entities.Company;
 import bg.tu_varna.sit.oop_project_demo.data.entities.Distributor;
 import bg.tu_varna.sit.oop_project_demo.data.repositories.CompanyRepository;
 import bg.tu_varna.sit.oop_project_demo.data.repositories.DistributorRepository;
+import bg.tu_varna.sit.oop_project_demo.presentation.models.CashierListViewModel;
 import bg.tu_varna.sit.oop_project_demo.presentation.models.CompanyListViewModel;
 import bg.tu_varna.sit.oop_project_demo.presentation.models.DistributorListViewModel;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import org.apache.log4j.Logger;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class DistributorService {
     private static final Logger log=Logger.getLogger(DistributorService.class);
@@ -17,6 +22,8 @@ public class DistributorService {
     public static DistributorService getInstance() {
         return DistributorService.DistributorServiceHolder.INSTANCE;
     }
+
+
 
     private static class DistributorServiceHolder {
         public static final DistributorService INSTANCE = new DistributorService();
@@ -85,5 +92,30 @@ public class DistributorService {
         }
         log.error("Distributor not found!");
         return null;
+    }
+
+    public ObservableList<DistributorListViewModel> getAllDistributor() {
+        List<Distributor> all = repository.getAll();
+        return FXCollections.observableList(
+                all.stream().map(w -> new DistributorListViewModel(
+                        w.getUsername(),
+                        w.getPassword(),
+                        w.getDistributorName(),
+                        w.getHonorarium()
+                )).collect(Collectors.toList()));
+    }
+
+    public boolean updateDistributorHonorarium(DistributorListViewModel a, double d){
+        Distributor distributor = getDistributorByName(a.getUsername());
+        distributor.setHonorarium(d);
+        try{
+            repository.update(distributor);
+            log.info("Distributor updated successfully!");
+            return true;
+        }catch(Exception e){
+            e.printStackTrace();
+            log.error("Error updating distributor!");
+            return false;
+        }
     }
 }
