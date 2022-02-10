@@ -16,8 +16,7 @@ import java.util.ResourceBundle;
 
 import static bg.tu_varna.sit.oop_project_demo.common.Constants.User.*;
 import static bg.tu_varna.sit.oop_project_demo.common.Constants.User.loggedCashierUsername;
-import static bg.tu_varna.sit.oop_project_demo.common.Constants.View.ADD_REQUEST;
-import static bg.tu_varna.sit.oop_project_demo.common.Constants.View.HELLO_VIEW;
+import static bg.tu_varna.sit.oop_project_demo.common.Constants.View.*;
 
 public class DistributorViewController implements Initializable {
 
@@ -40,6 +39,11 @@ public class DistributorViewController implements Initializable {
 
     public void onAddRequestButtonClick(){
         loadNewPage(ADD_REQUEST);
+    }
+
+    public void onAddCashierButtonClick()
+    {
+        loadNewPage(ADD_CASHIER);
     }
 
     public void onLogoutButtonClick()

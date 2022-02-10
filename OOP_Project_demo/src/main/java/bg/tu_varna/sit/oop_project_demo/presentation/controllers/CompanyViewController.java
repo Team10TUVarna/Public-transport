@@ -38,7 +38,7 @@ public class CompanyViewController implements Initializable {
     private Button requestButton;
 
 
-    public void onAddTripButtonClick(ActionEvent event) {
+    public void onAddTripButtonClick() {
         loadNewPage(ADD_TRIP);
     }
     public void onRequestButtonClick(){

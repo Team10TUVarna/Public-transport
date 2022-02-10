@@ -30,7 +30,7 @@
       </ImageView>
       <Separator layoutX="121.0" layoutY="88.0" prefHeight="8.0" prefWidth="479.0" style="-fx-background-color: #375E72FF;" />
       <Separator layoutX="121.0" layoutY="140.0" prefHeight="8.0" prefWidth="479.0" style="-fx-background-color: #375E72FF;" />
-      <Button fx:id="addCashierButton" layoutX="157.0" layoutY="51.0" mnemonicParsing="false" text="Create Cashier">
+      <Button fx:id="addCashierButton" layoutX="157.0" layoutY="51.0" mnemonicParsing="false" onAction="#onAddCashierButtonClick" text="Create Cashier">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>

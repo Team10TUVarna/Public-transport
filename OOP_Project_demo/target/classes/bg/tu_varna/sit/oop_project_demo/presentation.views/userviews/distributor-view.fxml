@@ -30,12 +30,12 @@
       </ImageView>
       <Separator layoutX="121.0" layoutY="88.0" prefHeight="8.0" prefWidth="479.0" style="-fx-background-color: #375E72FF;" />
       <Separator layoutX="121.0" layoutY="140.0" prefHeight="8.0" prefWidth="479.0" style="-fx-background-color: #375E72FF;" />
-      <Button fx:id="addCashierButton" layoutX="187.0" layoutY="51.0" mnemonicParsing="false" text="Create Cashier">
+      <Button fx:id="addCashierButton" layoutX="157.0" layoutY="51.0" mnemonicParsing="false" onAction="#onAddCashierButtonClick" text="Create Cashier">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="188.0" layoutY="105.0" mnemonicParsing="false" text="Add Trip">
+      <Button layoutX="157.0" layoutY="105.0" mnemonicParsing="false" text="Add Trip">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
@@ -45,49 +45,49 @@
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <Button fx:id="addTicketRequestButton" layoutX="327.0" layoutY="105.0" mnemonicParsing="false" onAction="#onAddRequestButtonClick" text="Request Tickets">
+      <Button fx:id="addTicketRequestButton" layoutX="309.0" layoutY="105.0" mnemonicParsing="false" onAction="#onAddRequestButtonClick" text="Request Tickets">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="188.0" layoutY="157.0" mnemonicParsing="false" text="Button">
+      <Button layoutX="157.0" layoutY="155.0" mnemonicParsing="false" text="Button">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="492.0" layoutY="157.0" mnemonicParsing="false" text="Button">
+      <Button layoutX="461.0" layoutY="155.0" mnemonicParsing="false" text="Button">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="340.0" layoutY="157.0" mnemonicParsing="false" text="Button">
+      <Button layoutX="309.0" layoutY="155.0" mnemonicParsing="false" text="Button">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="188.0" layoutY="209.0" mnemonicParsing="false" text="Button">
+      <Button layoutX="157.0" layoutY="207.0" mnemonicParsing="false" text="Button">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="492.0" layoutY="209.0" mnemonicParsing="false" text="Button">
+      <Button layoutX="461.0" layoutY="207.0" mnemonicParsing="false" text="Button">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="342.0" layoutY="209.0" mnemonicParsing="false" text="Button">
+      <Button layoutX="309.0" layoutY="207.0" mnemonicParsing="false" text="Button">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
       <Separator layoutX="121.0" layoutY="242.0" prefHeight="8.0" prefWidth="479.0" style="-fx-background-color: #375E72FF;" />
-      <Button layoutX="187.0" layoutY="264.0" mnemonicParsing="false" text="Trips Report">
+      <Button layoutX="157.0" layoutY="264.0" mnemonicParsing="false" text="Trips Report">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
       <Separator layoutX="121.0" layoutY="301.0" prefHeight="8.0" prefWidth="479.0" style="-fx-background-color: #375E72FF;" />
-      <Button layoutX="150.0" layoutY="364.0" mnemonicParsing="false" text="Cancelled Trips">
+      <Button layoutX="157.0" layoutY="364.0" mnemonicParsing="false" text="Cancelled Trips">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
@@ -166,7 +166,7 @@
             </Label>
          </children>
       </Pane>
-      <Button layoutX="277.0" layoutY="364.0" mnemonicParsing="false" text="Unsold Tickets">
+      <Button layoutX="309.0" layoutY="364.0" mnemonicParsing="false" text="Unsold Tickets">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
