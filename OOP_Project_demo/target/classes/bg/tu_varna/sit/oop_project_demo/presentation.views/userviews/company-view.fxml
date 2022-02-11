@@ -12,16 +12,16 @@
    <children>
       <Pane layoutX="101.0" layoutY="-8.0" prefHeight="46.0" prefWidth="500.0" style="-fx-background-color: #375E72FF;">
          <children>
-            <Button fx:id="logout" layoutX="432.0" layoutY="13.0" mnemonicParsing="false" onAction="#onLogoutButtonClick" style="-fx-background-color: transperent;" text="Log Out" textFill="WHITE">
-               <font>
-                  <Font name="Book Antiqua" size="13.0" />
-               </font>
-            </Button>
             <ImageView fitHeight="23.0" fitWidth="19.0" layoutX="410.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/logout.png" />
                </image>
             </ImageView>
+            <Button fx:id="logout" layoutX="432.0" layoutY="13.0" mnemonicParsing="false" onAction="#onLogoutButtonClick" style="-fx-background-color: transperent;" text="Log Out" textFill="WHITE">
+               <font>
+                  <Font name="Book Antiqua" size="13.0" />
+               </font>
+            </Button>
          </children></Pane>
       <ImageView fitHeight="74.0" fitWidth="89.0" layoutX="512.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -29,17 +29,7 @@
          </image>
       </ImageView>
       <Separator layoutX="121.0" layoutY="115.0" prefHeight="8.0" prefWidth="479.0" style="-fx-background-color: #375E72FF;" />
-      <Button layoutX="150.0" layoutY="59.0" mnemonicParsing="false" onAction="#onAddLocationButtonClick" prefHeight="37.0" prefWidth="143.0" text="Add Destination">
-         <font>
-            <Font name="Book Antiqua" size="14.0" />
-         </font>
-      </Button>
       <Button fx:id="addTripTypeButton" layoutX="452.0" layoutY="59.0" mnemonicParsing="false" onAction="#onAddTripTypeButtonClick" prefHeight="37.0" prefWidth="118.0" text="Add Trip Type">
-         <font>
-            <Font name="Book Antiqua" size="14.0" />
-         </font>
-      </Button>
-      <Button fx:id="addTripButton" layoutX="326.0" layoutY="59.0" mnemonicParsing="false" onAction="#onAddTripButtonClick" prefHeight="37.0" prefWidth="90.0" text="Add Trip">
          <font>
             <Font name="Book Antiqua" size="14.0" />
          </font>
@@ -126,6 +116,16 @@
          </font>
       </Button>
       <Button fx:id="requestButton" layoutX="150.0" layoutY="148.0" mnemonicParsing="false" onAction="#onRequestButtonClick" prefHeight="37.0" prefWidth="131.0" text="Check Requests">
+         <font>
+            <Font name="Book Antiqua" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="150.0" layoutY="59.0" mnemonicParsing="false" onAction="#onAddLocationButtonClick" prefHeight="37.0" prefWidth="143.0" text="Add Destination">
+         <font>
+            <Font name="Book Antiqua" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="addTripButton" layoutX="326.0" layoutY="59.0" mnemonicParsing="false" onAction="#onAddTripButtonClick" prefHeight="37.0" prefWidth="90.0" text="Add Trip">
          <font>
             <Font name="Book Antiqua" size="14.0" />
          </font>

@@ -29,11 +29,6 @@
          </image>
       </ImageView>
       <Separator layoutX="121.0" layoutY="120.0" prefHeight="8.0" prefWidth="479.0" style="-fx-background-color: #375E72FF;" />
-      <Button fx:id="addCashierButton" layoutX="150.0" layoutY="60.0" mnemonicParsing="false" onAction="#onAddCashierButtonClick" prefHeight="37.0" prefWidth="125.0" text="Create Cashier">
-         <font>
-            <Font name="Book Antiqua" size="14.0" />
-         </font>
-      </Button>
       <Button fx:id="addTicketRequestButton" layoutX="449.0" layoutY="60.0" mnemonicParsing="false" onAction="#onAddRequestButtonClick" prefHeight="37.0" prefWidth="130.0" text="Request Tickets">
          <font>
             <Font name="Book Antiqua" size="14.0" />
@@ -126,6 +121,11 @@
          </font>
       </Button>
       <Button fx:id="addTransportTypeButton" layoutX="287.0" layoutY="60.0" mnemonicParsing="false" onAction="#onAddTransportTypeButtonClick" prefHeight="37.0" prefWidth="150.0" text="Add Transport Type">
+         <font>
+            <Font name="Book Antiqua" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="addCashierButton" layoutX="150.0" layoutY="60.0" mnemonicParsing="false" onAction="#onAddCashierButtonClick" prefHeight="37.0" prefWidth="125.0" text="Create Cashier">
          <font>
             <Font name="Book Antiqua" size="14.0" />
          </font>

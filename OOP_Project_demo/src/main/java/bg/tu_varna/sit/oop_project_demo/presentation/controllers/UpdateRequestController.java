@@ -9,17 +9,22 @@ import javafx.beans.value.ObservableValue;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
 import javafx.util.Callback;
 
 import java.net.URL;
 import java.time.LocalDate;
 import java.util.ResourceBundle;
 
-import static bg.tu_varna.sit.oop_project_demo.common.Constants.User.loggedCashierUsername;
-import static bg.tu_varna.sit.oop_project_demo.common.Constants.User.loggedCompanyUsername;
+import static bg.tu_varna.sit.oop_project_demo.common.Constants.User.*;
+import static bg.tu_varna.sit.oop_project_demo.common.Constants.User.loggedDistributorUsername;
+import static bg.tu_varna.sit.oop_project_demo.common.Constants.View.*;
 
 public class UpdateRequestController implements Initializable {
 
@@ -64,9 +69,7 @@ public class UpdateRequestController implements Initializable {
     private TableView<RequestListViewModel> requestTable;
 
 
-    public void goBack(ActionEvent event) {
 
-    }
 
     public void onApproveButtonClick(){
         LocalDate date = LocalDate.of(2000, 1, 1);
@@ -80,6 +83,7 @@ public class UpdateRequestController implements Initializable {
                 maxSeatNum = a.getSeatNumber();
             }
         }
+        int res;
         if (cpcty > ticketCnt + maxSeatNum){
             if(requestService.updateRequestStatus(selectedItem, "APPROVED")){
                 Alert alert=new Alert(Alert.AlertType.CONFIRMATION,"Successfully approved status!",ButtonType.OK);
@@ -93,8 +97,8 @@ public class UpdateRequestController implements Initializable {
 
                 TicketListViewModel ticket = new TicketListViewModel(++maxSeatNum, "NOT SOLD", date,
                         cashierService.getCashierByName("test1"), selectedItem.getTripId());
-                int res = ticketService.createTicket(ticket);
-                if (res == 0){
+                res = ticketService.createTicket(ticket);
+                /*if (res == 0){
                     Alert alert=new Alert(Alert.AlertType.CONFIRMATION,"Ticket added", ButtonType.OK);
                     alert.show();
                 }
@@ -102,9 +106,18 @@ public class UpdateRequestController implements Initializable {
                     Alert alert=new Alert(Alert.AlertType.ERROR,"Couldn't add ticket!", ButtonType.CLOSE);
                     alert.show();
                     break;
+                }*/
+                if (res != 0){
+                    Alert alert=new Alert(Alert.AlertType.ERROR,"Couldn't add ticket!", ButtonType.CLOSE);
+                    alert.show();
+                    break;
                 }
                 --ticketCnt;
             }while (ticketCnt != 0);
+            if (res == 0){
+                Alert alert=new Alert(Alert.AlertType.CONFIRMATION,"Ticket added", ButtonType.OK);
+                alert.show();
+            }
         }
         else{
             Alert alert=new Alert(Alert.AlertType.ERROR,"Not enough space!", ButtonType.CLOSE);
@@ -158,6 +171,44 @@ public class UpdateRequestController implements Initializable {
         });
         ticketCount.setCellValueFactory(new PropertyValueFactory<>("ticketCount"));
         requestTable.setItems(requestListViewModels);
+    }
+
+    public void onGoBackButtonClick(ActionEvent event) {
+        if (trackUser == 1)
+            loadNewPage(ADMIN_VIEW);
+        if (trackUser == 2)
+            loadNewPage(COMPANY_VIEW);
+        if (trackUser == 3)
+            loadNewPage(DISTRIBUTOR_VIEW);
+        if (trackUser == 4)
+            loadNewPage(CASHIER_VIEW);
+    }
+
+
+    public void onLogoutButtonClick(ActionEvent event){
+        trackUser = 0;
+        loggedCashierUsername = "";
+        loggedAdminUsername = "";
+        loggedCompanyUsername = "";
+        loggedDistributorUsername = "";
+        loadNewPage(HELLO_VIEW);
+    }
+
+    public void loadNewPage(String path){
+        try {
+            Stage s = (Stage) backButton.getScene().getWindow();
+            s.close();
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(path));
+            Stage stage = new Stage();
+            Parent root1 = (Parent) fxmlLoader.load();
+            stage.setScene(new Scene(root1));
+            stage.setResizable(false);
+            stage.setWidth(630);
+            stage.setHeight(440);
+            stage.show();
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
     }
 
 

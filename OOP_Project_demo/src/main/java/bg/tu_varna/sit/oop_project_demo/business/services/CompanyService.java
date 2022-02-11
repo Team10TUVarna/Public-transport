@@ -140,4 +140,11 @@ public class CompanyService {
             return false;
         }
     }
+    /*public ObservableList<CompanyListViewModel> getAllNamesCompany(){
+        List<Company> all = repository.getAll();
+        return FXCollections.observableList(
+                all.stream().map(w -> new CompanyListViewModel(
+                        w.getCompanyName()
+                )).collect(Collectors.toList()));
+    }*/
 }

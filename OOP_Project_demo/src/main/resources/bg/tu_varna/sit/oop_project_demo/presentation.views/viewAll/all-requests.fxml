@@ -13,7 +13,7 @@
    <children>
       <Pane layoutX="101.0" layoutY="-8.0" prefHeight="112.0" prefWidth="500.0" style="-fx-background-color: #375E72FF;">
          <children>
-            <Button fx:id="logout" layoutX="431.0" layoutY="17.0" mnemonicParsing="false" style="-fx-background-color: transperent;" text="Log Out" textFill="WHITE">
+            <Button fx:id="logout" layoutX="431.0" layoutY="17.0" mnemonicParsing="false" onAction="#onLogoutButtonClick" style="-fx-background-color: transperent;" text="Log Out" textFill="WHITE">
                <font>
                   <Font name="Book Antiqua" size="13.0" />
                </font>
@@ -44,39 +44,29 @@
             </ImageView>
          </children>
       </Pane>
-      <Button fx:id="deleteRequestButton" layoutX="445.0" layoutY="347.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="104.0" text="    Delete">
-         <font>
-            <Font name="Book Antiqua" size="14.0" />
-         </font>
-      </Button>
-      <Button fx:id="backButton" layoutX="24.0" layoutY="24.0" mnemonicParsing="false" onAction="#goBack" text="Go Back">
+      <Button fx:id="backButton" layoutX="24.0" layoutY="24.0" mnemonicParsing="false" onAction="#onGoBackButtonClick" text="Go Back">
          <font>
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <Button fx:id="approveButton" layoutX="200.0" layoutY="347.0" mnemonicParsing="false" onAction="#onApproveButtonClick" prefHeight="28.0" prefWidth="104.0" text="      Approve">
+      <Button fx:id="approveButton" layoutX="254.0" layoutY="347.0" mnemonicParsing="false" onAction="#onApproveButtonClick" prefHeight="28.0" prefWidth="104.0" text="      Approve">
          <font>
             <Font name="Book Antiqua" size="14.0" />
          </font>
       </Button>
-      <Button fx:id="rejectButton" layoutX="321.0" layoutY="347.0" mnemonicParsing="false" onAction="#onRejectButtonClick" prefHeight="28.0" prefWidth="104.0" text="     Reject">
+      <Button fx:id="rejectButton" layoutX="375.0" layoutY="347.0" mnemonicParsing="false" onAction="#onRejectButtonClick" prefHeight="28.0" prefWidth="104.0" text="     Reject">
          <font>
             <Font name="Book Antiqua" size="14.0" />
          </font>
       </Button>
-      <ImageView fitHeight="25.0" fitWidth="26.0" layoutX="203.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="25.0" fitWidth="26.0" layoutX="257.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../images/approval.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="25.0" fitWidth="26.0" layoutX="331.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="25.0" fitWidth="26.0" layoutX="385.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../images/cancel.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="25.0" fitWidth="26.0" layoutX="453.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../images/delete-black.png" />
          </image>
       </ImageView>
       <TableView fx:id="requestTable" layoutX="125.0" layoutY="104.0" prefHeight="229.0" prefWidth="476.0">

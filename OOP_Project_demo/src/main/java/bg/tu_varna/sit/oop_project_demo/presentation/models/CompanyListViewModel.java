@@ -73,4 +73,5 @@ public class CompanyListViewModel {
     public String toString() {
         return String.format("%s",username);
     }
+
 }

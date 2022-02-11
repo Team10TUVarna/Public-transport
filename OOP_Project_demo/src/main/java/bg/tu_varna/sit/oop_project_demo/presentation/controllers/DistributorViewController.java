@@ -15,7 +15,6 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import static bg.tu_varna.sit.oop_project_demo.common.Constants.User.*;
-import static bg.tu_varna.sit.oop_project_demo.common.Constants.User.loggedCashierUsername;
 import static bg.tu_varna.sit.oop_project_demo.common.Constants.View.*;
 
 public class DistributorViewController implements Initializable {

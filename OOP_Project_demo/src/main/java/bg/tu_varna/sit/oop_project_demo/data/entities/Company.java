@@ -40,6 +40,8 @@ public class Company implements Serializable {
         this.password = password;
     }
 
+
+
     public Company(String companyName, String username, String password, double honorarium) {
         this.companyName = companyName;
         this.username = username;
