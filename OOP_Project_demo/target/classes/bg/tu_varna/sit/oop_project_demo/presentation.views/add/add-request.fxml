@@ -51,12 +51,12 @@
          </font>
       </Label>
       <TextField fx:id="ticketsCount" layoutX="300.0" layoutY="327.0" prefHeight="25.0" prefWidth="177.0" />
-      <Button fx:id="addRequestButton" layoutX="454.0" layoutY="358.0" mnemonicParsing="false" onAction="#onAddRequestButtonClick" text="Add">
+      <Button fx:id="addRequestButton" layoutX="429.0" layoutY="358.0" mnemonicParsing="false" onAction="#onAddRequestButtonClick" text="Add">
          <font>
             <Font name="Book Antiqua" size="14.0" />
          </font>
       </Button>
-      <Label layoutX="152.0" layoutY="325.0" prefHeight="28.0" prefWidth="187.0" text="Tickets Count:" textFill="#233d48">
+      <Label layoutX="152.0" layoutY="327.0" prefHeight="28.0" prefWidth="187.0" text="Tickets Count:" textFill="#233d48">
          <font>
             <Font name="Book Antiqua" size="14.0" />
          </font>

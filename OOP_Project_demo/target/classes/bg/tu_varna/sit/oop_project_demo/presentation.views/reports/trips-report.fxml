@@ -39,7 +39,7 @@
       </Pane>
       <Pane prefHeight="400.0" prefWidth="125.0" style="-fx-background-color: #375E72FF;">
          <children>
-            <ImageView fitHeight="98.0" fitWidth="121.0" layoutX="5.0" layoutY="294.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="98.0" fitWidth="121.0" layoutX="5.0" layoutY="302.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/logoEasyTravel2.png" />
                </image>
@@ -63,13 +63,23 @@
             <TableColumn fx:id="arrivalLocationColumn" prefWidth="96.0" text="Arrival location" />
          </columns>
       </TableView>
-      <ComboBox fx:id="comboBox" layoutX="327.0" layoutY="302.0" prefWidth="150.0" promptText="Chose company" />
-      <Button fx:id="checkButton" layoutX="498.0" layoutY="340.0" mnemonicParsing="false" onAction="#onCheckButtonClick" prefHeight="44.0" prefWidth="88.0" text="Check" textAlignment="CENTER">
+      <ComboBox fx:id="comboBox" layoutX="230.0" layoutY="302.0" prefWidth="150.0" promptText="Chose company" />
+      <Button fx:id="checkButton" layoutX="479.0" layoutY="333.0" mnemonicParsing="false" onAction="#onCheckButtonClick" prefHeight="35.0" prefWidth="88.0" text="Check" textAlignment="CENTER">
          <font>
-            <Font name="Calibri Light" size="18.0" />
+            <Font name="Book Antiqua" size="14.0" />
          </font>
       </Button>
-      <DatePicker fx:id="dateFrom" layoutX="127.0" layoutY="302.0" />
-      <DatePicker fx:id="dateTo" layoutX="127.0" layoutY="349.0" />
+      <DatePicker fx:id="dateFrom" layoutX="230.0" layoutY="334.0" />
+      <DatePicker fx:id="dateTo" layoutX="230.0" layoutY="364.0" />
+      <Label layoutX="155.0" layoutY="338.0" text="Date From:">
+         <font>
+            <Font name="Book Antiqua" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="155.0" layoutY="370.0" text="Date To:">
+         <font>
+            <Font name="Book Antiqua" size="14.0" />
+         </font>
+      </Label>
    </children>
 </Pane>

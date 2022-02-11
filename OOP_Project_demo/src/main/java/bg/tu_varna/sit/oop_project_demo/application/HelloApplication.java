@@ -21,11 +21,6 @@ public class HelloApplication extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        /*FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource(Constants.View.HELLO_VIEW));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
-        stage.setScene(scene);
-        stage.show();*/
 
         PropertyConfigurator.configure(HelloApplication.class.getResource(Constants.Configurations.LOG4J_PROPERTIES));
 

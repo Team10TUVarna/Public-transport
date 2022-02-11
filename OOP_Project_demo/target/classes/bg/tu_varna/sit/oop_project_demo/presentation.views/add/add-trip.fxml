@@ -36,68 +36,68 @@
             </ImageView>
          </children>
       </Pane>
-      <Pane prefHeight="400.0" prefWidth="125.0" style="-fx-background-color: #375E72FF;">
+      <Pane prefHeight="410.0" prefWidth="125.0" style="-fx-background-color: #375E72FF;">
          <children>
-            <ImageView fitHeight="98.0" fitWidth="121.0" layoutX="5.0" layoutY="294.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="98.0" fitWidth="121.0" layoutX="5.0" layoutY="312.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/logoEasyTravel2.png" />
                </image>
             </ImageView>
          </children>
       </Pane>
-      <Label layoutX="152.0" layoutY="369.0" prefHeight="28.0" prefWidth="360.0" text="Please, make sure you filled all fields." textFill="#233d48">
+      <Label layoutX="152.0" layoutY="376.0" prefHeight="28.0" prefWidth="360.0" text="Please, make sure you filled all fields." textFill="#233d48">
          <font>
             <Font name="Book Antiqua Bold Italic" size="14.0" />
          </font>
       </Label>
-      <Button fx:id="addTripButton" layoutX="480.0" layoutY="369.0" mnemonicParsing="false" onAction="#onAddTripButtonClick" text="Add">
+      <Button fx:id="addTripButton" layoutX="447.0" layoutY="375.0" mnemonicParsing="false" onAction="#onAddTripButtonClick" prefHeight="28.0" prefWidth="65.0" text="Add">
          <font>
-            <Font name="Book Antiqua" size="14.0" />
+            <Font name="Book Antiqua" size="15.0" />
          </font>
       </Button>
-      <Label layoutX="152.0" layoutY="72.0" prefHeight="28.0" prefWidth="187.0" text="Date of Departure:" textFill="#233d48">
+      <Label layoutX="192.0" layoutY="76.0" prefHeight="28.0" prefWidth="187.0" text="Date of Departure:" textFill="#233d48">
          <font>
             <Font name="Book Antiqua" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="152.0" layoutY="191.0" prefHeight="28.0" prefWidth="187.0" text="Capacity:" textFill="#233d48">
+      <Label layoutX="192.0" layoutY="211.0" prefHeight="28.0" prefWidth="187.0" text="Capacity:" textFill="#233d48">
          <font>
             <Font name="Book Antiqua" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="152.0" layoutY="226.0" prefHeight="28.0" prefWidth="187.0" text="Trip Type:" textFill="#233d48">
+      <Label layoutX="192.0" layoutY="244.0" prefHeight="28.0" prefWidth="187.0" text="Trip Type:" textFill="#233d48">
          <font>
             <Font name="Book Antiqua" size="14.0" />
          </font>
       </Label>
-      <TextField fx:id="capacity" layoutX="351.0" layoutY="193.0" prefHeight="25.0" prefWidth="175.0" />
-      <DatePicker fx:id="departure" layoutX="351.0" layoutY="73.0" prefHeight="25.0" prefWidth="175.0" />
-      <Label layoutX="152.0" layoutY="127.0" prefHeight="28.0" prefWidth="187.0" text="Date of Arrival:" textFill="#233d48">
+      <TextField fx:id="capacity" layoutX="336.0" layoutY="211.0" prefHeight="25.0" prefWidth="175.0" />
+      <DatePicker fx:id="departure" layoutX="336.0" layoutY="76.0" prefHeight="25.0" prefWidth="175.0" />
+      <Label layoutX="192.0" layoutY="143.0" prefHeight="28.0" prefWidth="187.0" text="Date of Arrival:" textFill="#233d48">
          <font>
             <Font name="Book Antiqua" size="14.0" />
          </font>
       </Label>
-      <DatePicker fx:id="arrival" layoutX="352.0" layoutY="128.0" prefHeight="25.0" prefWidth="175.0" />
-      <Label layoutX="152.0" layoutY="337.0" prefHeight="28.0" prefWidth="187.0" text="To:" textFill="#233d48">
+      <DatePicker fx:id="arrival" layoutX="336.0" layoutY="143.0" prefHeight="25.0" prefWidth="175.0" />
+      <Label layoutX="192.0" layoutY="343.0" prefHeight="28.0" prefWidth="187.0" text="To:" textFill="#233d48">
          <font>
             <Font name="Book Antiqua" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="152.0" layoutY="300.0" prefHeight="28.0" prefWidth="187.0" text="From:" textFill="#233d48">
+      <Label layoutX="192.0" layoutY="312.0" prefHeight="28.0" prefWidth="187.0" text="From:" textFill="#233d48">
          <font>
             <Font name="Book Antiqua" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="152.0" layoutY="263.0" prefHeight="28.0" prefWidth="187.0" text="Transport Type:" textFill="#233d48">
+      <Label layoutX="192.0" layoutY="278.0" prefHeight="28.0" prefWidth="187.0" text="Transport Type:" textFill="#233d48">
          <font>
             <Font name="Book Antiqua" size="14.0" />
          </font>
       </Label>
-      <ComboBox fx:id="tripType" layoutX="351.0" layoutY="227.0" prefHeight="25.0" prefWidth="175.0" />
-      <ComboBox fx:id="transportType" layoutX="352.0" layoutY="264.0" prefHeight="25.0" prefWidth="175.0" />
-      <ComboBox fx:id="locationFrom" layoutX="352.0" layoutY="301.0" prefHeight="25.0" prefWidth="175.0" />
-      <ComboBox fx:id="locationTo" layoutX="351.0" layoutY="338.0" prefHeight="25.0" prefWidth="175.0" />
-      <ImageView fitHeight="78.0" fitWidth="65.0" layoutX="529.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true">
+      <ComboBox fx:id="tripType" layoutX="336.0" layoutY="244.0" prefHeight="25.0" prefWidth="175.0" />
+      <ComboBox fx:id="transportType" layoutX="336.0" layoutY="278.0" prefHeight="25.0" prefWidth="175.0" />
+      <ComboBox fx:id="locationFrom" layoutX="336.0" layoutY="312.0" prefHeight="25.0" prefWidth="175.0" />
+      <ComboBox fx:id="locationTo" layoutX="336.0" layoutY="344.0" prefHeight="25.0" prefWidth="175.0" />
+      <ImageView fitHeight="78.0" fitWidth="65.0" layoutX="529.0" layoutY="339.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../images/traveler.png" />
          </image>
@@ -107,14 +107,14 @@
             <Font name="Book Antiqua" size="13.0" />
          </font>
       </Button>
-      <TextField fx:id="timeOfDeparture" layoutX="352.0" layoutY="99.0" prefHeight="25.0" prefWidth="175.0" />
-      <Label layoutX="152.0" layoutY="98.0" prefHeight="28.0" prefWidth="187.0" text="Time of Departure:" textFill="#233d48">
+      <TextField fx:id="timeOfDeparture" layoutX="336.0" layoutY="109.0" prefHeight="25.0" prefWidth="175.0" />
+      <Label layoutX="192.0" layoutY="109.0" prefHeight="28.0" prefWidth="187.0" text="Time of Departure:" textFill="#233d48">
          <font>
             <Font name="Book Antiqua" size="14.0" />
          </font>
       </Label>
-      <TextField fx:id="timeOfArrival" layoutX="351.0" layoutY="155.0" prefHeight="25.0" prefWidth="175.0" />
-      <Label layoutX="152.0" layoutY="154.0" prefHeight="28.0" prefWidth="187.0" text="Time of Arrival:" textFill="#233d48">
+      <TextField fx:id="timeOfArrival" layoutX="336.0" layoutY="177.0" prefHeight="25.0" prefWidth="175.0" />
+      <Label layoutX="192.0" layoutY="177.0" prefHeight="28.0" prefWidth="187.0" text="Time of Arrival:" textFill="#233d48">
          <font>
             <Font name="Book Antiqua" size="14.0" />
          </font>
