@@ -38,7 +38,7 @@
       </Pane>
       <Pane prefHeight="400.0" prefWidth="125.0" style="-fx-background-color: #375E72FF;">
          <children>
-            <ImageView fitHeight="98.0" fitWidth="121.0" layoutX="5.0" layoutY="294.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="98.0" fitWidth="121.0" layoutX="5.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/logoEasyTravel2.png" />
                </image>
@@ -62,14 +62,20 @@
             <TableColumn fx:id="departureHourColumn" prefWidth="61.0" text="Dep. hour" />
          </columns>
       </TableView>
-      <DatePicker fx:id="dateFrom" layoutX="230.0" layoutY="308.0" />
-      <DatePicker fx:id="dateTo" layoutX="230.0" layoutY="360.0" />
-      <Button fx:id="checkButton" layoutX="508.0" layoutY="350.0" mnemonicParsing="false" onAction="#onCheckButtonClick" prefHeight="44.0" prefWidth="88.0" text="Check" textAlignment="CENTER">
+      <DatePicker fx:id="dateFrom" layoutX="230.0" layoutY="310.0" />
+      <DatePicker fx:id="dateTo" layoutX="230.0" layoutY="358.0" />
+      <Button fx:id="checkButton" layoutX="442.0" layoutY="327.0" mnemonicParsing="false" onAction="#onCheckButtonClick" prefHeight="35.0" prefWidth="88.0" text="Check" textAlignment="CENTER">
          <font>
-            <Font name="Calibri Light" size="18.0" />
+            <Font name="Book Antiqua" size="14.0" />
          </font>
       </Button>
-      <Label layoutX="172.0" layoutY="312.0" text="Date from:" />
-      <Label layoutX="180.0" layoutY="364.0" text="Date to:" />
+      <Label layoutX="155.0" layoutY="314.0" text="Date From:">
+         <font>
+            <Font name="Book Antiqua" size="14.0" />
+         </font></Label>
+      <Label layoutX="155.0" layoutY="362.0" text="Date To:">
+         <font>
+            <Font name="Book Antiqua" size="14.0" />
+         </font></Label>
    </children>
 </Pane>
