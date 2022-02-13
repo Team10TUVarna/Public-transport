@@ -28,6 +28,7 @@ class AdminServiceTest {
 
     @Test
     void getAdminByName(){
-        assertEquals(admin, adminService.getAdminByName(admin.getUsername()));
+        //assertEquals(admin, adminService.getAdminByName(admin.getUsername()));
+        assertTrue(admin.equals(adminService.getAdminByName(admin.getUsername())));
     }
 }

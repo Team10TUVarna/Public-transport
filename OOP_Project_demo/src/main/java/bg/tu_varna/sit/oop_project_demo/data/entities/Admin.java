@@ -3,6 +3,7 @@ package bg.tu_varna.sit.oop_project_demo.data.entities;
 import javax.persistence.*;
 
 import java.io.Serializable;
+import java.util.Objects;
 
 @Table(name = "Admin")
 @Entity
@@ -59,5 +60,18 @@ public class Admin implements Serializable{
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Admin admin = (Admin) o;
+        return adminId == admin.adminId && Objects.equals(username, admin.username) && Objects.equals(password, admin.password);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(adminId, username, password);
     }
 }
