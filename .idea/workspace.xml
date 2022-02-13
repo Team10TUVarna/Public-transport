@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0aa2aad8-9505-497c-8ff4-f43497d366b7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/business/services/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/business/services/AdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/data/entities/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/java/bg/tu_varna/sit/oop_project_demo/data/entities/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP_Project_demo/src/main/tests/bg/tu_varna/sit/oop_project_demo/business/services/AdminServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Project_demo/src/main/tests/bg/tu_varna/sit/oop_project_demo/business/services/AdminServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/application.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +99,7 @@
       <recent name="bg.tu_varna.sit.oop_project_demo.business.services" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AdminServiceTest.getAdminByName">
+  <component name="RunManager" selected="Application.HelloApplication">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bg.tu_varna.sit.oop_project_demo.application.HelloApplication" />
       <module name="OOP_Project_demo" />
@@ -181,8 +178,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AdminServiceTest.getAdminByName" />
         <item itemvalue="Application.HelloApplication" />
+        <item itemvalue="JUnit.AdminServiceTest.getAdminByName" />
         <item itemvalue="JUnit.LocationRepositoryTest" />
         <item itemvalue="JUnit.LocationRepositoryTest.getAll" />
         <item itemvalue="JUnit.LocationRepositoryTest.delete" />
@@ -240,6 +237,7 @@
       <workItem from="1644575392454" duration="3550000" />
       <workItem from="1644581310390" duration="368000" />
       <workItem from="1644581957775" duration="3584000" />
+      <workItem from="1644775656923" duration="158000" />
     </task>
     <servers />
   </component>
